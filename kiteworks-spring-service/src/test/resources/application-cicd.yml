@@ -1,0 +1,17 @@
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+kiteworks:
+  enabled: true
+  baseUri: ${KITEWORKS_BASE_URI}
+  clientId: ${KITEWORKS_CLIENT_ID}
+  clientSecret: ${KITEWORKS_CLIENT_SECRET}
+  signatureKey: ${KITEWORKS_SIGNATURE_KEY}
+  userId: ${KITEWORKS_USER_ID}
+  clientAppScopes: ${KITEWORKS_CLIENT_APP_SCOPES}
+  redirectUri: ${KITEWORKS_REDIRECT_URI}
+  accessTokenUri: ${KITEWORKS_ACCESS_TOKEN_URI}
+  userAgent: kiteworks-java-client
+  kiteworksApiVersion: 24

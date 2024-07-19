@@ -1,0 +1,17 @@
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+kiteworks:
+  enabled: true
+  baseUri: https://kiteworks.dcj.nsw.gov.au/
+  clientId: your-client-id
+  clientSecret: your-client-secret
+  signatureKey: your-signature-key
+  userId: your-user-id
+  clientAppScopes: 'folders/* files/* mail/*'
+  redirectUri: https://yourapp.com/oauth/callback
+  accessTokenUri: https://kiteworks.dcj.nsw.gov.au/oauth/token
+  userAgent: kiteworks-client 1.0
+  kiteworksApiVersion: '24'

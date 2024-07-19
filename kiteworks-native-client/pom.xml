@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>au.gov.qld.ssq</groupId>
+    <artifactId>kiteworks-native-client</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <jackson-version>2.17.1</jackson-version>
+        <jackson-databind-nullable-version>0.2.6</jackson-databind-nullable-version>
+        <jakarta-annotation-version>2.1.1</jakarta-annotation-version>
+        <beanvalidation-version>3.0.2</beanvalidation-version>
+        <httpmime-version>4.5.14</httpmime-version>
+        <junit-version>5.10.2</junit-version>
+        <spotless.version>2.27.2</spotless.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>7.7.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <inputSpec>${project.basedir}/src/main/resources/kiteworks.28.swagger.json</inputSpec>
+                            <generatorName>java</generatorName>
+                            <configOptions>
+                                <dateLibrary>java8</dateLibrary> <!--java8 - Java 8 native JSR310 (preferred for jdk 1.8+) -->
+                                <useJakartaEe>true</useJakartaEe>
+                                <useTags>true</useTags>
+                                <serializationLibrary>jackson</serializationLibrary>
+                            </configOptions>
+
+                            <library>native</library>
+<!--                            <output>${project.build.directory}/generated-sources/openapi</output>-->
+                            <apiPackage>com.kiteworks.client.api</apiPackage>
+                            <modelPackage>com.kiteworks.client.model</modelPackage>
+                            <invokerPackage>com.kiteworks.client</invokerPackage>
+                            <cleanupOutput>false</cleanupOutput>
+                            <apisToGenerate>Files,Activities,Folders,Uploads</apisToGenerate>
+                            <modelsToGenerate>Task,Comment,Comment.Post,MemberGroup.Put,Member.Put,SendMessage.Post,SendMessage,Fingerprint,MobileInfo,PushedObject,FoldersMetaData,ActivityUser,UserMetadata,LdapGroup,Tag,BulkOperationLockFile,File,UserBasicInfo,BaseObject,MetaData,User,ErrorString,Group,Role,UserBasic,Activity,Members,MemberGroup,AdminFilePutRequest,AdminFileRescan,BulkOperationLockFile,Content,Content.Post,FileAddMembers,FileCopyPostBodyRequest,FileLockPostRequest,FileMembersPostRequest,FileMovePostBodyRequest,FileNameRequest.Post,FilePermissions,FilePreviewSupport,FileUpdateRequest,Files,KPTransferStatus,KitepointPreview,Members,Permission,Preview,RefreshToken,Task,Task.Post,Version,ActivityList,AdminFolderPutRequest,DestinationFolderIdRequest,Folder,Folder1,FolderAddMembers,FolderChildrenFiles,FolderCreatePostRequest,FolderMemberPostRequest,FolderPermissionsRequest,FolderQuota,FolderUpdatePutRequest,Folders,Member,Members,Task,AcfsConfig,InitiateUploadPostRequest,Upload</modelsToGenerate>
+                            <generateApiDocumentation>false</generateApiDocumentation>
+                            <generateApiTests>false</generateApiTests>
+                            <generateModelDocumentation>false</generateModelDocumentation>
+                            <generateModelTests>false</generateModelTests>
+                            <configHelp>false</configHelp>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.1.0</version>
+                <executions>
+                    <execution>
+                        <id>enforce-maven</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireMavenVersion>
+                                    <version>3</version>
+                                </requireMavenVersion>
+                                <requireJavaVersion>
+                                    <version>11</version>
+                                </requireJavaVersion>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.5</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <loggerPath>conf/log4j.properties</loggerPath>
+                    </systemPropertyVariables>
+                    <argLine>-Xms512m -Xmx1500m</argLine>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- attach test jar -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>test-jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- Use spotless plugin to automatically format code,remove unused import,etc
+                 To apply changes directly to the file,run `mvn spotless:apply`
+                 Ref: https://github.com/diffplug/spotless/tree/main/plugin-maven
+            -->
+            <plugin>
+                <groupId>com.diffplug.spotless</groupId>
+                <artifactId>spotless-maven-plugin</artifactId>
+                <version>${spotless.version}</version>
+                <configuration>
+                    <formats>
+                        <!-- you can define as many formats as you want,each is independent -->
+                        <format>
+                            <!-- define the files to apply to -->
+                            <includes>
+                                <include>.gitignore</include>
+                            </includes>
+                            <!-- define the steps to apply to those files -->
+                            <trimTrailingWhitespace/>
+                            <endWithNewline/>
+                            <indent>
+                                <spaces>true</spaces> <!-- or <tabs>true</tabs> -->
+                                <spacesPerTab>4</spacesPerTab> <!-- optional,default is 4 -->
+                            </indent>
+                        </format>
+                    </formats>
+                    <!-- define a language-specific format -->
+                    <java>
+                        <!-- no need to specify files,inferred automatically,but you can if you want -->
+
+                        <!-- apply a specific flavor of google-java-format and reflow long strings -->
+                        <googleJavaFormat>
+                            <version>1.8</version>
+                            <style>AOSP</style>
+                            <reflowLongStrings>true</reflowLongStrings>
+                        </googleJavaFormat>
+                        <removeUnusedImports/>
+                        <importOrder/>
+                    </java>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
+    <profiles>
+        <profile>
+            <id>sign-artifacts</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <version>3.0.1</version>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>2.0.13</version><scope>compile</scope></dependency>
+
+        <!-- JSON processing: jackson -->
+        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-core</artifactId><version>${jackson-version}</version></dependency>
+        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-annotations</artifactId><version>${jackson-version}</version></dependency>
+        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-databind</artifactId><version>${jackson-version}</version></dependency>
+        <dependency><groupId>com.fasterxml.jackson.datatype</groupId><artifactId>jackson-datatype-jsr310</artifactId><version>${jackson-version}</version></dependency>
+        <dependency><groupId>org.openapitools</groupId><artifactId>jackson-databind-nullable</artifactId><version>${jackson-databind-nullable-version}</version></dependency>
+
+
+        <dependency><groupId>jakarta.annotation</groupId><artifactId>jakarta.annotation-api</artifactId><version>${jakarta-annotation-version}</version><scope>provided</scope></dependency>
+        <dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpmime</artifactId><version>${httpmime-version}</version></dependency>
+
+                <!-- ########## Test dependencies ########## -->
+        <dependency><scope>test</scope><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-api</artifactId><version>${junit-version}</version></dependency>
+        <dependency><scope>test</scope><groupId>org.hamcrest</groupId><artifactId>hamcrest</artifactId><version>2.2</version></dependency>
+        <dependency><scope>test</scope><groupId>org.assertj</groupId><artifactId>assertj-core</artifactId><version>3.25.3</version></dependency>
+        <dependency><scope>test</scope><groupId>org.mockito</groupId><artifactId>mockito-core</artifactId><version>5.11.0</version></dependency>
+    </dependencies>
+
+
+</project>
+

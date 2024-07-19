@@ -1,0 +1,43 @@
+name: Integration Test
+
+on:
+  push:
+    branches:
+      - "*"
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'zulu'
+        java-version: '21'
+        cache: 'maven'
+
+    - name: Build with Maven
+      env:
+        KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+        KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+        KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+        KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+        KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+        KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+        KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+        KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+      run: mvn clean install  -Dspring.profiles.active=cicd
+
+#    - name: Publish to GitHub Packages Apache Maven
+#        run: mvn deploy
+#        env:
+#          GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
