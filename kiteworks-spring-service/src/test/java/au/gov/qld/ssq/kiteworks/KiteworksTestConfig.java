@@ -1,6 +1,5 @@
 package au.gov.qld.ssq.kiteworks;
 
-import au.gov.au.ssq.kiteworks.KiteworksService;
 import com.kiteworks.client.api.ActivitiesApi;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;

@@ -43,4 +43,65 @@
         <dependency><scope>test</scope><groupId>org.springframework.boot</groupId><artifactId>spring-boot-test</artifactId></dependency>
 
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.1</version>
+                <configuration>
+                    <argLine>-Xms512m -Xmx1500m</argLine>
+                    <parallel>methods</parallel>
+                    <threadCount>10</threadCount>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins </groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
+        </plugins>
+    </build>
+
+    <profiles>
+        <profile>
+            <id>skip-it-tests</id>
+            <activation>
+                <property>
+                    <name>!env.KITEWORKS_SIGNATURE_KEY</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <skipTests>true</skipTests>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>log-skip-message</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>echo</executable>
+                                    <arguments>
+                                        <argument>::warning:: [WARNING] Integration tests skipped: KITEWORKS_CLIENT_APP_SCOPES ;KITEWORKS_USER_ID ;KITEWORKS_CLIENT_SECRET ;KITEWORKS_ACCESS_TOKEN_URI ;KITEWORKS_CLIENT_ID; KITEWORKS_SIGNATURE_KEY ;KITEWORKS_BASE_URI ;KITEWORKS_REDIRECT_URI environment variable/s may not be set.</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

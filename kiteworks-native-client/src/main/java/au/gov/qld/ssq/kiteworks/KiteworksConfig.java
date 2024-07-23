@@ -1,4 +1,4 @@
-package au.gov.au.ssq.kiteworks;
+package au.gov.qld.ssq.kiteworks;
 
 import java.util.Objects;
 
