@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  versioning-strategy: increase
+  directory: "/"
+  target-branch: "develop"
+  schedule:
+    interval: daily
+    time: "19:00"
+  groups:
+    jackson:
+      patterns:
+        - "jackson*"
+  open-pull-requests-limit: 10
+  reviewers:
+  - qld-gov-au/qld-online-dev-team
