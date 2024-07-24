@@ -1,7 +1,6 @@
 version: 2
 updates:
 - package-ecosystem: maven
-  versioning-strategy: increase
   directory: "/"
   target-branch: "develop"
   schedule:
