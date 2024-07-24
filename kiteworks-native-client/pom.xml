@@ -22,6 +22,14 @@
         <spotless.version>2.27.2</spotless.version>
     </properties>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/qld-gov-au/kiteworks-integration</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>

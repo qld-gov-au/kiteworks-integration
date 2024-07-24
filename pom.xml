@@ -8,6 +8,15 @@
     <artifactId>kiteworks_integration</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/qld-gov-au/kiteworks-integration</url>
+        </repository>
+    </distributionManagement>
+
     <modules>
         <module>kiteworks-spring-service</module>
         <module>kiteworks-native-client</module>

@@ -1,0 +1,90 @@
+name: Integration Test
+
+on:
+  release:
+    types: [created]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+    inputs:
+      force:
+        type: choice
+        description: Retry Publish Version
+        options:
+          - No
+          - Yes
+jobs:
+  public-ghp:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    env:
+      SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
+      #When run on push tags, force is '', default for workflow_dispatch is No so you can't trigger without a double action
+      DO_DEPLOYMENT: ${{ github.event_name != 'workflow_dispatch'  || github.event.inputs.force == 'Yes' }}
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up JDK
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'zulu'
+        java-version: '21'
+        cache: 'maven'
+
+    - name: Build with Maven
+      env:
+        KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+        KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+        KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+        KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+        KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+        KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+        KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+        KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+      run: mvn clean install  -Dspring.profiles.active=cicd
+
+      - name: Publish package
+        if: ${{ env.DO_DEPLOYMENT == 'true' }}
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+
+      - name: Publish - Skipped
+        if: ${{ env.DO_DEPLOYMENT != 'true' }}
+        run: |
+          echo "### Publish skipped" >> $GITHUB_STEP_SUMMARY
+          echo "DO_DEPLOYMENT( ${{ env.DO_DEPLOYMENT }} ): github.event_name: ${{ github.event_name != 'workflow_dispatch'}} || github.event.inputs.force: ${{ github.event.inputs.force == 'Yes' }}"  >> $GITHUB_STEP_SUMMARY
+
+
+#      - name: Set up Java for publishing to Maven Central Repository
+#        uses: actions/setup-java@v4
+#        with:
+#          java-version: '11'
+#          distribution: 'temurin'
+#          server-id: ossrh
+#          server-username: MAVEN_USERNAME
+#          server-password: MAVEN_PASSWORD
+#      - name: Publish to the Maven Central Repository
+#        run: mvn --batch-mode deploy
+#        env:
+#          MAVEN_USERNAME: ${{ secrets.OSSRH_USERNAME }}
+#          MAVEN_PASSWORD: ${{ secrets.OSSRH_TOKEN }}
+#          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+#          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+#          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+#          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+#          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+#          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+#          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+#          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
