@@ -23,7 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest( classes = {KiteworksSpringService.class, ProxyConfig.class})
 @EnableConfigurationProperties
 @ActiveProfiles("cicd")
-public class EndToEndTestIT {
+public class EndToEndIT {
 
     @Autowired
     private KiteworksService kiteworksService;

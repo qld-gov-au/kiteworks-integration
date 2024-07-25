@@ -19,7 +19,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 @Import({KiteworksTestConfig.class})
 @EnableConfigurationProperties
 @ActiveProfiles("test")
-public class IntegrationTest {
+public class ServiceWireTest {
 
     @Autowired
     private KiteworksService kiteworksService;

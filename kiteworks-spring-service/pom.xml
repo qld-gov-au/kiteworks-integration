@@ -67,6 +67,41 @@
                 <groupId>org.apache.maven.plugins </groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.3.1</version>
+                <executions>
+                    <execution>
+                        <id>IntegrationTest</id>
+                        <goals>
+                            <goal>verify</goal>
+                            <goal>integration-test</goal>
+                        </goals>
+                        <configuration>
+                            <includes>
+                                <include>**/*IntegrationTest.java</include>
+                            </includes>
+                            <skipTests>${skipTests}</skipTests>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>IT</id>
+                        <goals>
+                            <goal>integration-test</goal>
+                            <goal>verify</goal>
+                        </goals>
+                        <configuration>
+                            <includes>
+                                <include>**/*IT.java</include>
+                            </includes>
+                            <systemPropertyVariables>
+                                <!--
+                                Set a system property for the test clients to use when connecting.
+                                Something like Apache's commons-configuration can pick this up
+                                transparently.
+                                -->
+                            </systemPropertyVariables>
+                            <skipTests>${skipTests}</skipTests>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

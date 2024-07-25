@@ -37,7 +37,16 @@ jobs:
         KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
       run: mvn clean install  -Dspring.profiles.active=cicd
 
-#    - name: Publish to GitHub Packages Apache Maven
-#        run: mvn deploy
-#        env:
-#          GITHUB_TOKEN: ${{ github.token }} # GITHUB_TOKEN is the default env for the password
+    - name: Package artifacts
+      run: |
+       mkdir staging
+       cp  */target/*.jar staging
+       cp -rf */target/*reports staging
+       cp -r  */target/generated-sources/openapi/api staging
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: Package
+        path: staging
+        overwrite: true
