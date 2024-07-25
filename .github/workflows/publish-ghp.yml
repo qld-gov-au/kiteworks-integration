@@ -1,4 +1,4 @@
-name: Integration Test
+name: GitHub Package Publish
 
 on:
   release:
@@ -10,10 +10,15 @@ on:
         type: choice
         description: Retry Publish Version
         options:
-          - No
-          - Yes
+          - 'No'
+          - 'Yes'
+    releaseversion:
+      description: 'Release version'
+      required: true
+      default: '2.4.0'
 jobs:
   public-ghp:
+    name: "Release version ${{ github.event.inputs.releaseversion }}"
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -26,6 +31,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
 
       - name: Set up JDK
         uses: actions/setup-java@v4
@@ -45,6 +52,33 @@ jobs:
           KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
           KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
         run: mvn clean install  -Dspring.profiles.active=cicd
+
+      - name: Set up Git username and email
+        run: |
+          git config --global user.name " ${{ variables.GPG_NAME }}"
+          git config --global user.email "${{ secrets.GPG_EMAIL }}"
+          echo "${{ secrets.GPG_KEY }}" | gpg --batch --import
+          git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
+          git config --global commit.gpgSign true
+          git config --global gpg.program gpg
+       env:
+          ssh-deploy-key: ${{ secrets.DEPLOY_KEY }}
+          ssh-gpg-email: ${{ secrets.GPG_EMAIL }}
+          ssh-gpg-key: ${{ secrets.GPG_KEY }}
+          ssh-gpg-key-id: ${{ secrets.GPG_KEY_ID }}
+          ssh-gpg-name: ${{ variables.GPG_NAME }}
+
+     - name: Verify GPG setup
+       run: gpg --list-keys
+
+      - name: Increment poms
+        run: echo "do"
+        env:
+          ssh-deploy-key: ${{ secrets.DEPLOY_KEY }}
+          ssh-gpg-email: ${{ secrets.GPG_EMAIL }}
+          ssh-gpg-key: ${{ secrets.GPG_KEY }}
+          ssh-gpg-key-id: ${{ secrets.GPG_KEY_ID }}
+          ssh-gpg-name: ${{ variables.GPG_NAME }}
 
       - name: Publish package
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
