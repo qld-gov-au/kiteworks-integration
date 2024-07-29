@@ -41,6 +41,15 @@
     </properties>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -108,6 +117,41 @@
     </build>
 
     <profiles>
+        <profile>
+            <id>skip-it-tests</id>
+            <activation>
+                <property>
+                    <name>!env.KITEWORKS_SIGNATURE_KEY</name>
+                </property>
+            </activation>
+            <properties>
+                <failSafeSkipTests>true</failSafeSkipTests>
+            </properties>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>exec-maven-plugin</artifactId>
+                        <version>3.0.0</version>
+                        <executions>
+                            <execution>
+                                <id>log-skip-message</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <executable>echo</executable>
+                                    <arguments>
+                                        <argument>::warning:: [WARNING] Integration tests skipped: KITEWORKS_CLIENT_APP_SCOPES ;KITEWORKS_USER_ID ;KITEWORKS_CLIENT_SECRET ;KITEWORKS_ACCESS_TOKEN_URI ;KITEWORKS_CLIENT_ID; KITEWORKS_SIGNATURE_KEY ;KITEWORKS_BASE_URI ;KITEWORKS_REDIRECT_URI environment variable/s may not be set.</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
         <profile>
             <id>skip-gpg-signing</id>
             <activation>

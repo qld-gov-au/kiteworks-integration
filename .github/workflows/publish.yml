@@ -75,6 +75,8 @@ jobs:
 
       - name: Mvn Effective POM
         run: mvn -N help:effective-pom
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
       - name: Mvn Effective Settings
         run: mvn -N help:effective-settings
@@ -120,6 +122,7 @@ jobs:
           git clean -f -d -x
 
         env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
           KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
           KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
@@ -156,6 +159,7 @@ jobs:
           KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
           releaseVersion: ${{ github.event.inputs.releaseVersion }}
           developmentVersion: ${{ github.event.inputs.developmentVersion }}
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
       - name: Git status after prepare
         run: |
@@ -167,7 +171,6 @@ jobs:
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
         run: mvn  --batch-mode release:perform -DlocalCheckout=true -DdeployAtEnd=true "-Dgoals=clean install package javadoc:jar deploy"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
           KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
           KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
@@ -176,6 +179,8 @@ jobs:
           KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
           KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
           KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Cleanup on failure
         if: failure()

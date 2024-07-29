@@ -53,6 +53,15 @@
     </dependencies>
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.3.1</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -78,7 +87,7 @@
                             <includes>
                                 <include>**/*IntegrationTest.java</include>
                             </includes>
-                            <skipTests>${skipTests}</skipTests>
+                            <skipTests>${failSafeSkipTests}</skipTests>
                         </configuration>
                     </execution>
                     <execution>
@@ -98,7 +107,7 @@
                                 transparently.
                                 -->
                             </systemPropertyVariables>
-                            <skipTests>${skipTests}</skipTests>
+                            <skipTests>${failSafeSkipTests}</skipTests>
                         </configuration>
                     </execution>
                 </executions>
@@ -114,15 +123,11 @@
                     <name>!env.KITEWORKS_SIGNATURE_KEY</name>
                 </property>
             </activation>
+            <properties>
+                <failSafeSkipTests>true</failSafeSkipTests>
+            </properties>
             <build>
                 <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-failsafe-plugin</artifactId>
-                        <configuration>
-                            <skipTests>true</skipTests>
-                        </configuration>
-                    </plugin>
                     <plugin>
                         <groupId>org.codehaus.mojo</groupId>
                         <artifactId>exec-maven-plugin</artifactId>
