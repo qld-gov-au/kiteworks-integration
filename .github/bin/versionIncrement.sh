@@ -16,15 +16,15 @@ major=${version_parts[0]}
 minor=${version_parts[1]}
 patch=${version_parts[2]}
 next_patch=$((patch + 1))
-next_development_version="'$major.$minor.$next_patch-SNAPSHOT'"
-next_version="'$major.$minor.$next_patch'"
+next_development_version="$major.$minor.$patch-SNAPSHOT"
+next_version="$major.$minor.$next_patch"
 
 # Update the YAML file
-./update_text.sh ./../workflows/publish.yml releaseVersion $next_version
-./update_text.sh ./../workflows/publish.yml developmentVersion $next_development_version
+./update_text.sh ./../workflows/publish.yml releaseVersion "$next_version"
+./update_text.sh ./../workflows/publish.yml developmentVersion "$next_development_version"
 
 
 git add ./../workflows/publish.yml
 git commit -m "Updated publish.yml with release version: $release_version and development version: $next_development_version"
 
-echo "Updated publish.yml with release version: $release_version and development version: $next_development_version and commited"
+echo "Updated publish.yml with next patch release version: $release_version and patch development version: $next_development_version and commited"
