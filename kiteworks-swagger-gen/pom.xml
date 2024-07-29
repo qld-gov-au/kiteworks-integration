@@ -3,12 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>au.gov.qld.ssq</groupId>
+        <artifactId>kiteworks_integration</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
 
-    <groupId>au.gov.qld.ssq</groupId>
-    <artifactId>kiteworks-native-client</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>kiteworks-swagger-gen</artifactId>
 
     <properties>
+        <maven.compiler.release>21</maven.compiler.release>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,6 +46,52 @@
         </pluginManagement>
         <plugins>
             <plugin>
+                <groupId>org.openapitools</groupId>
+                <artifactId>openapi-generator-maven-plugin</artifactId>
+                <version>7.7.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                        <configuration>
+                            <!-- please ensure its updated when this plugin is updated -->
+                            <!-- https://openapi-generator.tech/docs/templating/
+                            cd .openapi-generator
+                            curl -L https://api.github.com/repos/OpenAPITools/openapi-generator/tarball | tar xz
+                            mv `ls`/modules/openapi-generator/src/main/resources/Java ./Java
+                            rm -rf OpenAPITools-openapi-generator-*
+                            cd Java; ls -d libraries/* | grep -v native | xargs rm -rf -->
+                            <!-- what we changed: -->
+                            <!-- * api.mustache -->
+                            <templateDirectory>.openapi-generator/templates/Java</templateDirectory>
+                            <inputSpec>${project.basedir}/src/main/resources/kiteworks.28.swagger.json</inputSpec>
+                            <generatorName>java</generatorName>
+                            <configOptions>
+                                <dateLibrary>java8</dateLibrary> <!--java8 - Java 8 native JSR310 (preferred for jdk 1.8+) -->
+                                <useJakartaEe>true</useJakartaEe>
+                                <useTags>true</useTags>
+                                <serializationLibrary>jackson</serializationLibrary>
+                            </configOptions>
+
+                            <library>native</library>
+                            <!--                            <output>${project.build.directory}/generated-sources/openapi</output>-->
+                            <apiPackage>com.kiteworks.client.api</apiPackage>
+                            <modelPackage>com.kiteworks.client.model</modelPackage>
+                            <invokerPackage>com.kiteworks.client</invokerPackage>
+                            <cleanupOutput>false</cleanupOutput>
+                            <apisToGenerate>Files,Activities,Folders,Uploads</apisToGenerate>
+                            <modelsToGenerate>Task,Comment,Comment.Post,MemberGroup.Put,Member.Put,SendMessage.Post,SendMessage,Fingerprint,MobileInfo,PushedObject,FoldersMetaData,ActivityUser,UserMetadata,LdapGroup,Tag,BulkOperationLockFile,File,UserBasicInfo,BaseObject,MetaData,User,ErrorString,Group,Role,UserBasic,Activity,Members,MemberGroup,AdminFilePutRequest,AdminFileRescan,BulkOperationLockFile,Content,Content.Post,FileAddMembers,FileCopyPostBodyRequest,FileLockPostRequest,FileMembersPostRequest,FileMovePostBodyRequest,FileNameRequest.Post,FilePermissions,FilePreviewSupport,FileUpdateRequest,Files,KPTransferStatus,KitepointPreview,Members,Permission,Preview,RefreshToken,Task,Task.Post,Version,ActivityList,AdminFolderPutRequest,DestinationFolderIdRequest,Folder,Folder1,FolderAddMembers,FolderChildrenFiles,FolderCreatePostRequest,FolderMemberPostRequest,FolderPermissionsRequest,FolderQuota,FolderUpdatePutRequest,Folders,Member,Members,Task,AcfsConfig,InitiateUploadPostRequest,Upload</modelsToGenerate>
+                            <generateApiDocumentation>false</generateApiDocumentation>
+                            <generateApiTests>false</generateApiTests>
+                            <generateModelDocumentation>false</generateModelDocumentation>
+                            <generateModelTests>false</generateModelTests>
+                            <configHelp>false</configHelp>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <artifactId>maven-enforcer-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
@@ -73,8 +123,8 @@
                 </configuration>
             </plugin>
             <plugin>
-            <groupId>org.apache.maven.plugins </groupId>
-            <artifactId>maven-failsafe-plugin</artifactId>
+                <groupId>org.apache.maven.plugins </groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.3.1</version>
             </plugin>
             <plugin>
@@ -150,8 +200,6 @@
     </profiles>
 
     <dependencies>
-        <dependency><groupId>au.gov.qld.ssq</groupId><artifactId>kiteworks-swagger-gen</artifactId><version>1.0-SNAPSHOT</version></dependency>
-
         <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>2.0.13</version><scope>compile</scope></dependency>
 
         <!-- JSON processing: jackson -->
@@ -172,4 +220,3 @@
     </dependencies>
 
 </project>
-

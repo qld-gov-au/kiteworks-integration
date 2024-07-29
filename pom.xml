@@ -30,8 +30,9 @@
     </distributionManagement>
 
     <modules>
-        <module>kiteworks-spring-service</module>
+        <module>kiteworks-swagger-gen</module>
         <module>kiteworks-native-client</module>
+        <module>kiteworks-spring-service</module>
     </modules>
 
     <properties>
