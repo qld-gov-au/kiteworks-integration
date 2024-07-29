@@ -16,7 +16,7 @@ major=${version_parts[0]}
 minor=${version_parts[1]}
 patch=${version_parts[2]}
 next_patch=$((patch + 1))
-next_development_version="$major.$minor.$patch-SNAPSHOT"
+next_development_version="$major.$minor.$next_patch-SNAPSHOT"
 next_version="$major.$minor.$next_patch"
 
 # Update the YAML file
