@@ -1,5 +1,5 @@
 name: Package Publish
-run-name: Deploy to ${{ inputs.ref_name }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }} will deploy ${{ github.event.inputs.publish }}
+run-name: Deploy to ${{ github.ref_name }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }} will deploy ${{ github.event.inputs.publish }}
 
 on:
   # Allows you to run this workflow manually from the Actions tab
