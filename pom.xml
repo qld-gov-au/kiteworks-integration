@@ -63,19 +63,7 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+
             <!-- Use spotless plugin to automatically format code,remove unused import,etc
                  To apply changes directly to the file,run `mvn spotless:apply`
                  Ref: https://github.com/diffplug/spotless/tree/main/plugin-maven
