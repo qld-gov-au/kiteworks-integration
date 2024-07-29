@@ -67,16 +67,16 @@ jobs:
 
       - name: Git & Maven Status
         run: |
-          $MVNCMD -version
+          mvn -version
           git remote -v
           git status --untracked-files --ignored
           git log -3 --no-color --decorate
 
       - name: Mvn Effective POM
-        run: $MVNCMD -N help:effective-pom
+        run: mvn -N help:effective-pom
 
       - name: Mvn Effective Settings
-        run: $MVNCMD -N help:effective-settings
+        run: mvn -N help:effective-settings
 
       - name: Build with Maven
         env:
@@ -100,26 +100,20 @@ jobs:
           git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
           git config --global commit.gpgSign true
           git config --global gpg.program gpg
-        env:
-          #ssh-deploy-key: ${{ secrets.DEPLOY_KEY }}
-          #ssh-gpg-email: ${{ secrets.GPG_EMAIL }}
-          #ssh-gpg-key: ${{ secrets.GPG_KEY }}
-          #ssh-gpg-key-id: ${{ secrets.GPG_KEY_ID }}
-          #ssh-gpg-name: ${{ vars.GPG_NAME }}
 
       - name: Check that we are on snapshot branch before creating the release
         run: |
           echo "Version: "
-          $MVNCMD help:evaluate -Dexpression=project.version -q -DforceStdout
-          $MVNCMD help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
+          mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+          mvn help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
           # unfortunately, this would require a snapshot parent if just called from the command line, so we cannot use it: :-(
           # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
 
       - name: Check that we are on snapshot branch before creating the release
         run: |
           echo "Version: "
-          $MVNCMD help:evaluate -Dexpression=project.version -q -DforceStdout
-          $MVNCMD help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
+          mvn help:evaluate -Dexpression=project.version -q -DforceStdout
+          mvn help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
           # unfortunately, this would require a snapshot parent if just called from the command line, so we cannot use it: :-(
           # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
 
