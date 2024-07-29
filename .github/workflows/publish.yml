@@ -169,7 +169,7 @@ jobs:
 
       - name: Perform package publish
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: mvn  --batch-mode release:perform -DlocalCheckout=true -DdeployAtEnd=true "-Dgoals=clean install package javadoc:jar deploy"
+        run: mvn  --batch-mode release:perform -DlocalCheckout=true -DdeployAtEnd=true
         env:
           KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
           KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
