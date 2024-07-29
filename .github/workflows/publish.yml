@@ -205,6 +205,7 @@ jobs:
       - name: Increment workflow defaults
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
         run: |
+          sudo apt-get install -y libxml2-utils
           ./.github/bin/versionIncrement.sh
       
 
