@@ -1,23 +1,26 @@
-name: GitHub Package Publish
+name: Package Publish
 
 on:
-  release:
-    types: [created]
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
-      force:
+      publish:
         type: choice
-        description: Retry Publish Version
+        description: Publish Version
         options:
           - 'No'
           - 'Yes'
-    releaseversion:
-      description: 'Release version'
-      required: true
-      default: '2.4.0'
+      releaseVersion:
+        description: 'Release version'
+        required: true
+        default: '1.0.0'
+      developmentVersion:
+        description: 'Development version'
+        required: true
+        default: '1.0.1-SNAPSHOT'
+
 jobs:
-  public-ghp:
+  publish:
     name: "Release version ${{ github.event.inputs.releaseversion }}"
     runs-on: ubuntu-latest
     permissions:
@@ -26,8 +29,8 @@ jobs:
       id-token: write
     env:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
-      #When run on push tags, force is '', default for workflow_dispatch is No so you can't trigger without a double action
-      DO_DEPLOYMENT: ${{ github.event_name != 'workflow_dispatch'  || github.event.inputs.force == 'Yes' }}
+      #When run workflow_dispatch is set and publish is 'Yes', default for workflow_dispatch is No so you can't trigger without a double action
+      DO_DEPLOYMENT: ${{ github.event_name == 'workflow_dispatch'  && github.event.inputs.publish == 'Yes' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -61,15 +64,15 @@ jobs:
           git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
           git config --global commit.gpgSign true
           git config --global gpg.program gpg
-       env:
+        env:
           ssh-deploy-key: ${{ secrets.DEPLOY_KEY }}
           ssh-gpg-email: ${{ secrets.GPG_EMAIL }}
           ssh-gpg-key: ${{ secrets.GPG_KEY }}
           ssh-gpg-key-id: ${{ secrets.GPG_KEY_ID }}
           ssh-gpg-name: ${{ variables.GPG_NAME }}
 
-     - name: Verify GPG setup
-       run: gpg --list-keys
+      - name: "Verify GPG setup"
+        run: gpg --list-keys
 
       - name: Increment poms
         run: echo "do"
@@ -93,6 +96,13 @@ jobs:
           KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
           KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
           KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+
+      - name: Increment workflow defaults
+        if: ${{ env.DO_DEPLOYMENT == 'true' }}
+        run: |
+          ./../bin/versionIncrement.sh
+          git push
+        
 
       - name: Publish - Skipped
         if: ${{ env.DO_DEPLOYMENT != 'true' }}
