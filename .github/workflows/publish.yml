@@ -1,5 +1,5 @@
 name: Package Publish
-run-name: Deploy to ${{ inputs.ref_name }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }}
+run-name: Deploy to ${{ inputs.ref_name }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }} will deploy ${{ github.event.inputs.publish }}
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -165,7 +165,7 @@ jobs:
 
       - name: Perform package publish
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: mvn  release:perform -DlocalCheckout=true -DdeployAtEnd=true "-Dgoals=clean install package source:jar javadoc:jar deploy"
+        run: mvn  release:perform -DlocalCheckout=true -DdeployAtEnd=true "-Dgoals=clean install package javadoc:jar deploy"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
