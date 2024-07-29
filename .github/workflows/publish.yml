@@ -1,5 +1,5 @@
 name: Package Publish
-run-name: Deploy to ${{ inputs.deploy_target }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }}
+run-name: Deploy to ${{ inputs.ref_name }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }}
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -138,9 +138,9 @@ jobs:
       - name: Prepare package publish
         run: |
           # Define versions and tag
-          RELEASE_VERSION="${github.event.inputs.releaseVersion}"
-          DEVELOPMENT_VERSION="${github.event.inputs.developmentVersion}"
-          TAG=v"${github.event.inputs.releaseVersion}"
+          RELEASE_VERSION="${releaseVersion}"
+          DEVELOPMENT_VERSION="${developmentVersion}"
+          TAG=v"${releaseVersion}"
           
           # Prepare the release with -DpushChanges=false so its all local for now
           mvn release:prepare -DreleaseVersion=$RELEASE_VERSION -DdevelopmentVersion=$DEVELOPMENT_VERSION -Dtag=$TAG -DpushChanges=false
@@ -154,6 +154,8 @@ jobs:
           KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
           KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
           KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+          releaseVersion: ${{ github.event.inputs.releaseVersion }}
+          developmentVersion: ${{ github.event.inputs.developmentVersion }}
 
       - name: Git status after prepare
         run: |
