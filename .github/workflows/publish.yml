@@ -1,4 +1,5 @@
 name: Package Publish
+run-name: Deploy to ${{ inputs.deploy_target }} to version ${{ github.event.inputs.releaseVersion }} by @${{ github.actor }}
 
 on:
   # Allows you to run this workflow manually from the Actions tab
@@ -109,14 +110,6 @@ jobs:
           # unfortunately, this would require a snapshot parent if just called from the command line, so we cannot use it: :-(
           # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
 
-      - name: Check that we are on snapshot branch before creating the release
-        run: |
-          echo "Version: "
-          mvn help:evaluate -Dexpression=project.version -q -DforceStdout
-          mvn help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
-          # unfortunately, this would require a snapshot parent if just called from the command line, so we cannot use it: :-(
-          # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
-
       - name: Dry run of release goals
 
         run: |
@@ -125,6 +118,16 @@ jobs:
           mvn release:perform -DdryRun=true -DlocalCheckout=true -DdeployAtEnd=true
           mvn clean release:clean
           git clean -f -d -x
+
+        env:
+          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
 
       - name: Verify git is clean
         run: |
