@@ -81,18 +81,8 @@ jobs:
 
       - name: Mvn Effective Settings
         run: mvn -N help:effective-settings
-
-      - name: Build with Maven
         env:
-          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
-          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
-          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
-          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
-          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
-          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
-          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
-          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
-        run: mvn clean install  -Dspring.profiles.active=cicd
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
       - name: Set up Git username and email
         run: |
@@ -114,7 +104,6 @@ jobs:
           # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
 
       - name: Dry run of release goals
-
         run: |
           mvn clean release:clean
           mvn --batch-mode release:prepare -DdryRun=true -DpushChanges=false
