@@ -15,9 +15,9 @@ IFS='.' read -r -a version_parts <<< "$release_version"
 major=${version_parts[0]}
 minor=${version_parts[1]}
 patch=${version_parts[2]}
-next_patch=$((patch + 1))
-next_development_version="$major.$minor.$next_patch-SNAPSHOT"
-next_version="$major.$minor.$next_patch"
+next_dev_patch=$((patch + 1))
+next_version="$major.$minor.$patch"
+next_development_version="$major.$minor.$next_dev_patch-SNAPSHOT"
 
 # Update the YAML file
 ./update_text.sh ./../workflows/publish.yml releaseVersion "$next_version"
