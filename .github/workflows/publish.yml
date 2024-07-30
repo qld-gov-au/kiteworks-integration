@@ -26,8 +26,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      packages: write
       pages: write
-      actions: read
+      actions: write
       id-token: write
     env:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
