@@ -25,8 +25,9 @@ jobs:
     name: "Release version ${{ github.event.inputs.releaseversion }}"
     runs-on: ubuntu-latest
     permissions:
-      contents: read
-      packages: write
+      contents: write
+      pages: write
+      actions: read
       id-token: write
     env:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
@@ -224,12 +225,20 @@ jobs:
           ls -l ./target/checkout/target || true
           ls -l ./target/checkout/commons/target || true
 
+      - name: Release
+        continue-on-error: true
+        if: ${{ env.DO_DEPLOYMENT != 'true' }}
+        run: gh release create "v${releaseversion}" --generate-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          releaseversion: ${{ github.event.inputs.releaseversion }}
+
       - name: Publish - Skipped
         if: ${{ env.DO_DEPLOYMENT != 'true' }}
         run: |
           echo "### Publish skipped" >> $GITHUB_STEP_SUMMARY
           echo "DO_DEPLOYMENT( ${{ env.DO_DEPLOYMENT }} ): github.event_name: ${{ github.event_name != 'workflow_dispatch'}} || github.event.inputs.force: ${{ github.event.inputs.force == 'Yes' }}"  >> $GITHUB_STEP_SUMMARY
-
+        
 
 #      - name: Set up Java for publishing to Maven Central Repository
 #        uses: actions/setup-java@v4
