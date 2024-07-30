@@ -224,6 +224,19 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           releaseversion: ${{ github.event.inputs.releaseversion }}
 
+      - name: Update Changelog
+        # https://github.com/git-chglog/git-chglog#getting-started
+        run: ./.github/bin/updateChangeLog.sh
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: "Update changelog: ${{ github.event.inputs.releaseversion }}"
+          title: "Update Changelog ${{ github.event.inputs.releaseversion }}"
+          body: "Update changelog to reflect release changes: ${{ github.event.inputs.releaseversion }}"
+          branch: update-changelog
+          base: main
+
       - name: Publish - Skipped
         if: ${{ env.DO_DEPLOYMENT != 'true' }}
         run: |
