@@ -137,7 +137,7 @@ jobs:
           TAG=v"${releaseVersion}"
           
           # Prepare the release with -DpushChanges=false so its all local for now
-          mvn  --batch-mode release:prepare -DreleaseVersion=$RELEASE_VERSION -DdevelopmentVersion=$DEVELOPMENT_VERSION -Dtag=$TAG -DpushChanges=false
+          mvn  --batch-mode release:prepare -DreleaseVersion=$RELEASE_VERSION -DdevelopmentVersion=$DEVELOPMENT_VERSION -Dtag=$TAG -DsignTag=true -DpushChanges=false
 
         env:
           KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
@@ -160,7 +160,7 @@ jobs:
 
       - name: Perform package publish
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: mvn  --batch-mode release:perform -DlocalCheckout=true -DdeployAtEnd=true
+        run: mvn  --batch-mode release:perform -DlocalCheckout=true -DdeployAtEnd=true -DsignTag=true
         env:
           KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
           KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
