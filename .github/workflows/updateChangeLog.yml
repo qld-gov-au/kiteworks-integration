@@ -1,7 +1,8 @@
 name: Update Changelog
 on:
   release:
-    types: [published]
+    types:
+      - created
   workflow_dispatch:
     inputs:
       description:

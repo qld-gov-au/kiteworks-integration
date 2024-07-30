@@ -94,6 +94,7 @@ jobs:
           gpg --list-secret-keys --keyid-format LONG
           git config --global user.signingkey ${{ secrets.GPG_KEY_ID }}
           git config --global commit.gpgSign true
+          git config --global tag.gpgSign true
           git config --global gpg.program gpg
 
       - name: Check that we are on snapshot branch before creating the release
@@ -218,7 +219,7 @@ jobs:
       - name: Release
         continue-on-error: true
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: gh release create "v${releaseversion}" --generate-notes
+        run: gh release create "v${releaseversion}" **/target/*${releaseversion}* --generate-notes --verify-tag
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           releaseversion: ${{ github.event.inputs.releaseversion }}
