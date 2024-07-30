@@ -3,6 +3,10 @@ on:
   release:
     types:
       - published #only on human interactions, won't be done on github action triggers
+  push:
+    #On versioned releases
+    tags:
+      - v*.*.*
   workflow_dispatch:
     inputs:
       description:
