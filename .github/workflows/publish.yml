@@ -217,7 +217,7 @@ jobs:
 
       - name: Release
         continue-on-error: true
-        if: ${{ env.DO_DEPLOYMENT != 'true' }}
+        if: ${{ env.DO_DEPLOYMENT == 'true' }}
         run: gh release create "v${releaseversion}" --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
