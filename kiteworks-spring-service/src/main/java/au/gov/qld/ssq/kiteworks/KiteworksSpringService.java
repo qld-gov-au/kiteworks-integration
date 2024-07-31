@@ -1,5 +1,6 @@
 package au.gov.qld.ssq.kiteworks;
 
+import au.gov.qld.ssq.kiteworks.helpers.KiteworksApiHelper;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
@@ -36,5 +37,10 @@ public class KiteworksSpringService {
     @Bean
     public FilesApi filesApi(KiteworksService kiteworksService) {
         return kiteworksService.filesApi();
+    }
+
+    @Bean
+    public KiteworksApiHelper kiteworksApiHelper(FoldersApi foldersApi, FilesApi filesApi) {
+        return new KiteworksApiHelper(foldersApi, filesApi);
     }
 }
