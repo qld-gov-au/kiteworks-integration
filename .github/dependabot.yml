@@ -1,7 +1,9 @@
 version: 2
 updates:
 - package-ecosystem: maven
-  directory: "/"
+  directories: 
+   - "**/*" 
+   # Specify all directories from the current layer and below recursively, using globstar, for locations of manifest files
   target-branch: "develop"
   schedule:
     interval: daily
