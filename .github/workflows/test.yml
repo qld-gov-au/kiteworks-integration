@@ -35,7 +35,7 @@ jobs:
         KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
         KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
         KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
-      run: mvn clean install  -Dspring.profiles.active=cicd
+      run: mvn clean install  -Dspring.profiles.active=cicd -Pskip-gpg-signing
 
     - name: Package artifacts
       run: |
