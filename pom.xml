@@ -6,13 +6,30 @@
     <artifactId>kiteworks_integration</artifactId>
     <version>1.0.11-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <url>https://github.com/qld-gov-au/kiteworks-integration</url>
+    <description>Kiteworks integration for Qld Government - Java client for kiteworks based on their swagger</description>
 
     <scm>
         <connection>scm:git:${project.scm.url}</connection>
         <developerConnection>scm:git:${project.scm.url}</developerConnection>
         <url>https://github.com/qld-gov-au/kiteworks-integration.git</url>
       <tag>HEAD</tag>
-  </scm>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>duttonw</id>
+            <name>William Dutton</name>
+            <email>william.dutton@smartservice.qld.gov.au</email>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License, version 2.1</name>
+            <url>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
 
     <modules>
         <module>kiteworks-swagger-gen</module>
@@ -225,11 +242,11 @@
         </profile>
         <profile>
             <id>skip-gpg-signing</id>
-            <activation>
-                <property>
-                    <name>!env.GPG_KEY_ID</name>
-                </property>
-            </activation>
+<!--            <activation>-->
+<!--                <property>-->
+<!--                    <name>!env.GPG_KEY_ID</name>-->
+<!--                </property>-->
+<!--            </activation>-->
             <build>
                 <plugins>
                     <plugin>
