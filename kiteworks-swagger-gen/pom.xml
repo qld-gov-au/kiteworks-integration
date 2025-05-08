@@ -62,7 +62,7 @@
                             cd Java; ls -d libraries/* | grep -v native | xargs rm -rf -->
                             <!-- what we changed: -->
                             <!-- * api.mustache -->
-                            <templateDirectory>.openapi-generator/templates/Java</templateDirectory>
+<!--                            <templateDirectory>.openapi-generator/templates/Java</templateDirectory>-->
                             <inputSpec>${project.basedir}/src/main/resources/kiteworks.28.swagger.json</inputSpec>
                             <generatorName>java</generatorName>
                             <configOptions>
@@ -78,9 +78,10 @@
                             <modelPackage>com.kiteworks.client.model</modelPackage>
                             <invokerPackage>com.kiteworks.client</invokerPackage>
                             <cleanupOutput>false</cleanupOutput>
-                            <apisToGenerate>Files,Activities,Folders,Uploads</apisToGenerate>
-                            <modelsToGenerate>Task,Comment,Comment.Post,MemberGroup.Put,Member.Put,SendMessage.Post,SendMessage,Fingerprint,MobileInfo,PushedObject,FoldersMetaData,ActivityUser,UserMetadata,LdapGroup,Tag,BulkOperationLockFile,File,UserBasicInfo,BaseObject,MetaData,User,ErrorString,Group,Role,UserBasic,Activity,Members,MemberGroup,AdminFilePutRequest,AdminFileRescan,BulkOperationLockFile,Content,Content.Post,FileAddMembers,FileCopyPostBodyRequest,FileLockPostRequest,FileMembersPostRequest,FileMovePostBodyRequest,FileNameRequest.Post,FilePermissions,FilePreviewSupport,FileUpdateRequest,Files,KPTransferStatus,KitepointPreview,Members,Permission,Preview,RefreshToken,Task,Task.Post,Version,ActivityList,AdminFolderPutRequest,DestinationFolderIdRequest,Folder,Folder1,FolderAddMembers,FolderChildrenFiles,FolderCreatePostRequest,FolderMemberPostRequest,FolderPermissionsRequest,FolderQuota,FolderUpdatePutRequest,Folders,Member,Members,Task,AcfsConfig,InitiateUploadPostRequest,Upload</modelsToGenerate>
+<!--                            <apisToGenerate>Files,Activities,Folders,Uploads</apisToGenerate>-->
+<!--                            <modelsToGenerate>Task,Comment,Comment.Post,MemberGroup.Put,Member.Put,SendMessage.Post,SendMessage,Fingerprint,MobileInfo,PushedObject,FoldersMetaData,ActivityUser,UserMetadata,LdapGroup,Tag,BulkOperationLockFile,File,UserBasicInfo,BaseObject,MetaData,User,ErrorString,Group,Role,UserBasic,Activity,Members,MemberGroup,AdminFilePutRequest,AdminFileRescan,BulkOperationLockFile,Content,Content.Post,FileAddMembers,FileCopyPostBodyRequest,FileLockPostRequest,FileMembersPostRequest,FileMovePostBodyRequest,FileNameRequest.Post,FilePermissions,FilePreviewSupport,FileUpdateRequest,Files,KPTransferStatus,KitepointPreview,Members,Permission,Preview,RefreshToken,Task,Task.Post,Version,ActivityList,AdminFolderPutRequest,DestinationFolderIdRequest,Folder,Folder1,FolderAddMembers,FolderChildrenFiles,FolderCreatePostRequest,FolderMemberPostRequest,FolderPermissionsRequest,FolderQuota,FolderUpdatePutRequest,Folders,Member,Members,Task,AcfsConfig,InitiateUploadPostRequest,Upload,SafeEdit,DownloadLink,Files.FilePermissions</modelsToGenerate>-->
                             <generateApiDocumentation>false</generateApiDocumentation>
+
                             <generateApiTests>false</generateApiTests>
                             <generateModelDocumentation>false</generateModelDocumentation>
                             <generateModelTests>false</generateModelTests>

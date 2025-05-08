@@ -10,6 +10,7 @@ import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.model.ActivityList;
 import com.kiteworks.client.model.FolderChildrenFiles;
+import com.kiteworks.client.model.RestDliFilesIdVersionsGet200Response;
 import com.kiteworks.client.model.Version;
 
 import java.io.File;
@@ -30,34 +31,14 @@ public class KiteworksApiHelper {
     public ApiResponse<FolderChildrenFiles> getFolderFileNames(RestFoldersParentFilesGetRequestBuilder builder) throws ApiException {
 
         return foldersApi.restFoldersParentFilesGetWithHttpInfo(
-            builder.getParent(),
-            builder.getUserId(),
-            builder.getReturnEntity(),
-            builder.getModifiedColonLte(),
-            builder.getModifiedColonLt(),
-            builder.getDeleted(),
-            builder.getCreatedColonLt(),
-            builder.getOrderBy(),
-            builder.getOffset(),
-            builder.getLimit(),
-            builder.getNameColonContains(),
-            builder.getCreatedColonGte(),
-            builder.getMode(),
-            builder.getModifiedColonGte(),
-            builder.getCreated(),
-            builder.getCreatedColonLte(),
-            builder.getModifiedColonGt(),
-            builder.getExpireColonLte(),
-            builder.getModified(),
-            builder.getUserIdColonIn(),
-            builder.getExpireColonLt(),
-            builder.getExpireColonGte(),
-            builder.getCreatedColonGt(),
-            builder.getWith(),
-            builder.getName(),
-            builder.getIsPushed(),
-            builder.getExpireColonGt(),
-            builder.getExpire()
+            builder.getParent(), builder.getName(), builder.getNameColonContains(),
+            builder.getReturnEntity(), builder.getExpireColonGt(), builder.getCreatedColonLte(),
+            builder.getExpire(), builder.getModifiedColonLt(), builder.getExpireColonLt(), builder.getExpireColonLte(),
+            builder.getCreated(), builder.getExpireColonGte(), builder.getIsPushed(), builder.getOffset(),
+            builder.getMode(), builder.getUserIdColonIn(), builder.getCreatedColonGt(), builder.getModifiedColonGt(),
+            builder.getCreatedColonGte(), builder.getDeleted(), builder.getUserId(), builder.getModifiedColonLte(),
+            builder.getLimit(), builder.getModifiedColonGte(), builder.getOrderBy(), builder.getModified(), builder.getWith(),
+            builder.getCreatedColonLt()
         );
     }
 
@@ -90,49 +71,28 @@ public class KiteworksApiHelper {
     }
 
     // "%s/files/%%s/versions
-    public ApiResponse<List<Version>> restFilesIdVersionsGetWithHttpInfo(RestFilesidVersionsGetWithHttpInfoRequestBuilder builder) throws ApiException {
+    public ApiResponse<RestDliFilesIdVersionsGet200Response> restFilesIdVersionsGetWithHttpInfo(RestFilesidVersionsGetWithHttpInfoRequestBuilder builder) throws ApiException {
         return filesApi.restFilesIdVersionsGetWithHttpInfo(
-            builder.getId(),
-            builder.getCreated(),
-            builder.getCreatedColonGt(),
-            builder.getCreatedColonGte(),
-            builder.getCreatedColonLt(),
-            builder.getCreatedColonLte(),
-            builder.getOrderBy(),
-            builder.getOffset(),
-            builder.getLimit(),
-            builder.getLocateId(),
-            builder.getWith(),
-            builder.getMode()
+            builder.getId(), builder.getCreated(), builder.getCreatedColonGt(),
+            builder.getCreatedColonGte(), builder.getCreatedColonLt(), builder.getCreatedColonLte(),
+            builder.getOrderBy(), builder.getOffset(), builder.getLimit(), builder.getLocateId(),
+            builder.getWith(), builder.getMode()
         );
     }
 
     // %s/files/%%s/versions/%%s/content
-    public ApiResponse<Void> restFilesIdVersionsVersionIdContentGetWithHttpInfo(String id, String versionId, String range) throws ApiException {
+    public ApiResponse<File> restFilesIdVersionsVersionIdContentGetWithHttpInfo(String id, String versionId, String range) throws ApiException {
         return filesApi.restFilesIdVersionsVersionIdContentGetWithHttpInfo(id, versionId, range);
     }
 
     // %s/folders/%%s/activities?limit=%s
     public ApiResponse<ActivityList> restFoldersIdActivitiesGetWithHttpInfo(RestFoldersIdActivitiesGetRequestBuilder builder) throws ApiException {
         return foldersApi.restFoldersIdActivitiesGetWithHttpInfo(
-            builder.getId(),
-            builder.getFilter(),
-            builder.getType(),
-            builder.getStartTime(),
-            builder.getWith(),
-            builder.getOffset(),
-            builder.getEndTime(),
-            builder.getReturnEntity(),
-            builder.getEndDate(),
-            builder.getSearch(),
-            builder.getOrderBy(),
-            builder.getMode(),
-            builder.getStartDate(),
-            builder.getTransactionId(),
-            builder.getFileId(),
-            builder.getLimit(),
-            builder.getNested(),
-            builder.getNoDayBack()
+            builder.getId(),builder.getTransactionId(), builder.getOrderBy(), builder.getMode(),
+            builder.getFileId(), builder.getLimit(), builder.getWith(), builder.getOffset(),
+            builder.getFilter(), builder.getEndDate(), builder.getType(), builder.getNested(),
+            builder.getNoDayBack(),builder.getReturnEntity(), builder.getStartTime(),
+            builder.getEndTime(), builder.getStartDate(), builder.getSearch()
         );
     }
 
