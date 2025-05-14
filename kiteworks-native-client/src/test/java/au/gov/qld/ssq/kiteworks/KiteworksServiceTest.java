@@ -31,7 +31,7 @@ public class KiteworksServiceTest {
         MockitoAnnotations.openMocks(this);
         // Mocking ApiClient creation to avoid actual instantiation
         when(kiteworksConfig.getSignatureKey()).thenReturn("abc123");
-        when(kiteworksConfig.getAuthorizationGrantType()).thenReturn("user-credentials");
+        when(kiteworksConfig.getAuthorizationGrantType()).thenReturn("user_credentials");
         when(kiteworksConfig.getBaseUri()).thenReturn("https://kiteworks.dcj.nsw.gov.au/");
         when(kiteworksConfig.getClientId()).thenReturn("client-id");
         when(kiteworksConfig.getClientSecret()).thenReturn("client-secret");
