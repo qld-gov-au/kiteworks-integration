@@ -122,7 +122,17 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
                     .build();
 
                 HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
+                if (response.statusCode() >= 400 && response.statusCode() <= 499) {
+                    LOG.error("Failed to fetch access token, incorrect username/password or client configuration?, username: {}..., client: {}... status code: {} body: {}",
+                            config.getUsername().substring(0, config.getClientId().length() / 2),
+                            config.getClientId().substring(0, config.getClientId().length() / 2),
+                            response.statusCode(), response.body());
+                    throw new RuntimeException("Failed to fetch access token, status code: " + response.statusCode() + " body: " + response.body());
+                }
+                if (response.statusCode() != 200) {
+                    LOG.error("Failed to fetch access token, status code: {}", response.statusCode());
+                    throw new RuntimeException("Failed to fetch access token, status code: " + response.statusCode());
+                }
                 // Parse the response to extract the access token and its expiry time
                 JsonNode jsonNode = objectMapper.readTree(response.body());
                 accessToken = jsonNode.get("access_token").asText();
