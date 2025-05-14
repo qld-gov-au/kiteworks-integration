@@ -24,6 +24,27 @@ import java.util.Map;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.function.Consumer;
 
+/**
+ * Interceptor for Kiteworks API requests that uses OAuth 2.0 with a signature-based authorization code.
+ *
+ * Ensure "Signature Authorization" is enabled
+ *
+ * Only use this class for high trust applications that need to access the Kiteworks API as different users. Use with caution.
+ *
+ * Please use {@link KiteworksUserCredentialOAuthInterceptor} for low trust applications that need to access the Kiteworks API as a single user.
+ *
+ *
+ *
+ * Please see the Kiteworks API documentation for more information on OAuth 2.0 authorization.
+ * <a href="https://developer.kiteworks.com/api-guides/authentication.htm">Signature Authorization flow</a>
+ *
+ * Kiteworks offers Signature Authorization flow for trusted apps where user interaction is impossible or undesirable.
+ * This is mostly applicable when some backend servers in your corporate network need to communicate with Kiteworks or
+ * when your app handles user authentication on its own.
+ *
+ * Note: Apps using Signature Authorization flow can access any user's content, simply by specifying their email address.
+ * As such, these apps should only be accessible by trusted employees with high security clearance.
+ */
 public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.Builder> {
 
     private static final Logger LOG = LoggerFactory.getLogger(KiteworksSignatureOAuthInterceptor.class);
@@ -36,6 +57,16 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
     private final Mac mac;
 
     public KiteworksSignatureOAuthInterceptor(KiteworksConfig config) {
+        if (isEmpty(config.getClientId()) || isEmpty(config.getClientSecret())) {
+            throw new IllegalArgumentException("Client ID and secret must be provided");
+        }
+        if (isEmpty(config.getRedirectUri()) || isEmpty(config.getSignatureKey())|| isEmpty(config.getUserId())) {
+            throw new IllegalArgumentException("Redirect URI, signature key, UserId must be provided");
+        }
+        if (isEmpty(config.getScope())) {
+            throw new IllegalArgumentException("Scopes must be provided");
+        }
+
         this.config = config;
 
         final SecretKeySpec keySpec = new SecretKeySpec(config.getSignatureKey().getBytes(StandardCharsets.UTF_8), HMAC_ALGORITHM);
@@ -77,14 +108,16 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
                 formData.put("client_secret", config.getClientSecret());
                 formData.put("grant_type", "authorization_code");
                 formData.put("code", generateSignatureAuthorizationCode());
-                formData.put("scope", config.getClientAppScopes());
+                formData.put("scope", config.getScope());
                 formData.put("redirect_uri", config.getRedirectUri());
 
                 HttpClient client = HttpClient.newHttpClient();
                 HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(config.getAccessTokenUri()))
                     .header("User-Agent", config.getUserAgent())
-                    .header("Content-Type", "application/x-www-form-urlencoded")
+                    .header("accept", "*/*")
+                    .header("cache-control", "no-cache")
+                    .header("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
                     .POST(BodyPublishers.ofString(getFormDataAsString(formData)))
                     .build();
 
@@ -170,5 +203,9 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
 
             return result;
         }
+    }
+
+    public static boolean isEmpty(final CharSequence cs) {
+        return cs == null || cs.isEmpty();
     }
 }
