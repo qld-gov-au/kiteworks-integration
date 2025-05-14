@@ -18,8 +18,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest( classes = {KiteworksTestConfig.class, KiteworksSpringService.class})
 @Import({KiteworksTestConfig.class})
 @EnableConfigurationProperties
-@ActiveProfiles("test")
-public class ServiceWireTest {
+@ActiveProfiles("test-signature")
+public class ServiceWireSignatureTest {
 
     @Autowired
     private KiteworksService kiteworksService;

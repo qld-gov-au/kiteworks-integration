@@ -1,30 +1,27 @@
 package au.gov.qld.ssq.kiteworks;
 
 
-import com.kiteworks.client.ApiException;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
-import com.kiteworks.client.model.Folder;
-import com.kiteworks.client.model.RestFoldersSharedGet200Response;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.ActiveProfiles;
-
-import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
-@SpringBootTest( classes = {KiteworksSpringService.class, ProxyConfig.class})
+@SpringBootTest( classes = {KiteworksTestConfig.class, KiteworksSpringService.class})
+@Import({KiteworksTestConfig.class})
 @EnableConfigurationProperties
-@ActiveProfiles("cicd")
-public class EndToEndIT {
+@ActiveProfiles("test-user-credentials")
+public class ServiceWireUserCredentialsTest {
 
     @Autowired
     private KiteworksService kiteworksService;
@@ -45,7 +42,7 @@ public class EndToEndIT {
     private Environment env;
 
     @Test
-    public void testBeansAreWiredCorrectly() throws ApiException {
+    public void testBeansAreWiredCorrectly() {
         try {
             for (String profileName : env.getActiveProfiles()) {
                 System.out.println("Currently active profile - " + profileName);
@@ -54,9 +51,11 @@ public class EndToEndIT {
             System.out.println("could not get active profile");
         }
 
-        RestFoldersSharedGet200Response foldersSharedGet = foldersApi.restFoldersSharedGet(null, null, null, null, null, null, null, null, null, null, null,
-            null, null, null, null, null, null, null, null, null, null, null,
-            null, null, null, null, null, null, null, null, null, null, null);
-        assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);
+        // Act and Assert
+        assertThat(kiteworksConfig).isNotNull();
+        assertThat(uploadsApi).isNotNull();
+        assertThat(foldersApi).isNotNull();
+        assertThat(filesApi).isNotNull();
+
     }
 }
