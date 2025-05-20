@@ -5,6 +5,7 @@ import com.kiteworks.client.ApiException;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
+import com.kiteworks.client.model.ActivityList;
 import com.kiteworks.client.model.RestFoldersSharedGet200Response;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -55,5 +56,9 @@ public class EndToEndSignatureIT {
             null, null, null, null, null, null, null, null, null, null, null,
             null, null, null, null, null, null, null, null, null, null, null);
         assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);
+
+        ActivityList activityList = foldersApi.restFoldersIdActivitiesGet("1ed4f72a-634e-45f6-9299-689aef37e414", null
+                , null, null, null, 1000, null, null, null, null, null
+                , null, null, null, null, null, null, null);
     }
 }
