@@ -128,7 +128,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
+                <version>3.14.0</version>
             </plugin>
 
             <!-- Use spotless plugin to automatically format code,remove unused import,etc
