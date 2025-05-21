@@ -1,17 +1,22 @@
 version: 2
 updates:
+
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
+    time: "7:00"
+    timezone: "Australia/Brisbane"
+
 - package-ecosystem: maven
-  directories: 
-   - "**/*" 
-   # Specify all directories from the current layer and below recursively, using globstar, for locations of manifest files
-  target-branch: "develop"
+  directories:
+   - "**/*"
   schedule:
     interval: daily
-    time: "19:00"
+    time: "7:00"
+    timezone: "Australia/Brisbane"
   groups:
     jackson:
       patterns:
         - "jackson*"
   open-pull-requests-limit: 10
-  reviewers:
-  - qld-gov-au/qld-online-dev-team
