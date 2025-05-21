@@ -67,7 +67,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.3.1</version>
+                <version>3.5.3</version>
                 <configuration>
                     <argLine>-Xms512m -Xmx1500m</argLine>
                     <parallel>methods</parallel>
