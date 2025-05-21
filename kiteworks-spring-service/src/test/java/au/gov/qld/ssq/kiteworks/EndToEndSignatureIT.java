@@ -5,6 +5,7 @@ import com.kiteworks.client.ApiException;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
+import com.kiteworks.client.model.ActivityList;
 import com.kiteworks.client.model.RestFoldersSharedGet200Response;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -43,6 +44,7 @@ public class EndToEndSignatureIT {
 
     @Test
     public void testBeansAreWiredCorrectly() throws ApiException {
+
         try {
             for (String profileName : env.getActiveProfiles()) {
                 System.out.println("Currently active profile - " + profileName);
@@ -55,5 +57,10 @@ public class EndToEndSignatureIT {
             null, null, null, null, null, null, null, null, null, null, null,
             null, null, null, null, null, null, null, null, null, null, null);
         assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);
+
+        String uuid = env.getProperty("KITEWORKS_ACTIVITY_LIST_UUID");
+        ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
+                , null, null, null, 1000, null, null, null, null, null
+                , null, null, null, null, null, null, null);
     }
 }
