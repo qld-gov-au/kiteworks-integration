@@ -44,6 +44,7 @@ public class EndToEndSignatureIT {
 
     @Test
     public void testBeansAreWiredCorrectly() throws ApiException {
+
         try {
             for (String profileName : env.getActiveProfiles()) {
                 System.out.println("Currently active profile - " + profileName);
@@ -57,7 +58,8 @@ public class EndToEndSignatureIT {
             null, null, null, null, null, null, null, null, null, null, null);
         assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);
 
-        ActivityList activityList = foldersApi.restFoldersIdActivitiesGet("1ed4f72a-634e-45f6-9299-689aef37e414", null
+        String uuid = env.getProperty("KITEWORKS_ACTIVITY_LIST_UUID");
+        ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
                 , null, null, null, 1000, null, null, null, null, null
                 , null, null, null, null, null, null, null);
     }

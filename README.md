@@ -18,12 +18,25 @@ Please look up 1password for test secrets in note "kiteworks-integration"
 
 example command for secretes required for integration testing:
 ```bash
-KITEWORKS_CLIENT_APP_SCOPES="" KITEWORKS_USER_ID="" KITEWORKS_CLIENT_SECRET="" \
-KITEWORKS_USER_AGENT="" KITEWORKS_ACCESS_TOKEN_URI="https://${SERVER}/oauth/token" \
-KITEWORKS_CLIENT_ID="" KITEWORKS_SIGNATURE_KEY="" KITEWORKS_BASE_URI="https://SERVER/" \
-KITEWORKS_REDIRECT_URI="https://REDIRECTURI" mvn verify
+KITEWORKS_USERNAME="" \
+KITEWORKS_PASSWORD="" \
+KITEWORKS_ACTIVITY_LIST_UUID="" \
+KITEWORKS_CLIENT_APP_SCOPES="" \
+KITEWORKS_USER_ID="" \
+KITEWORKS_CLIENT_SECRET="" \
+KITEWORKS_USER_AGENT="" \
+KITEWORKS_ACCESS_TOKEN_URI="https://${SERVER}/oauth/token" \
+KITEWORKS_CLIENT_ID="" \
+KITEWORKS_SIGNATURE_KEY="" \
+KITEWORKS_BASE_URI="https://${SERVER}/" \
+KITEWORKS_REDIRECT_URI="https://${REDIRECTURI}" mvn verify
 ```
 
+IntelliJ environment args are without double quotes and split by ;
+i.e.
+```
+KITEWORKS_CLIENT_APP_SCOPES=*/*/*;ETC
+```
 
 
 ### How to release a new version
