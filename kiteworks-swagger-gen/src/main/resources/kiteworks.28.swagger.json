@@ -30116,7 +30116,7 @@
         "created": {
           "description": "File Version creation date",
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         "userId": {
           "description": "Unique identifier of User who created File Version",
@@ -30162,7 +30162,7 @@
         "clientModified": {
           "description": "Original modified time of the file",
           "type": "string",
-          "format": "date"
+          "format": "date-time"
         },
         "avStatus": {
           "description": "Check file availability status according to AV settings and file scanned/infected status",
@@ -30184,7 +30184,7 @@
           "description": "Array of all file fingerprint objects",
           "type": "array",
           "items": {
-            "type": "string"
+            "$ref": "#/definitions/Fingerprint"
           }
         },
         "tags": {
