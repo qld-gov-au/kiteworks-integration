@@ -5,7 +5,7 @@
     <parent>
         <groupId>au.gov.qld.services.kiteworks</groupId>
         <artifactId>kiteworks_integration</artifactId>
-        <version>1.0.16</version>
+        <version>1.0.17-SNAPSHOT</version>
     </parent>
 
     <artifactId>kiteworks-spring-service</artifactId>
@@ -38,7 +38,7 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency><groupId>au.gov.qld.services.kiteworks</groupId><artifactId>kiteworks-native-client</artifactId><version>1.0.16</version></dependency>
+        <dependency><groupId>au.gov.qld.services.kiteworks</groupId><artifactId>kiteworks-native-client</artifactId><version>1.0.17-SNAPSHOT</version></dependency>
 
         <dependency><groupId>org.springframework</groupId><artifactId>spring-beans</artifactId></dependency>
         <dependency><groupId>org.springframework</groupId><artifactId>spring-context</artifactId></dependency>
