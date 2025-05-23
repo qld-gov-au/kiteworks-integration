@@ -2,6 +2,42 @@
 ## [Unreleased]
 
 
+<a name="1.0.16"></a>
+## [1.0.16] - 2025-05-23
+### Pull Requests
+- Merge pull request [#65](https://github.com/qld-gov-au/kiteworks-integration/issues/65) from qld-gov-au/dependabot/maven/org.springframework.boot-spring-boot-dependencies-3.4.6
+  - Merge pull request [#66](https://github.com/qld-gov-au/kiteworks-integration/issues/66) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.springframework.boot-spring-boot-dependencies-3.4.6
+  
+  
+<a name="1.0.15"></a>
+## [1.0.15] - 2025-05-22
+### Pull Requests
+- Merge pull request [#45](https://github.com/qld-gov-au/kiteworks-integration/issues/45) from qld-gov-au/dependabot/maven/org.openapitools-openapi-generator-maven-plugin-7.13.0
+  - Merge pull request [#62](https://github.com/qld-gov-au/kiteworks-integration/issues/62) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.openapitools-openapi-generator-maven-plugin-7.13.0
+  - Merge pull request [#56](https://github.com/qld-gov-au/kiteworks-integration/issues/56) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.apache.maven.plugins-maven-failsafe-plugin-3.5.3
+  - Merge pull request [#42](https://github.com/qld-gov-au/kiteworks-integration/issues/42) from qld-gov-au/dependabot/maven/org.apache.maven.plugins-maven-gpg-plugin-3.2.7
+  - Merge pull request [#54](https://github.com/qld-gov-au/kiteworks-integration/issues/54) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.hamcrest-hamcrest-3.0
+  - Merge pull request [#64](https://github.com/qld-gov-au/kiteworks-integration/issues/64) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.apache.maven.plugins-maven-gpg-plugin-3.2.7
+  - Merge pull request [#63](https://github.com/qld-gov-au/kiteworks-integration/issues/63) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.hamcrest-hamcrest-3.0
+  - Merge pull request [#61](https://github.com/qld-gov-au/kiteworks-integration/issues/61) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.apache.maven.plugins-maven-surefire-plugin-3.5.3
+  - Merge pull request [#60](https://github.com/qld-gov-au/kiteworks-integration/issues/60) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.apache.maven.plugins-maven-failsafe-plugin-3.5.3
+  - Merge pull request [#59](https://github.com/qld-gov-au/kiteworks-integration/issues/59) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.mockito-mockito-core-5.18.0
+  - Merge pull request [#58](https://github.com/qld-gov-au/kiteworks-integration/issues/58) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.apache.maven.plugins-maven-gpg-plugin-3.2.7
+  - Merge pull request [#57](https://github.com/qld-gov-au/kiteworks-integration/issues/57) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.apache.maven.plugins-maven-surefire-plugin-3.5.3
+  - Merge pull request [#55](https://github.com/qld-gov-au/kiteworks-integration/issues/55) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.apache.commons-commons-lang3-3.17.0
+  - Merge pull request [#53](https://github.com/qld-gov-au/kiteworks-integration/issues/53) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.apache.maven.plugins-maven-failsafe-plugin-3.5.3
+  - Merge pull request [#52](https://github.com/qld-gov-au/kiteworks-integration/issues/52) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.hamcrest-hamcrest-3.0
+  - Merge pull request [#51](https://github.com/qld-gov-au/kiteworks-integration/issues/51) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.apache.maven.plugins-maven-surefire-plugin-3.5.3
+  - Merge pull request [#50](https://github.com/qld-gov-au/kiteworks-integration/issues/50) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.mockito-mockito-core-5.18.0
+  - Merge pull request [#49](https://github.com/qld-gov-au/kiteworks-integration/issues/49) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.apache.maven.plugins-maven-gpg-plugin-3.2.7
+  - Merge pull request [#48](https://github.com/qld-gov-au/kiteworks-integration/issues/48) from qld-gov-au/dependabot/maven/org.apache.maven.plugins-maven-failsafe-plugin-3.5.3
+  - Merge pull request [#47](https://github.com/qld-gov-au/kiteworks-integration/issues/47) from qld-gov-au/dependabot/maven/org.apache.maven.plugins-maven-surefire-plugin-3.5.3
+  - Merge pull request [#46](https://github.com/qld-gov-au/kiteworks-integration/issues/46) from qld-gov-au/dependabot/maven/org.apache.commons-commons-lang3-3.17.0
+  - Merge pull request [#44](https://github.com/qld-gov-au/kiteworks-integration/issues/44) from qld-gov-au/dependabot/maven/org.hamcrest-hamcrest-3.0
+  - Merge pull request [#43](https://github.com/qld-gov-au/kiteworks-integration/issues/43) from qld-gov-au/dependabot/maven/org.mockito-mockito-core-5.18.0
+  - Merge pull request [#41](https://github.com/qld-gov-au/kiteworks-integration/issues/41) from qld-gov-au/update-changelog
+  
+  
 <a name="1.0.14"></a>
 ## [1.0.14] - 2025-05-21
 ### Pull Requests
@@ -92,7 +128,9 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.14...HEAD
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.16...HEAD
+[1.0.16]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.15...1.0.16
+[1.0.15]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.14...1.0.15
 [1.0.14]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.13...1.0.14
 [1.0.13]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.12...1.0.13
 [1.0.12]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.11...1.0.12
