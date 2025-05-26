@@ -2,6 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.17"></a>
+## [1.0.17] - 2025-05-26
+### Pull Requests
+- Merge pull request [#67](https://github.com/qld-gov-au/kiteworks-integration/issues/67) from qld-gov-au/update-changelog
+  - Merge pull request [#69](https://github.com/qld-gov-au/kiteworks-integration/issues/69) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.springframework.boot-spring-boot-dependencies-3.5.0
+  - Merge pull request [#68](https://github.com/qld-gov-au/kiteworks-integration/issues/68) from qld-gov-au/dependabot/maven/org.springframework.boot-spring-boot-dependencies-3.5.0
+  
+  
 <a name="1.0.16"></a>
 ## [1.0.16] - 2025-05-23
 ### Pull Requests
@@ -128,7 +136,8 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.16...HEAD
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.17...HEAD
+[1.0.17]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.16...1.0.17
 [1.0.16]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.15...1.0.16
 [1.0.15]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.14...1.0.15
 [1.0.14]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.13...1.0.14
