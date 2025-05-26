@@ -4,7 +4,7 @@
     <parent>
         <groupId>au.gov.qld.services.kiteworks</groupId>
         <artifactId>kiteworks_integration</artifactId>
-        <version>1.0.17</version>
+        <version>1.0.18-SNAPSHOT</version>
     </parent>
 
     <artifactId>kiteworks-native-client</artifactId>
@@ -153,7 +153,7 @@
     </profiles>
 
     <dependencies>
-        <dependency><groupId>au.gov.qld.services.kiteworks</groupId><artifactId>kiteworks-swagger-gen</artifactId><version>1.0.17</version></dependency>
+        <dependency><groupId>au.gov.qld.services.kiteworks</groupId><artifactId>kiteworks-swagger-gen</artifactId><version>1.0.18-SNAPSHOT</version></dependency>
 
         <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>2.0.17</version><scope>compile</scope></dependency>
 
