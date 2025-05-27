@@ -41,7 +41,7 @@ public class KiteworksConfig {
     private String redirectUri; // e.g. what you configured for the client redirect url
     private String accessTokenUri; // e.g. defaults to "baseURI + oauth/token" i.e. https://kiteworks.dcj.nsw.gov.au/oauth/token
     private String userAgent; // e.g. kiteworks-client 1.0
-    private String kiteworksApiVersion = "24"; //default latest as of 2024/07
+    private String kiteworksApiVersion = "28"; //default latest as of 2025/05
 
 
     public KiteworksConfig() {
