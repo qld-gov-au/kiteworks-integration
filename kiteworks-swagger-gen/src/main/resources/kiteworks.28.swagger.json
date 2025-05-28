@@ -28695,6 +28695,10 @@
             "type": "string"
           }
         },
+        "reason": {
+          "type": "string",
+          "description": "Optional. May be null, is the reason why things were deleted etc"
+        },
         "reference_id": {
           "type": "string"
         },
