@@ -19,4 +19,40 @@ updates:
     jackson:
       patterns:
         - "jackson*"
-  open-pull-requests-limit: 10
+    spotless-maven-plugin:
+      patterns:
+        - "com.diffplug.spotless:spotless-maven-plugin"
+    exec-maven-plugin:
+      patterns:
+        - "org.codehaus.mojo:*"
+    spring-boot-dependencies:
+      patterns:
+        - "org.springframework.boot:*"
+    openapi-generator-maven-plugin:
+      patterns:
+        - "org.openapitools:*"
+    org-apache-maven-plugins:
+      patterns:
+        - "org.apache.maven.plugins:*"
+    hamcrest:
+      patterns:
+        - "org.hamcrest:hamcrest"
+    mockito-core:
+      patterns:
+        - "org.mockito:mockito-core"
+    commons-lang3:
+      patterns:
+        - "org.apache.commons:commons-lang3"
+    jakarta-annotation-api:
+      patterns:
+        - "jakarta.annotation:jakarta.annotation-api"
+    junit-jupiter:
+      patterns:
+        - "org.junit.jupiter:*"
+    assertj:
+      patterns:
+        - "org.assertj:*"
+    slf4j-api:
+      patterns:
+        - "org.slf4j:*"
+  open-pull-requests-limit: 20
