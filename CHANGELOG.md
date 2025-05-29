@@ -2,6 +2,20 @@
 ## [Unreleased]
 
 
+<a name="1.0.19"></a>
+## [1.0.19] - 2025-05-29
+### Pull Requests
+- Merge pull request [#81](https://github.com/qld-gov-au/kiteworks-integration/issues/81) from qld-gov-au/fix/FileShouldBeFileNotJsonObjectRead
+  
+  
+<a name="1.0.18"></a>
+## [1.0.18] - 2025-05-28
+### Pull Requests
+- Merge pull request [#70](https://github.com/qld-gov-au/kiteworks-integration/issues/70) from qld-gov-au/update-changelog
+  - Merge pull request [#80](https://github.com/qld-gov-au/kiteworks-integration/issues/80) from qld-gov-au/dependabot/maven/exec-maven-plugin-a472123c94
+  - Merge pull request [#79](https://github.com/qld-gov-au/kiteworks-integration/issues/79) from qld-gov-au/dependabot/maven/spotless-maven-plugin-6214df9cac
+  
+  
 <a name="1.0.17"></a>
 ## [1.0.17] - 2025-05-26
 ### Pull Requests
@@ -136,7 +150,9 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.17...HEAD
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.19...HEAD
+[1.0.19]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.18...1.0.19
+[1.0.18]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.17...1.0.18
 [1.0.17]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.16...1.0.17
 [1.0.16]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.15...1.0.16
 [1.0.15]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.14...1.0.15
