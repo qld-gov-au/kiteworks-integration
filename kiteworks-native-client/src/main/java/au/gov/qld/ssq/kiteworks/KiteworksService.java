@@ -1,9 +1,5 @@
 package au.gov.qld.ssq.kiteworks;
 
-import com.fasterxml.jackson.core.StreamReadFeature;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.kiteworks.client.ApiClient;
 import com.kiteworks.client.api.ActivitiesApi;
 import com.kiteworks.client.api.FilesApi;
@@ -35,13 +31,6 @@ public class KiteworksService {
 
     public ApiClient kiteworksDefaultApiClient() {
         if (Objects.isNull(apiClient)) {
-            HttpClient.Builder httpClientBuilder = HttpClient.newBuilder();
-            ObjectMapper objectMapper = new ObjectMapper();
-            objectMapper.enable(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION.mappedFeature());
-            objectMapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-            objectMapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.US));
-            objectMapper.configure(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY, true);
-//            objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
             if (Objects.isNull(config.getAuthorizationGrantType()) || config.getAuthorizationGrantType().isEmpty()) {
                 LOG.error("Kiteworks mode is not set, defaulting to User Credentials");
@@ -57,7 +46,7 @@ public class KiteworksService {
                 throw new IllegalArgumentException("Invalid mode: " + config.getAuthorizationGrantType());
             }
 
-            apiClient = new ApiClient(httpClientBuilder, objectMapper, config.getBaseUri());
+            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder(), ApiClient.createDefaultObjectMapper(), config.getBaseUri());
             apiClient.setRequestInterceptor(kiteworksOAuthInterceptor);
         }
         return apiClient;
