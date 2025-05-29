@@ -47,7 +47,10 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.Optional;
 import java.util.function.Consumer;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 {{#asyncNative}}
 
 import java.util.concurrent.CompletableFuture;
@@ -98,6 +101,66 @@ public class {{classname}} {
       body = "[no body]";
     }
     return operationId + " call failed with: " + statusCode + " - " + body;
+  }
+
+  /**
+   * Download file from the given response.
+   *
+   * @param response Response
+   * @return File
+   * @throws ApiException If fail to read file content from response and write to disk
+   */
+  public File downloadFileFromResponse(HttpResponse<InputStream> response) throws ApiException {
+    try {
+      File file = prepareDownloadFile(response);
+      java.nio.file.Files.copy(response.body(), file.toPath(), java.nio.file.StandardCopyOption.REPLACE_EXISTING);
+      return file;
+    } catch (IOException e) {
+      throw new ApiException(e);
+    }
+  }
+
+  /**
+   * <p>Prepare the file for download from the response.</p>
+   *
+   * @param response a {@link java.net.http.HttpResponse} object.
+   * @return a {@link java.io.File} object.
+   * @throws java.io.IOException if any.
+   */
+  private File prepareDownloadFile(HttpResponse<InputStream> response) throws IOException {
+    String filename = null;
+    Optional<String> contentDisposition = response.headers().firstValue("Content-Disposition");
+    if (contentDisposition.isPresent() && !"".equals(contentDisposition.get())) {
+      // Get filename from the Content-Disposition header.
+      Pattern pattern = Pattern.compile("filename=['\"]?([^'\"\\s]+)['\"]?");
+      Matcher matcher = pattern.matcher(contentDisposition.get());
+      if (matcher.find())
+        filename = matcher.group(1);
+    }
+
+    String prefix;
+    String suffix = null;
+    if (filename == null) {
+      prefix = "download-";
+      suffix = "";
+    } else {
+      int pos = filename.lastIndexOf('.');
+      if (pos == -1) {
+        prefix = filename + "-";
+      } else {
+        prefix = filename.substring(0, pos) + "-";
+        suffix = filename.substring(pos);
+      }
+      // Files.createTempFile requires the prefix to be at least three characters long
+      if (prefix.length() < 3)
+        prefix = "download-";
+    }
+
+    String tempFolderPath = null;
+    if (tempFolderPath == null)
+      return java.nio.file.Files.createTempFile(prefix, suffix).toFile();
+    else
+      return java.nio.file.Files.createTempFile(java.nio.file.Paths.get(tempFolderPath), prefix, suffix).toFile();
   }
 
   {{#operation}}
@@ -291,13 +354,23 @@ public class {{classname}} {
           );
         }
 
+        {{^isResponseFile}}{{#isResponseBinary}}
+        Byte[] responseValue = localVarResponse.body().readAllBytes();
+        {{/isResponseBinary}}{{/isResponseFile}}
+        {{#isResponseFile}}
+        // Handle file downloading.
+        File responseValue = downloadFileFromResponse(localVarResponse);
+        {{/isResponseFile}}
+        {{^isResponseBinary}}{{^isResponseFile}}
         String responseBody = new String(localVarResponse.body().readAllBytes());
+        {{{returnType}}} responseValue = responseBody.isBlank()? null: memberVarObjectMapper.readValue(responseBody, new TypeReference<{{{returnType}}}>() {});
+        {{/isResponseFile}}{{/isResponseBinary}}
         localVarResponse.body().close();
 
         return new ApiResponse<{{{returnType}}}>(
             localVarResponse.statusCode(),
             localVarResponse.headers().map(),
-            responseBody.isBlank()? null: memberVarObjectMapper.readValue(responseBody, new TypeReference<{{{returnType}}}>() {})
+            responseValue
         );
         {{/returnType}}
         {{^returnType}}
