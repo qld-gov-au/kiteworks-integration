@@ -137,7 +137,7 @@ public class {{classname}} {
     File file = null;
     if (filename != null) {
       java.nio.file.Path tempDir = java.nio.file.Files.createTempDirectory("swagger-gen-native");
-      java.nio.file.Path filePath = java.nio.file.Files.createFile(tempDir.resolve(filename), null);
+      java.nio.file.Path filePath = java.nio.file.Files.createFile(tempDir.resolve(filename));
       file = filePath.toFile();
       tempDir.toFile().deleteOnExit();   // best effort cleanup
       file.deleteOnExit(); // best effort cleanup
