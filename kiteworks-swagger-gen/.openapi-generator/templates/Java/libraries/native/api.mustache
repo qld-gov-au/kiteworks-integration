@@ -47,10 +47,7 @@ import java.util.StringJoiner;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.Optional;
 import java.util.function.Consumer;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 {{#asyncNative}}
 
 import java.util.concurrent.CompletableFuture;
@@ -129,38 +126,26 @@ public class {{classname}} {
    */
   private File prepareDownloadFile(HttpResponse<InputStream> response) throws IOException {
     String filename = null;
-    Optional<String> contentDisposition = response.headers().firstValue("Content-Disposition");
+    java.util.Optional<String> contentDisposition = response.headers().firstValue("Content-Disposition");
     if (contentDisposition.isPresent() && !"".equals(contentDisposition.get())) {
       // Get filename from the Content-Disposition header.
-      Pattern pattern = Pattern.compile("filename=['\"]?([^'\"\\s]+)['\"]?");
-      Matcher matcher = pattern.matcher(contentDisposition.get());
+      java.util.regex.Pattern pattern = java.util.regex.Pattern.compile("filename=['\"]?([^'\"\\s]+)['\"]?");
+      java.util.regex.Matcher matcher = pattern.matcher(contentDisposition.get());
       if (matcher.find())
         filename = matcher.group(1);
     }
-
-    String prefix;
-    String suffix = null;
-    if (filename == null) {
-      prefix = "download-";
-      suffix = "";
+    File file = null;
+    if (filename != null) {
+      java.nio.file.Path tempDir = java.nio.file.Files.createTempDirectory("swagger-gen-native");
+      java.nio.file.Path filePath = java.nio.file.Files.createFile(tempDir.resolve(filename), null);
+      file = filePath.toFile();
+      tempDir.toFile().deleteOnExit();   // best effort cleanup
+      file.deleteOnExit(); // best effort cleanup
     } else {
-      int pos = filename.lastIndexOf('.');
-      if (pos == -1) {
-        prefix = filename + "-";
-      } else {
-        prefix = filename.substring(0, pos) + "-";
-        suffix = filename.substring(pos);
-      }
-      // Files.createTempFile requires the prefix to be at least three characters long
-      if (prefix.length() < 3)
-        prefix = "download-";
+      file = java.nio.file.Files.createTempFile("download-", "").toFile();
+      file.deleteOnExit(); // best effort cleanup
     }
-
-    String tempFolderPath = null;
-    if (tempFolderPath == null)
-      return java.nio.file.Files.createTempFile(prefix, suffix).toFile();
-    else
-      return java.nio.file.Files.createTempFile(java.nio.file.Paths.get(tempFolderPath), prefix, suffix).toFile();
+    return file;
   }
 
   {{#operation}}
