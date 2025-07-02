@@ -64,7 +64,7 @@
                             <!-- * api.mustache -->
                             <!-- patch for null check objects on non required params -->
                             <templateDirectory>.openapi-generator/templates/Java</templateDirectory>
-                            <inputSpec>${project.basedir}/src/main/resources/kiteworks.28.swagger.json</inputSpec>
+                            <inputSpec>${project.basedir}/src/main/resources/kiteworks.28.openapi.json</inputSpec>
                             <generatorName>java</generatorName>
                             <configOptions>
                                 <dateLibrary>java8</dateLibrary> <!--java8 - Java 8 native JSR310 (preferred for jdk 1.8+) -->
