@@ -15104,6 +15104,17 @@
         "summary": "Download a file version",
         "description": "Downloads the specified file version. Must be assigned the `download` permission for the file.",
         "responses": {
+          "200": {
+            "description": "The file download request was successful.",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
           "403": {
             "description": "Forbidden<br /><br /><i>Possible error codes: </i>ERR_ACCESS_USER",
             "content": {
@@ -54662,7 +54673,7 @@
           "clientModified": {
             "description": "File modify date set from client",
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "disableAutoVersion": {
             "description": "Indicates whether Client would like to save file as new version",
@@ -55569,6 +55580,191 @@
           }
         }
       },
+      "ActivityFileDetailsFile": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/File"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ec_source": {
+                "type": "string",
+                "description": "Optional. External content source. May be null."
+              },
+              "ec_object_id": {
+                "type": "string",
+                "description": "Optional. Object ID from external content source. May be null."
+              },
+              "hash_algo": {
+                "type": "string",
+                "description": "Optional. Mirror of fingerprints.algo. May be null."
+              },
+              "hash": {
+                "type": "string",
+                "description": "Optional. Mirror of fingerprints.hash. May be null."
+              },
+              "file_id": {
+                "type": "string",
+                "description": "Optional. File ID. May be null."
+              },
+              "version": {
+                "type": "string",
+                "description": "Optional. version. May be null."
+              },
+              "file_uploader": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "guid": {
+                    "type": "string"
+                  },
+                  "profile": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "format": "int32"
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ActivityFileDetailsFolder": {
+        "allOf": [
+          {
+            "$ref": "#/components/schemas/Folder"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "ec_source": {
+                "type": "string",
+                "description": "Optional. External content source. May be null."
+              },
+              "ec_object_id": {
+                "type": "string",
+                "description": "Optional. Object ID from external content source. May be null."
+              }
+            }
+          }
+        ]
+      },
+      "ActivityFileDetails": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "$ref": "#/components/schemas/ActivityFileDetailsFile"
+          },
+          "files": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivityFileDetailsFile"
+            }
+          },
+          "folders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivityFileDetailsFolder"
+            }
+          },
+          "parent_folder": {
+            "$ref": "#/components/schemas/ActivityFileDetailsFolder"
+          },
+          "name": {
+            "type": "string"
+          },
+          "size": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "range": {
+            "type": "string",
+            "description": "Optional. May be null."
+          },
+          "partial": {
+            "type": "boolean",
+            "description": "Optional. May be null."
+          },
+          "final_chunk": {
+            "type": "boolean",
+            "description": "Optional. May be null."
+          },
+          "bypass_scan": {
+            "type": "boolean",
+            "description": "Optional. May be null."
+          },
+          "bypass_permission_check": {
+            "type": "boolean",
+            "description": "Optional. May be null."
+          },
+          "error": {
+            "type": "string",
+            "description": "Optional. May be null."
+          },
+          "asset_classes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "policies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reason": {
+            "type": "string",
+            "description": "Optional. May be null, is the reason why things were deleted etc"
+          },
+          "reference_id": {
+            "type": "string"
+          },
+          "on_behalf_of": {
+            "type": "string",
+            "description": "Optional. May be null."
+          },
+          "sender": {
+            "type": "string",
+            "description": "Optional. May be null."
+          },
+          "mail": {
+            "type": "string",
+            "description": "Optional. May be null."
+          },
+          "is_folder_upload": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "failed_files": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivityFileDetailsFile"
+            }
+          },
+          "failed_folders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ActivityFileDetailsFolder"
+            }
+          }
+        }
+      },
+
       "Activity": {
         "type": "object",
         "properties": {
@@ -55576,7 +55772,7 @@
             "type": "string"
           },
           "data": {
-            "type": "string",
+            "$ref": "#/components/schemas/ActivityFileDetails",
             "readOnly": true
           },
           "successful": {
@@ -56996,7 +57192,7 @@
           "created": {
             "description": "The creation date of this file version.",
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "userId": {
             "description": "The unique identifier of the user who created this file version.",
@@ -57042,7 +57238,7 @@
           "clientModified": {
             "description": "The date and time the file version was last modified on the client side.",
             "type": "string",
-            "format": "date"
+            "format": "date-time"
           },
           "avStatus": {
             "description": "Indicates the file version's availability status based on Antivirus (AV) settings and whether it has been scanned or detected as infected.",
@@ -57064,7 +57260,7 @@
             "description": "A list of fingerprints associated with the file version.",
             "type": "array",
             "items": {
-              "type": "string"
+              "$ref": "#/components/schemas/Fingerprint"
             }
           },
           "tags": {
@@ -66314,7 +66510,7 @@
           },
           "quota": {
             "type": "integer",
-            "format": "int32",
+            "format": "int64",
             "enum": [
               1073741824,
               2147483648,
@@ -66382,7 +66578,7 @@
           },
           "quota": {
             "type": "integer",
-            "format": "int32",
+            "format": "int64",
             "enum": [
               1073741824,
               2147483648,
@@ -66454,7 +66650,7 @@
           },
           "quota": {
             "type": "integer",
-            "format": "int32",
+            "format": "int64",
             "enum": [
               1073741824,
               2147483648,
@@ -68192,6 +68388,20 @@
           "message": {
             "type": "string",
             "description": "Error message"
+          }
+        }
+      }
+    },
+    "securitySchemes": {
+      "OAuth2": {
+        "type": "oauth2",
+        "flows": {
+          "authorizationCode": {
+            "authorizationUrl": "https://filetransfer.services.qld.gov.au/oauth/auth",
+            "tokenUrl": "https://filetransfer.services.qld.gov.au/oauth/token",
+            "scopes": {
+              "*/*/*": "Grants full access"
+            }
           }
         }
       }
