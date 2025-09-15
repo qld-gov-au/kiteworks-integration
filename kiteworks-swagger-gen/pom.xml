@@ -23,6 +23,7 @@
         <httpmime-version>4.5.14</httpmime-version>
         <junit-version>5.13.4</junit-version>
         <spotless.version>2.46.1</spotless.version>
+        <argLine/>
     </properties>
 
     <distributionManagement>
@@ -128,7 +129,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.3</version>
                 <configuration>
-                    <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar} -Xms512m -Xmx1500m</argLine>
+                    <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar}</argLine>
                     <parallel>methods</parallel>
                     <threadCount>10</threadCount>
                 </configuration>

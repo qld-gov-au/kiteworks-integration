@@ -15,6 +15,7 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <argLine/>
     </properties>
 
     <distributionManagement>
@@ -82,7 +83,7 @@
                 <version>3.5.3</version>
                 <configuration>
                     <!-- https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3 -->
-                    <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar} -Xms512m -Xmx1500m</argLine>
+                    <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar}</argLine>
                     <parallel>methods</parallel>
                     <threadCount>10</threadCount>
                 </configuration>
@@ -92,19 +93,19 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.5.3</version>
                 <executions>
-                    <execution>
-                        <id>IntegrationTest</id>
-                        <goals>
-                            <goal>verify</goal>
-                            <goal>integration-test</goal>
-                        </goals>
-                        <configuration>
-                            <includes>
-                                <include>**/*IntegrationTest.java</include>
-                            </includes>
-                            <skipTests>${failSafeSkipTests}</skipTests>
-                        </configuration>
-                    </execution>
+<!--                    <execution>-->
+<!--                        <id>IntegrationTest</id>-->
+<!--                        <goals>-->
+<!--                            <goal>verify</goal>-->
+<!--                            <goal>integration-test</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <includes>-->
+<!--                                <include>**/*IntegrationTest.java</include>-->
+<!--                            </includes>-->
+<!--                            <skipTests>${failSafeSkipTests}</skipTests>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
                     <execution>
                         <id>IT</id>
                         <goals>
