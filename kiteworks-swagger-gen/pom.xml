@@ -4,7 +4,7 @@
     <parent>
         <groupId>au.gov.qld.services.kiteworks</groupId>
         <artifactId>kiteworks_integration</artifactId>
-        <version>1.0.21-SNAPSHOT</version>
+        <version>2.0.0</version>
     </parent>
 
     <artifactId>kiteworks-swagger-gen</artifactId>
@@ -23,7 +23,7 @@
         <httpmime-version>4.5.14</httpmime-version>
         <junit-version>5.13.4</junit-version>
         <spotless.version>2.46.1</spotless.version>
-        <argLine/>
+        <argLine />
     </properties>
 
     <distributionManagement>
