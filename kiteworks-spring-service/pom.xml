@@ -8,6 +8,7 @@
         <version>2.0.1-SNAPSHOT</version>
     </parent>
 
+    <name>Kiteworks Spring Service for Qld Government</name>
     <artifactId>kiteworks-spring-service</artifactId>
 
     <properties>
