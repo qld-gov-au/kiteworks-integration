@@ -15,6 +15,7 @@ import com.kiteworks.client.model.Version;
 
 import java.io.File;
 import java.util.List;
+import java.util.UUID;
 
 public class KiteworksApiHelper {
 
@@ -31,15 +32,35 @@ public class KiteworksApiHelper {
     public ApiResponse<FolderChildrenFiles> getFolderFileNames(RestFoldersParentFilesGetRequestBuilder builder) throws ApiException {
 
         return foldersApi.restFoldersParentFilesGetWithHttpInfo(
-            builder.getParent(), builder.getName(), builder.getNameColonContains(),
-            builder.getReturnEntity(), builder.getExpireColonGt(), builder.getCreatedColonLte(),
-            builder.getExpire(), builder.getModifiedColonLt(), builder.getExpireColonLt(), builder.getExpireColonLte(),
-            builder.getCreated(), builder.getExpireColonGte(), builder.getIsPushed(), builder.getOffset(),
-            builder.getMode(), builder.getUserIdColonIn(), builder.getCreatedColonGt(), builder.getModifiedColonGt(),
-            builder.getCreatedColonGte(), builder.getDeleted(), builder.getUserId(), builder.getModifiedColonLte(),
-            builder.getLimit(), builder.getModifiedColonGte(), builder.getOrderBy(), builder.getModified(), builder.getWith(),
-            builder.getCreatedColonLt()
+            builder.getParent(),
+            builder.getDeleted(),
+            builder.getName(),
+            builder.getNameContains(),
+            builder.getUserId(),
+            builder.getUserIdIn(),
+            builder.getCreated(),
+            builder.getCreatedGt(),
+            builder.getCreatedGte(),
+            builder.getCreatedLt(),
+            builder.getCreatedLte(),
+            builder.getModified(),
+            builder.getModifiedGt(),
+            builder.getModifiedGte(),
+            builder.getModifiedLt(),
+            builder.getModifiedLte(),
+            builder.getExpire(),
+            builder.getExpireGt(),
+            builder.getExpireGte(),
+            builder.getExpireLt(),
+            builder.getExpireLte(),
+            builder.getPushed(),
+            builder.getOrderBy(),
+            builder.getLimit(),
+            builder.getOffset(),
+            builder.getWith(),
+            builder.getMode()
         );
+
     }
 
     // %s/rest/files/%s (method DELETE)
@@ -66,8 +87,11 @@ public class KiteworksApiHelper {
      * List versions
      * Returns a list of versions for a given file
      **/
-    public ApiResponse<File> getFilesContent(String fileId) throws ApiException {
-        return filesApi.restFilesIdContentGetWithHttpInfo(fileId);
+    public ApiResponse<File> getFilesContent(UUID fileId) throws ApiException {
+        return filesApi.restFilesIdContentGetWithHttpInfo(fileId, null);
+    }
+    public ApiResponse<File> getFilesContent(UUID fileId, String range) throws ApiException {
+        return filesApi.restFilesIdContentGetWithHttpInfo(fileId, range);
     }
 
     // "%s/files/%%s/versions
@@ -88,12 +112,24 @@ public class KiteworksApiHelper {
     // %s/folders/%%s/activities?limit=%s
     public ApiResponse<ActivityList> restFoldersIdActivitiesGetWithHttpInfo(RestFoldersIdActivitiesGetRequestBuilder builder) throws ApiException {
         return foldersApi.restFoldersIdActivitiesGetWithHttpInfo(
-            builder.getId(),builder.getTransactionId(), builder.getOrderBy(), builder.getMode(),
-            builder.getFileId(), builder.getLimit(), builder.getWith(), builder.getOffset(),
-            builder.getFilter(), builder.getEndDate(), builder.getType(), builder.getNested(),
-            builder.getNoDayBack(),builder.getReturnEntity(), builder.getStartTime(),
-            builder.getEndTime(), builder.getStartDate(), builder.getSearch()
+            builder.getId(),
+            builder.getNoDayBack(),
+            builder.getStartTime(),
+            builder.getEndTime(),
+            builder.getStartDate(),
+            builder.getEndDate(),
+            builder.getFilter(),
+            builder.getSearch(),
+            builder.getType(),
+            builder.getTransactionId(),
+            builder.getOrderBy(),
+            builder.getNested(),
+            builder.getFileId(),
+            builder.getLimit(),
+            builder.getOffset(),
+            builder.getWith(),
+            builder.getMode()
         );
-    }
 
+    }
 }

@@ -8,8 +8,8 @@ public class RestFoldersIdActionsFilePostRequestBuilder {
     private File body;
     private Boolean returnEntity;
     private String mode;
-    private LocalDate clientCreated;
-    private LocalDate clientModified;
+    private String clientCreated;
+    private String clientModified;
     private Boolean disableAutoVersion;
     private Boolean note;
 
@@ -33,12 +33,12 @@ public class RestFoldersIdActionsFilePostRequestBuilder {
         return this;
     }
 
-    public RestFoldersIdActionsFilePostRequestBuilder withClientCreated(LocalDate clientCreated) {
+    public RestFoldersIdActionsFilePostRequestBuilder withClientCreated(String clientCreated) {
         this.clientCreated = clientCreated;
         return this;
     }
 
-    public RestFoldersIdActionsFilePostRequestBuilder withClientModified(LocalDate clientModified) {
+    public RestFoldersIdActionsFilePostRequestBuilder withClientModified(String clientModified) {
         this.clientModified = clientModified;
         return this;
     }
@@ -75,11 +75,11 @@ public class RestFoldersIdActionsFilePostRequestBuilder {
         return mode;
     }
 
-    public LocalDate getClientCreated() {
+    public String getClientCreated() {
         return clientCreated;
     }
 
-    public LocalDate getClientModified() {
+    public String getClientModified() {
         return clientModified;
     }
 

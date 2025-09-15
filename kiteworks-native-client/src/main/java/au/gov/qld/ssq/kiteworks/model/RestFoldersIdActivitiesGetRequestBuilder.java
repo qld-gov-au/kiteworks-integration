@@ -1,108 +1,37 @@
 package au.gov.qld.ssq.kiteworks.model;
 
-public class RestFoldersIdActivitiesGetRequestBuilder {
-    private String id;
-    private String filter;
-    private String type;
-    private Integer startTime;
-    private String with;
-    private Integer offset;
-    private Integer endTime;
-    private Boolean returnEntity;
-    private String endDate;
-    private String search;
-    private String orderBy;
-    private String mode;
-    private String startDate;
-    private String transactionId;
-    private String fileId;
-    private Integer limit;
-    private Boolean nested;
-    private Integer noDayBack;
+import java.util.UUID;
 
-    public RestFoldersIdActivitiesGetRequestBuilder withId(String id) {
+public class RestFoldersIdActivitiesGetRequestBuilder {
+    private  UUID id;
+    private  Integer noDayBack;
+    private  Integer startTime;
+    private  Integer endTime;
+    private  String startDate;
+    private  String endDate;
+    private  String filter;
+    private  String search;
+    private  String type;
+    private  String transactionId;
+    private  String orderBy;
+    private  Boolean nested;
+    private  String fileId;
+    private  Integer limit;
+    private  Integer offset;
+    private  String with;
+    private  String mode;
+
+    public UUID getId() {
+        return id;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withId(UUID id) {
         this.id = id;
         return this;
     }
 
-    public RestFoldersIdActivitiesGetRequestBuilder withFilter(String filter) {
-        this.filter = filter;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withType(String type) {
-        this.type = type;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withStartTime(Integer startTime) {
-        this.startTime = startTime;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withWith(String with) {
-        this.with = with;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withOffset(Integer offset) {
-        this.offset = offset;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withEndTime(Integer endTime) {
-        this.endTime = endTime;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withReturnEntity(Boolean returnEntity) {
-        this.returnEntity = returnEntity;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withEndDate(String endDate) {
-        this.endDate = endDate;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withSearch(String search) {
-        this.search = search;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withOrderBy(String orderBy) {
-        this.orderBy = orderBy;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withMode(String mode) {
-        this.mode = mode;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withStartDate(String startDate) {
-        this.startDate = startDate;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withTransactionId(String transactionId) {
-        this.transactionId = transactionId;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withFileId(String fileId) {
-        this.fileId = fileId;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withLimit(Integer limit) {
-        this.limit = limit;
-        return this;
-    }
-
-    public RestFoldersIdActivitiesGetRequestBuilder withNested(Boolean nested) {
-        this.nested = nested;
-        return this;
+    public Integer getNoDayBack() {
+        return noDayBack;
     }
 
     public RestFoldersIdActivitiesGetRequestBuilder withNoDayBack(Integer noDayBack) {
@@ -110,81 +39,138 @@ public class RestFoldersIdActivitiesGetRequestBuilder {
         return this;
     }
 
-    // Add build method to return the built object
-    public RestFoldersIdActivitiesGetRequestBuilder build() {
-        return this;
-    }
-
-    // Getter methods for each field (if needed)
-    public String getId() {
-        return id;
-    }
-
-    public String getFilter() {
-        return filter;
-    }
-
-    public String getType() {
-        return type;
-    }
-
     public Integer getStartTime() {
         return startTime;
     }
 
-    public String getWith() {
-        return with;
-    }
-
-    public Integer getOffset() {
-        return offset;
+    public RestFoldersIdActivitiesGetRequestBuilder withStartTime(Integer startTime) {
+        this.startTime = startTime;
+        return this;
     }
 
     public Integer getEndTime() {
         return endTime;
     }
 
-    public Boolean getReturnEntity() {
-        return returnEntity;
-    }
-
-    public String getEndDate() {
-        return endDate;
-    }
-
-    public String getSearch() {
-        return search;
-    }
-
-    public String getOrderBy() {
-        return orderBy;
-    }
-
-    public String getMode() {
-        return mode;
+    public RestFoldersIdActivitiesGetRequestBuilder withEndTime(Integer endTime) {
+        this.endTime = endTime;
+        return this;
     }
 
     public String getStartDate() {
         return startDate;
     }
 
+    public RestFoldersIdActivitiesGetRequestBuilder withStartDate(String startDate) {
+        this.startDate = startDate;
+        return this;
+    }
+
+    public String getEndDate() {
+        return endDate;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withEndDate(String endDate) {
+        this.endDate = endDate;
+        return this;
+    }
+
+    public String getFilter() {
+        return filter;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withFilter(String filter) {
+        this.filter = filter;
+        return this;
+    }
+
+    public String getSearch() {
+        return search;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withSearch(String search) {
+        this.search = search;
+        return this;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withType(String type) {
+        this.type = type;
+        return this;
+    }
+
     public String getTransactionId() {
         return transactionId;
     }
 
-    public String getFileId() {
-        return fileId;
+    public RestFoldersIdActivitiesGetRequestBuilder withTransactionId(String transactionId) {
+        this.transactionId = transactionId;
+        return this;
     }
 
-    public Integer getLimit() {
-        return limit;
+    public String getOrderBy() {
+        return orderBy;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withOrderBy(String orderBy) {
+        this.orderBy = orderBy;
+        return this;
     }
 
     public Boolean getNested() {
         return nested;
     }
 
-    public Integer getNoDayBack() {
-        return noDayBack;
+    public RestFoldersIdActivitiesGetRequestBuilder withNested(Boolean nested) {
+        this.nested = nested;
+        return this;
+    }
+
+    public String getFileId() {
+        return fileId;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withFileId(String fileId) {
+        this.fileId = fileId;
+        return this;
+    }
+
+    public Integer getLimit() {
+        return limit;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withLimit(Integer limit) {
+        this.limit = limit;
+        return this;
+    }
+
+    public Integer getOffset() {
+        return offset;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withOffset(Integer offset) {
+        this.offset = offset;
+        return this;
+    }
+
+    public String getWith() {
+        return with;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withWith(String with) {
+        this.with = with;
+        return this;
+    }
+
+    public String getMode() {
+        return mode;
+    }
+
+    public RestFoldersIdActivitiesGetRequestBuilder withMode(String mode) {
+        this.mode = mode;
+        return this;
     }
 }

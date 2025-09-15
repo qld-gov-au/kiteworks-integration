@@ -16,6 +16,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.env.Environment;
 import org.springframework.test.context.ActiveProfiles;
 
+import java.util.UUID;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 @ExtendWith(MockitoExtension.class)
@@ -58,9 +60,9 @@ public class EndToEndSignatureIT {
             null, null, null, null, null, null, null, null, null, null, null);
         assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);
 
-        String uuid = env.getProperty("KITEWORKS_ACTIVITY_LIST_UUID");
+        UUID uuid = UUID.fromString(env.getProperty("KITEWORKS_ACTIVITY_LIST_UUID"));
         ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
-                , null, null, null, 1000, null, null, null, null, null
-                , null, null, null, null, null, null, null);
+                , null, null, null, null, null, null, null, null
+                , null, null, null, 1000, null, null, null);
     }
 }
