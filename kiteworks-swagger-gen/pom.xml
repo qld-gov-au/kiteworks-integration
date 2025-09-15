@@ -15,7 +15,8 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <jackson-version>2.20</jackson-version>
+        <jackson-version>2.20.0</jackson-version>
+        <jackson-annotation-version>2.20</jackson-annotation-version>
         <jackson-databind-nullable-version>0.2.7</jackson-databind-nullable-version>
         <jakarta-annotation-version>3.0.0</jakarta-annotation-version>
         <beanvalidation-version>3.0.2</beanvalidation-version>
@@ -63,7 +64,7 @@
                             <!-- what we changed: -->
                             <!-- * api.mustache -->
                             <!-- patch for null check objects on non required params -->
-                            <templateDirectory>.openapi-generator/templates/Java</templateDirectory>
+<!--                            <templateDirectory>.openapi-generator/templates/Java</templateDirectory>-->
                             <inputSpec>${project.basedir}/src/main/resources/kiteworks.28.openapi.json</inputSpec>
                             <generatorName>java</generatorName>
                             <configOptions>
@@ -112,10 +113,22 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.8.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.5.3</version>
                 <configuration>
-                    <argLine>-Xms512m -Xmx1500m</argLine>
+                    <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar} -Xms512m -Xmx1500m</argLine>
                     <parallel>methods</parallel>
                     <threadCount>10</threadCount>
                 </configuration>
@@ -202,7 +215,7 @@
 
         <!-- JSON processing: jackson -->
         <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-core</artifactId><version>${jackson-version}</version></dependency>
-        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-annotations</artifactId><version>${jackson-version}</version></dependency>
+        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-annotations</artifactId><version>${jackson-annotation-version}</version></dependency>
         <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-databind</artifactId><version>${jackson-version}</version></dependency>
         <dependency><groupId>com.fasterxml.jackson.datatype</groupId><artifactId>jackson-datatype-jsr310</artifactId><version>${jackson-version}</version></dependency>
         <dependency><groupId>org.openapitools</groupId><artifactId>jackson-databind-nullable</artifactId><version>${jackson-databind-nullable-version}</version></dependency>
