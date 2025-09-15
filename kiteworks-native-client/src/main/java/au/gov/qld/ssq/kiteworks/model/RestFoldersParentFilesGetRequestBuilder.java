@@ -1,60 +1,75 @@
 package au.gov.qld.ssq.kiteworks.model;
 
 import java.util.List;
+import java.util.UUID;
 
 public class RestFoldersParentFilesGetRequestBuilder {
-    private String parent;
-    private String userId;
-    private Boolean returnEntity;
-    private String modifiedColonLte;
-    private String modifiedColonLt;
+
+    private UUID parent;
+
     private Boolean deleted;
-    private String createdColonLt;
-    private String orderBy;
-    private Integer offset;
-    private Integer limit;
-    private String nameColonContains;
-    private String createdColonGte;
-    private String mode;
-    private String modifiedColonGte;
-    private String created;
-    private String createdColonLte;
-    private String modifiedColonGt;
-    private String expireColonLte;
-    private String modified;
-    private List<String> userIdColonIn;
-    private String expireColonLt;
-    private String expireColonGte;
-    private String createdColonGt;
-    private String with;
+
     private String name;
-    private Boolean isPushed;
-    private String expireColonGt;
+
+    private String nameContains;
+
+    private String userId;
+
+    private List<String> userIdIn;
+
+    private String created;
+
+    private String createdGt;
+
+    private String createdGte;
+
+    private String createdLt;
+
+    private String createdLte;
+
+    private String modified;
+
+    private String modifiedGt;
+
+    private String modifiedGte;
+
+    private String modifiedLt;
+
+    private String modifiedLte;
+
     private String expire;
 
-    public RestFoldersParentFilesGetRequestBuilder withParent(String parent) {
+    private String expireGt;
+
+    private String expireGte;
+
+    private String expireLt;
+
+    private String expireLte;
+
+    private Boolean isPushed;
+
+    private String orderBy;
+
+    private Integer limit;
+
+    private Integer offset;
+
+    private String with;
+
+    private String mode;
+
+    public UUID getParent() {
+        return parent;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withParent(UUID parent) {
         this.parent = parent;
         return this;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withUserId(String userId) {
-        this.userId = userId;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withReturnEntity(Boolean returnEntity) {
-        this.returnEntity = returnEntity;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withModifiedColonLte(String modifiedColonLte) {
-        this.modifiedColonLte = modifiedColonLte;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withModifiedColonLt(String modifiedColonLt) {
-        this.modifiedColonLt = modifiedColonLt;
-        return this;
+    public Boolean getDeleted() {
+        return deleted;
     }
 
     public RestFoldersParentFilesGetRequestBuilder withDeleted(Boolean deleted) {
@@ -62,94 +77,8 @@ public class RestFoldersParentFilesGetRequestBuilder {
         return this;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withCreatedColonLt(String createdColonLt) {
-        this.createdColonLt = createdColonLt;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withOrderBy(String orderBy) {
-        this.orderBy = orderBy;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withOffset(Integer offset) {
-        this.offset = offset;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withLimit(Integer limit) {
-        this.limit = limit;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withNameColonContains(String nameColonContains) {
-        this.nameColonContains = nameColonContains;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withCreatedColonGte(String createdColonGte) {
-        this.createdColonGte = createdColonGte;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withMode(String mode) {
-        this.mode = mode;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withModifiedColonGte(String modifiedColonGte) {
-        this.modifiedColonGte = modifiedColonGte;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withCreated(String created) {
-        this.created = created;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withCreatedColonLte(String createdColonLte) {
-        this.createdColonLte = createdColonLte;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withModifiedColonGt(String modifiedColonGt) {
-        this.modifiedColonGt = modifiedColonGt;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withExpireColonLte(String expireColonLte) {
-        this.expireColonLte = expireColonLte;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withModified(String modified) {
-        this.modified = modified;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withUserIdColonIn(List<String> userIdColonIn) {
-        this.userIdColonIn = userIdColonIn;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withExpireColonLt(String expireColonLt) {
-        this.expireColonLt = expireColonLt;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withExpireColonGte(String expireColonGte) {
-        this.expireColonGte = expireColonGte;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withCreatedColonGt(String createdColonGt) {
-        this.createdColonGt = createdColonGt;
-        return this;
-    }
-
-    public RestFoldersParentFilesGetRequestBuilder withWith(String with) {
-        this.with = with;
-        return this;
+    public String getName() {
+        return name;
     }
 
     public RestFoldersParentFilesGetRequestBuilder withName(String name) {
@@ -157,14 +86,125 @@ public class RestFoldersParentFilesGetRequestBuilder {
         return this;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withIsPushed(Boolean isPushed) {
-        this.isPushed = isPushed;
+    public String getNameContains() {
+        return nameContains;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withNameContains(String nameContains) {
+        this.nameContains = nameContains;
         return this;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withExpireColonGt(String expireColonGt) {
-        this.expireColonGt = expireColonGt;
+    public String getUserId() {
+        return userId;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withUserId(String userId) {
+        this.userId = userId;
         return this;
+    }
+
+    public List<String> getUserIdIn() {
+        return userIdIn;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withUserIdIn(List<String> userIdIn) {
+        this.userIdIn = userIdIn;
+        return this;
+    }
+
+    public String getCreated() {
+        return created;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withCreated(String created) {
+        this.created = created;
+        return this;
+    }
+
+    public String getCreatedGt() {
+        return createdGt;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withCreatedGt(String createdGt) {
+        this.createdGt = createdGt;
+        return this;
+    }
+
+    public String getCreatedGte() {
+        return createdGte;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withCreatedGte(String createdGte) {
+        this.createdGte = createdGte;
+        return this;
+    }
+
+    public String getCreatedLt() {
+        return createdLt;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withCreatedLt(String createdLt) {
+        this.createdLt = createdLt;
+        return this;
+    }
+
+    public String getCreatedLte() {
+        return createdLte;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withCreatedLte(String createdLte) {
+        this.createdLte = createdLte;
+        return this;
+    }
+
+    public String getModified() {
+        return modified;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withModified(String modified) {
+        this.modified = modified;
+        return this;
+    }
+
+    public String getModifiedGt() {
+        return modifiedGt;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withModifiedGt(String modifiedGt) {
+        this.modifiedGt = modifiedGt;
+        return this;
+    }
+
+    public String getModifiedGte() {
+        return modifiedGte;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withModifiedGte(String modifiedGte) {
+        this.modifiedGte = modifiedGte;
+        return this;
+    }
+
+    public String getModifiedLt() {
+        return modifiedLt;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withModifiedLt(String modifiedLt) {
+        this.modifiedLt = modifiedLt;
+        return this;
+    }
+
+    public String getModifiedLte() {
+        return modifiedLte;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withModifiedLte(String modifiedLte) {
+        this.modifiedLte = modifiedLte;
+        return this;
+    }
+
+    public String getExpire() {
+        return expire;
     }
 
     public RestFoldersParentFilesGetRequestBuilder withExpire(String expire) {
@@ -172,121 +212,93 @@ public class RestFoldersParentFilesGetRequestBuilder {
         return this;
     }
 
-    // Add build method to return the built object
-    public RestFoldersParentFilesGetRequestBuilder build() {
+    public String getExpireGt() {
+        return expireGt;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withExpireGt(String expireGt) {
+        this.expireGt = expireGt;
         return this;
     }
 
-    // Getter methods for each field (if needed)
-    public String getParent() {
-        return parent;
+    public String getExpireGte() {
+        return expireGte;
     }
 
-    public String getUserId() {
-        return userId;
+    public RestFoldersParentFilesGetRequestBuilder withExpireGte(String expireGte) {
+        this.expireGte = expireGte;
+        return this;
     }
 
-    public Boolean getReturnEntity() {
-        return returnEntity;
+    public String getExpireLt() {
+        return expireLt;
     }
 
-    public String getModifiedColonLte() {
-        return modifiedColonLte;
+    public RestFoldersParentFilesGetRequestBuilder withExpireLt(String expireLt) {
+        this.expireLt = expireLt;
+        return this;
     }
 
-    public String getModifiedColonLt() {
-        return modifiedColonLt;
+    public String getExpireLte() {
+        return expireLte;
     }
 
-    public Boolean getDeleted() {
-        return deleted;
+    public RestFoldersParentFilesGetRequestBuilder withExpireLte(String expireLte) {
+        this.expireLte = expireLte;
+        return this;
     }
 
-    public String getCreatedColonLt() {
-        return createdColonLt;
+    public Boolean getPushed() {
+        return isPushed;
+    }
+
+    public RestFoldersParentFilesGetRequestBuilder withPushed(Boolean pushed) {
+        isPushed = pushed;
+        return this;
     }
 
     public String getOrderBy() {
         return orderBy;
     }
 
-    public Integer getOffset() {
-        return offset;
+    public RestFoldersParentFilesGetRequestBuilder withOrderBy(String orderBy) {
+        this.orderBy = orderBy;
+        return this;
     }
 
     public Integer getLimit() {
         return limit;
     }
 
-    public String getNameColonContains() {
-        return nameColonContains;
+    public RestFoldersParentFilesGetRequestBuilder withLimit(Integer limit) {
+        this.limit = limit;
+        return this;
     }
 
-    public String getCreatedColonGte() {
-        return createdColonGte;
+    public Integer getOffset() {
+        return offset;
     }
 
-    public String getMode() {
-        return mode;
-    }
-
-    public String getModifiedColonGte() {
-        return modifiedColonGte;
-    }
-
-    public String getCreated() {
-        return created;
-    }
-
-    public String getCreatedColonLte() {
-        return createdColonLte;
-    }
-
-    public String getModifiedColonGt() {
-        return modifiedColonGt;
-    }
-
-    public String getExpireColonLte() {
-        return expireColonLte;
-    }
-
-    public String getModified() {
-        return modified;
-    }
-
-    public List<String> getUserIdColonIn() {
-        return userIdColonIn;
-    }
-
-    public String getExpireColonLt() {
-        return expireColonLt;
-    }
-
-    public String getExpireColonGte() {
-        return expireColonGte;
-    }
-
-    public String getCreatedColonGt() {
-        return createdColonGt;
+    public RestFoldersParentFilesGetRequestBuilder withOffset(Integer offset) {
+        this.offset = offset;
+        return this;
     }
 
     public String getWith() {
         return with;
     }
 
-    public String getName() {
-        return name;
+    public RestFoldersParentFilesGetRequestBuilder withWith(String with) {
+        this.with = with;
+        return this;
     }
 
-    public Boolean getIsPushed() {
-        return isPushed;
+    public String getMode() {
+        return mode;
     }
 
-    public String getExpireColonGt() {
-        return expireColonGt;
-    }
-
-    public String getExpire() {
-        return expire;
+    public RestFoldersParentFilesGetRequestBuilder withMode(String mode) {
+        this.mode = mode;
+        return this;
     }
 }

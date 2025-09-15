@@ -18,7 +18,10 @@ updates:
   groups:
     jackson:
       patterns:
+        - "jackson-version"
         - "jackson*"
+        - "org.openapitools:jackson-*"
+        - "com.fasterxml.jackson*"
     spotless-maven-plugin:
       patterns:
         - "com.diffplug.spotless:spotless-maven-plugin"
@@ -45,7 +48,7 @@ updates:
         - "org.apache.commons:commons-lang3"
     jakarta-annotation-api:
       patterns:
-        - "jakarta.annotation:jakarta.annotation-api"
+        - "jakarta.annotation*"
     junit-jupiter:
       patterns:
         - "org.junit.jupiter:*"
