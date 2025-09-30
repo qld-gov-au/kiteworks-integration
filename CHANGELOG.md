@@ -2,6 +2,25 @@
 ## [Unreleased]
 
 
+<a name="2.0.3"></a>
+## [2.0.3] - 2025-10-01
+### Pull Requests
+- Merge pull request [#141](https://github.com/qld-gov-au/kiteworks-integration/issues/141) from qld-gov-au/fix/swagger_issues
+  - Merge pull request [#138](https://github.com/qld-gov-au/kiteworks-integration/issues/138) from qld-gov-au/dependabot/maven/spotless-maven-plugin-2d70aa2626
+  - Merge pull request [#139](https://github.com/qld-gov-au/kiteworks-integration/issues/139) from qld-gov-au/dependabot/maven/commons-lang3-454c85d248
+  - Merge pull request [#137](https://github.com/qld-gov-au/kiteworks-integration/issues/137) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.sonatype.central-central-publishing-maven-plugin-0.9.0
+  - Merge pull request [#136](https://github.com/qld-gov-au/kiteworks-integration/issues/136) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.sonatype.central-central-publishing-maven-plugin-0.9.0
+  - Merge pull request [#135](https://github.com/qld-gov-au/kiteworks-integration/issues/135) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.sonatype.central-central-publishing-maven-plugin-0.9.0
+  - Merge pull request [#134](https://github.com/qld-gov-au/kiteworks-integration/issues/134) from qld-gov-au/dependabot/maven/org.sonatype.central-central-publishing-maven-plugin-0.9.0
+  - Merge pull request [#133](https://github.com/qld-gov-au/kiteworks-integration/issues/133) from qld-gov-au/dependabot/maven/assertj-2e99938950
+  - Merge pull request [#132](https://github.com/qld-gov-au/kiteworks-integration/issues/132) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-3a2f077ab8
+  - Merge pull request [#130](https://github.com/qld-gov-au/kiteworks-integration/issues/130) from qld-gov-au/dependabot/maven/mockito-core-07342f914c
+  - Merge pull request [#131](https://github.com/qld-gov-au/kiteworks-integration/issues/131) from qld-gov-au/dependabot/maven/assertj-2a04b5a292
+  - Merge pull request [#129](https://github.com/qld-gov-au/kiteworks-integration/issues/129) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-ea412f6f03
+  - Merge pull request [#128](https://github.com/qld-gov-au/kiteworks-integration/issues/128) from qld-gov-au/dependabot/maven/spring-boot-dependencies-fde80531d9
+  - Merge pull request [#127](https://github.com/qld-gov-au/kiteworks-integration/issues/127) from qld-gov-au/update-changelog
+  
+  
 <a name="2.0.1"></a>
 ## [2.0.1] - 2025-09-15
 
@@ -199,7 +218,8 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.1...HEAD
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.3...HEAD
+[2.0.3]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.1...2.0.3
 [2.0.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.20...2.0.0
 [1.0.20]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.19...1.0.20
