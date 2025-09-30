@@ -11,21 +11,11 @@ on:
         options:
           - 'No'
           - 'Yes'
-      releaseVersion:
-        description: 'Release version'
-        required: true
-        default: '2.0.3'
-      developmentVersion:
-        description: 'Development version'
-        required: true
-        default: '2.0.4-SNAPSHOT'
+
 jobs:
   publish:
-    name: "Release version ${{ github.event.inputs.releaseversion }}"
+    name: "Publish version"
     runs-on: ubuntu-latest
-    environment:
-      name: publish
-      url: https://github.com/orgs/qld-gov-au/packages?repo_name=kiteworks-integration
     permissions:
       contents: write
       packages: write
@@ -83,7 +73,7 @@ jobs:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
       - name: Mvn Effective Settings
-        run: mvn -Pgithub  -N help:effective-settings
+        run: mvn -Pgithub -N help:effective-settings
         env:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
@@ -102,33 +92,10 @@ jobs:
       - name: Check that we are on snapshot branch before creating the release
         run: |
           echo "Version: "
-          mvn -Pgithub  help:evaluate -Dexpression=project.version -q -DforceStdout
-          mvn -Pgithub  help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
+          mvn -Pgithub help:evaluate -Dexpression=project.version -q -DforceStdout
+          mvn -Pgithub help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
           # unfortunately, this would require a snapshot parent if just called from the command line, so we cannot use it: :-(
           # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
-
-      - name: Dry run of release goals
-        run: |
-          mvn -Pgithub clean release:clean
-          mvn -Pgithub --batch-mode release:prepare -DdryRun=true -DpushChanges=false
-          mvn -Pgithub --batch-mode release:perform -DdryRun=true -DlocalCheckout=true -DdeployAtEnd=true
-          mvn -Pgithub clean release:clean
-          git clean -f -d -x
-
-        env:
-          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
-          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
-          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
-          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
-          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
-          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
-          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
-          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
-          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
-          KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
-          KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
-          KITEWORKS_ACTIVITY_LIST_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST_UUID }}
-          KITEWORKS_ACTIVITY_LIST2_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST2_UUID }}
 
       - name: Verify git is clean
         run: |
@@ -136,57 +103,24 @@ jobs:
           git log -3 --no-color --decorate
           git clean -f -d
 
-      - name: Prepare package publish
-        run: |
-          # Define versions and tag
-          RELEASE_VERSION="${releaseVersion}"
-          DEVELOPMENT_VERSION="${developmentVersion}"
-          TAG="${releaseVersion}"
-          
-          # Prepare the release with -DpushChanges=false so its all local for now
-          mvn -Pgithub --batch-mode release:prepare -DreleaseVersion=$RELEASE_VERSION -DdevelopmentVersion=$DEVELOPMENT_VERSION -Dtag=$TAG -DsignTag=true -DpushChanges=false
-
-        env:
-          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
-          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
-          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
-          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
-          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
-          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
-          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
-          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
-          KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
-          KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
-          KITEWORKS_ACTIVITY_LIST_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST_UUID }}
-          KITEWORKS_ACTIVITY_LIST2_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST2_UUID }}
-          releaseVersion: ${{ github.event.inputs.releaseVersion }}
-          developmentVersion: ${{ github.event.inputs.developmentVersion }}
-          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
-
-      - name: Git status after prepare
-        run: |
-          git status --untracked-files --ignored
-          git log -3 --no-color --decorate
-          cat release.properties || true
-
-      - name: Perform package publish
+      - name: Publish package
         if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: mvn -Pgithub --batch-mode release:perform -DlocalCheckout=true -DdeployAtEnd=true -DsignTag=true
+        run: mvn -Pgithub  --batch-mode clean deploy -DsignTag=true
         env:
-          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
-          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
-          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
-          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
-          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
-          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
-          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
-          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
-          KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
-          KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
-          KITEWORKS_ACTIVITY_LIST_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST_UUID }}
-          KITEWORKS_ACTIVITY_LIST2_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST2_UUID }}
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+          KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+          KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+          KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+          KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+          KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+          KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+          KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+          KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
+          KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
+          KITEWORKS_ACTIVITY_LIST_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST_UUID }}
+          KITEWORKS_ACTIVITY_LIST2_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST2_UUID }}
 
       - name: Cleanup on failure
         if: failure()
@@ -208,18 +142,6 @@ jobs:
         run: |
           git status --untracked-files --ignored
 
-      - name: Increment workflow defaults
-        if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: |
-          sudo apt-get install -y libxml2-utils
-          ./.github/bin/versionIncrement.sh
-      
-
-      - name: Push changes
-        if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: |
-          git push origin --follow-tags -v
-
       - name: List target files even if recipe fails
         if: always()
         run: |
@@ -230,17 +152,8 @@ jobs:
           ls -l ./target/checkout/target || true
           ls -l ./target/checkout/commons/target || true
 
-      - name: Release
-        continue-on-error: true
-        if: ${{ env.DO_DEPLOYMENT == 'true' }}
-        run: gh release create "v${releaseversion}" **/target/*${releaseversion}* --generate-notes --verify-tag
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          releaseversion: ${{ github.event.inputs.releaseversion }}
-
       - name: Publish - Skipped
         if: ${{ env.DO_DEPLOYMENT != 'true' }}
         run: |
           echo "### Publish skipped" >> $GITHUB_STEP_SUMMARY
           echo "DO_DEPLOYMENT( ${{ env.DO_DEPLOYMENT }} ): github.event_name: ${{ github.event_name != 'workflow_dispatch'}} || github.event.inputs.force: ${{ github.event.inputs.force == 'Yes' }}"  >> $GITHUB_STEP_SUMMARY
-        

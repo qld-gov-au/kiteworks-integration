@@ -87,3 +87,43 @@ In this example the org is ``qld-gov-au`` and the repo is ``kiteworks-integratio
     </distributionManagement>
 ```
 
+## Manual deployment
+
+As central.sonatype.com setup users ``publishingServerId`` as central
+
+1. Ensure you are approved in the package space for deployment.
+2. Generate a token (prefer short term tokens) https://central.sonatype.com/usertoken
+3. Update/insert into ``settings.xml`` the token credentials from step 2. 
+
+```xml
+ <servers>
+      ...     
+      <server>
+          <id>central</id>
+          <username>#username</username>
+          <password>#token</password>
+      </server>
+  </servers>
+
+```
+
+### For deployment:
+
+```shell
+mvn release:prepare -Prelease
+mvn release:perform -Prelease
+mvn release:clean -Prelease
+```
+
+You may need to 'approve' what was pushed to central.sonatype.  https://central.sonatype.com/publishing
+
+Please note that work proxies may interfere, so if hangs at publishing step.
+
+```
+Going to upload .../kiteworks_integration/target/checkout/target/central-publishing/central-bundle.zip
+```
+
+If this occurs, visit https://central.sonatype.com/publishing and manual upload the zip and manual publish.
+
+
+
