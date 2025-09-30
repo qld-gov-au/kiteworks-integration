@@ -1,0 +1,2431 @@
+{
+  "data": [
+    {
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders: Viewed file XXXX_Other_20250723012024.csv",
+      "id": 17087471,
+      "user": {
+        "name": "email@example.com",
+        "userId": "4651dd56-7fc0-4b0c-9093-e6bd02735807",
+        "profileIcon": "4651dd56-7fc0-4b0c-9093-e6bd02735807",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "fad53648-1ee5-4ee2-8686-f7a1797c7887",
+          "name": "XXXX_Other_20250723012024.csv",
+          "path": "folder_path/with/sub/folders/XXXX_Other_20250723012024.csv",
+          "size": 3396,
+          "ec_source": null,
+          "file_id": "3f6dedde-e714-45e7-ab9e-b9c9ebb16d1c",
+          "hash_algo": "md5",
+          "hash": "a194b359d4648c9cd003278dfde6c76d",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "660aa79aa730fcab950ba6ad56384a9121969c5c43dd8574a025981a4e8fa630"
+            },
+            {
+              "algo": "md5",
+              "hash": "a194b359d4648c9cd003278dfde6c76d"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1099,
+            "name": "email@example.com",
+            "guid": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+            "profile": {
+              "id": 4,
+              "name": "restricted"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "07df2f15-0a33-4cb1-a1ee-2ee5b570053b"
+      },
+      "type": "file_changes",
+      "created": "2025-09-30T03:14:54+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download_folder_activities_to_csv",
+      "message": "The report with folder activities was exported to CSV  by person1@smartservice.qld.gov.au",
+      "id": 17087397,
+      "user": {
+        "name": "email@example.com",
+        "userId": "4651dd56-7fc0-4b0c-9093-e6bd02735807",
+        "profileIcon": "4651dd56-7fc0-4b0c-9093-e6bd02735807",
+        "email": "email@example.com"
+      },
+      "data": {
+        "folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "nested": false
+      },
+      "type": "folder_activities",
+      "created": "2025-09-30T02:53:27+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders: Version was updated for XXXX_YYYY_20250929012024.csv",
+      "id": 17086417,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "64822e62-ba62-4254-8112-18c94cc63585",
+          "name": "XXXX_YYYY_20250929012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250929012024.csv",
+          "size": 1944,
+          "ec_source": null,
+          "file_id": "f1789444-10eb-4f73-a749-97c9c42f0d91",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1099,
+            "name": "email@example.com",
+            "guid": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+            "profile": {
+              "id": 4,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "ee509f27-2697-4fdf-baff-626890781c43"
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T23:01:02+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250929012024.csv",
+      "id": 17086411,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "64822e62-ba62-4254-8112-18c94cc63585",
+          "name": "XXXX_YYYY_20250929012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250929012024.csv",
+          "size": 1933,
+          "ec_source": null,
+          "file_id": "085df660-b6cf-4c79-b599-aeea46275204",
+          "hash_algo": "md5",
+          "hash": "781b2a4591978541bd3d98443c6b28cf",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "f1b6847e044c02c9a4f486095752fcc960e562806680b957f3c378c69ae70108"
+            },
+            {
+              "algo": "md5",
+              "hash": "781b2a4591978541bd3d98443c6b28cf"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 649,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "d5a122a6-858f-408c-8124-0edec2c7db7b",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T22:58:26+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders: Version was updated for XXXX_YYYY_20250925012024.csv",
+      "id": 17086410,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "4af7fa03-012e-48ce-b63d-17dc73c3fb3e",
+          "name": "XXXX_YYYY_20250925012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250925012024.csv",
+          "size": 1903,
+          "ec_source": null,
+          "file_id": "6c7cd820-f32c-4e69-b02b-377f3bf5854d",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1099,
+            "name": "email@example.com",
+            "guid": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+            "profile": {
+              "id": 4,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "a3c0d004-faef-4587-bd6e-9b0e1a58ed26"
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T22:58:17+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250925012024.csv",
+      "id": 17086407,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "4af7fa03-012e-48ce-b63d-17dc73c3fb3e",
+          "name": "XXXX_YYYY_20250925012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250925012024.csv",
+          "size": 1891,
+          "ec_source": null,
+          "file_id": "86897516-b5d3-4260-bef7-2de1c3eb49f5",
+          "hash_algo": "md5",
+          "hash": "a16dd0d6e2b81f9e547df84603e148c0",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "1da1b0af8e1d58d1f2c2ab73342f8f2317e1349329710286e64fae8e0782c757"
+            },
+            {
+              "algo": "md5",
+              "hash": "a16dd0d6e2b81f9e547df84603e148c0"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 634,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "2fe14888-ea89-44e4-a3b6-1136b1f13272",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T22:54:34+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders: Version was updated for XXXX_YYYY_20250924012024.csv",
+      "id": 17086406,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1904,
+          "ec_source": null,
+          "file_id": "b3e09eb6-fdec-4fee-8391-197f85b25003",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1099,
+            "name": "email@example.com",
+            "guid": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+            "profile": {
+              "id": 4,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "7e88cc02-cd72-4247-9e5e-3c155c284d28"
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T22:54:08+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250924012024.csv",
+      "id": 17086405,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "89d843bf54219c79dc514a396f3be96ce071cfcfe0dc298c8bdbc71765091390"
+            },
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 656,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "c500fa5b-1092-4c74-8b8d-20261b5d6260",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T22:51:48+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders: Version was updated for XXXX_YYYY_20250923012024.csv",
+      "id": 17086404,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "1c127623-fa7b-4ab0-b428-82029a997ef8",
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": 2006,
+          "ec_source": null,
+          "file_id": "4b51c138-e427-467e-9245-311e491fda41",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1099,
+            "name": "email@example.com",
+            "guid": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+            "profile": {
+              "id": 4,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "1c552f0f-65f3-467c-88a2-7a4a24da5edb"
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T22:51:32+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders: Uploaded file XXXX_YYYY_20250929012024.csv",
+      "id": 17086240,
+      "user": {
+        "name": "email@example.com",
+        "userId": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "profileIcon": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "64822e62-ba62-4254-8112-18c94cc63585",
+          "name": "XXXX_YYYY_20250929012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250929012024.csv",
+          "size": 1933,
+          "ec_source": null,
+          "file_id": "085df660-b6cf-4c79-b599-aeea46275204",
+          "hash_algo": "md5",
+          "hash": "781b2a4591978541bd3d98443c6b28cf",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "781b2a4591978541bd3d98443c6b28cf"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "2a17def1-87e4-420e-aca3-92da3dc6a1f4"
+      },
+      "type": "file_changes",
+      "created": "2025-09-28T15:20:29+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250924012024.csv.",
+      "id": 17084214,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "3d929414-1200-46c8-bd7e-b9d349451f46"
+      },
+      "type": "file_changes",
+      "created": "2025-09-24T22:25:26+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250923012024.csv.",
+      "id": 17084213,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "9a25cddc-fca5-4e35-8ecf-6d83eed78553"
+      },
+      "type": "file_changes",
+      "created": "2025-09-24T22:23:45+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders: Uploaded file XXXX_YYYY_20250925012024.csv",
+      "id": 17084081,
+      "user": {
+        "name": "email@example.com",
+        "userId": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "profileIcon": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "4af7fa03-012e-48ce-b63d-17dc73c3fb3e",
+          "name": "XXXX_YYYY_20250925012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250925012024.csv",
+          "size": 1891,
+          "ec_source": null,
+          "file_id": "86897516-b5d3-4260-bef7-2de1c3eb49f5",
+          "hash_algo": "md5",
+          "hash": "a16dd0d6e2b81f9e547df84603e148c0",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "a16dd0d6e2b81f9e547df84603e148c0"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "6e1c51b4-bc58-46f7-883a-fe8ff66754ba"
+      },
+      "type": "file_changes",
+      "created": "2025-09-24T15:20:25+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250924012024.csv.",
+      "id": 17083577,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "04f2984b-fe4d-4209-ba97-c9ac06775d96"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:51:00+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250923012024 (2).csv.",
+      "id": 17083576,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250923012024 (2).csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024 (2).csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "4d8e2503-2b44-46b0-8131-f7b70895c798"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:46:42+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250924012024.csv",
+      "id": 17083537,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "89d843bf54219c79dc514a396f3be96ce071cfcfe0dc298c8bdbc71765091390"
+            },
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 656,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "a52071b1-8124-40fa-8358-76650bb2e410",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:16:35+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders: Viewed file XXXX_YYYY_20250924012024.csv",
+      "id": 17083536,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "89d843bf54219c79dc514a396f3be96ce071cfcfe0dc298c8bdbc71765091390"
+            },
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "f66e9095-c367-4e05-9e0c-648a8c0275fe"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:16:30+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders: Viewed file XXXX_YYYY_20250924012024.csv",
+      "id": 17083535,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "89d843bf54219c79dc514a396f3be96ce071cfcfe0dc298c8bdbc71765091390"
+            },
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "74afcfd8-d974-4913-b80d-116e1a3da645"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:16:14+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250923012024 (2).csv.",
+      "id": 17083534,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250923012024 (2).csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024 (2).csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "cc2c98ca-6e09-4cb3-914c-e47c53a5819f"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:13:14+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250923012024.csv",
+      "id": 17083532,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "1c127623-fa7b-4ab0-b428-82029a997ef8",
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": 1994,
+          "ec_source": null,
+          "file_id": "bdc7ed3a-68cd-4558-964f-44521b33bb07",
+          "hash_algo": "md5",
+          "hash": "0fe5955f8f99b4f705db00eee176c0e5",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "f7dfe4579b619688587d2e870bde35fd94ed2d2ac2fd7ef8dc0f7d42369ed75f"
+            },
+            {
+              "algo": "md5",
+              "hash": "0fe5955f8f99b4f705db00eee176c0e5"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 659,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "b87a4409-ac18-4788-b2e1-de3de810884f",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T23:11:19+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250924012024.csv",
+      "id": 17083510,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "89d843bf54219c79dc514a396f3be96ce071cfcfe0dc298c8bdbc71765091390"
+            },
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 656,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "7476d3ef-8711-4b58-8329-0f1d7e17e14a",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T22:55:45+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders: Viewed file XXXX_YYYY_20250924012024.csv",
+      "id": 17083509,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "89d843bf54219c79dc514a396f3be96ce071cfcfe0dc298c8bdbc71765091390"
+            },
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "cf8fc3c9-2893-42e2-910e-2f4350425360"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T22:55:40+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250923012024.csv.",
+      "id": 17083508,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "e02a8179-84c1-48f4-9c8e-bb5308fd8e93"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T22:55:18+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250923012024.csv",
+      "id": 17083506,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "1c127623-fa7b-4ab0-b428-82029a997ef8",
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": 1994,
+          "ec_source": null,
+          "file_id": "bdc7ed3a-68cd-4558-964f-44521b33bb07",
+          "hash_algo": "md5",
+          "hash": "0fe5955f8f99b4f705db00eee176c0e5",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "f7dfe4579b619688587d2e870bde35fd94ed2d2ac2fd7ef8dc0f7d42369ed75f"
+            },
+            {
+              "algo": "md5",
+              "hash": "0fe5955f8f99b4f705db00eee176c0e5"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 659,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "31ed185e-3cf7-4259-875b-dc6cf12f1b72",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T22:53:45+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders: Uploaded file XXXX_YYYY_20250924012024.csv",
+      "id": 17083308,
+      "user": {
+        "name": "email@example.com",
+        "userId": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "profileIcon": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "001f9e0a-15d6-4f14-a5dc-930e9dc85bbd",
+          "name": "XXXX_YYYY_20250924012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250924012024.csv",
+          "size": 1892,
+          "ec_source": null,
+          "file_id": "ea527a32-a401-4fd4-b643-c573ef3a5bce",
+          "hash_algo": "md5",
+          "hash": "83157e6ba7bb72442fee67edafcc921e",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "83157e6ba7bb72442fee67edafcc921e"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "0d76139c-975f-4385-9eda-0e5101777dfc"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T15:20:25+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250923012024.csv.",
+      "id": 17082888,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "4cedf9cd-0691-40c5-bdb7-8bc261bd5ec6"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T01:09:34+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "Failed upload attempt of file XXXX_YYYY_20250923012024.csv.",
+      "id": 17082887,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": null,
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": null,
+          "guid": null,
+          "file_guid": null,
+          "ec_source": null,
+          "file_id": null,
+          "hash_algo": null,
+          "hash": null,
+          "fingerprints": [],
+          "mime": null,
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": null
+        },
+        "error": {
+          "code": "ERR_ENTITY_RESTRICTED_TYPE",
+          "msg": "The specified entity mime type is not allowed."
+        },
+        "is_folder_upload": null,
+        "on_behalf_of": null,
+        "sender": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "cd592a1d-c8ae-425b-a29d-d657ac4d81dc"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T01:09:17+0000",
+      "successful": false,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "download",
+      "message": "folder_path/with/sub/folders: Downloaded file XXXX_YYYY_20250923012024.csv",
+      "id": 17082886,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "file": {
+          "id": "1c127623-fa7b-4ab0-b428-82029a997ef8",
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": 1994,
+          "ec_source": null,
+          "file_id": "bdc7ed3a-68cd-4558-964f-44521b33bb07",
+          "hash_algo": "md5",
+          "hash": "0fe5955f8f99b4f705db00eee176c0e5",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "f7dfe4579b619688587d2e870bde35fd94ed2d2ac2fd7ef8dc0f7d42369ed75f"
+            },
+            {
+              "algo": "md5",
+              "hash": "0fe5955f8f99b4f705db00eee176c0e5"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "size": 659,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "aead8121-2e54-4f3c-82f7-577b03c87328",
+        "bypass_permission_check": null
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T01:04:04+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders: Viewed file XXXX_YYYY_20250923012024.csv",
+      "id": 17082883,
+      "user": {
+        "name": "email@example.com",
+        "userId": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "profileIcon": "a1bf91cb-f3bc-4198-b42b-0d4f6752dcb1",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "1c127623-fa7b-4ab0-b428-82029a997ef8",
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": 1994,
+          "ec_source": null,
+          "file_id": "bdc7ed3a-68cd-4558-964f-44521b33bb07",
+          "hash_algo": "md5",
+          "hash": "0fe5955f8f99b4f705db00eee176c0e5",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "f7dfe4579b619688587d2e870bde35fd94ed2d2ac2fd7ef8dc0f7d42369ed75f"
+            },
+            {
+              "algo": "md5",
+              "hash": "0fe5955f8f99b4f705db00eee176c0e5"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "bf2db0f4-451b-4f61-8e48-f73f8d247d3f"
+      },
+      "type": "file_changes",
+      "created": "2025-09-23T01:03:21+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    },
+    {
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders: Uploaded file XXXX_YYYY_20250923012024.csv",
+      "id": 17082495,
+      "user": {
+        "name": "email@example.com",
+        "userId": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "profileIcon": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+        "email": "email@example.com"
+      },
+      "data": {
+        "parent_folder": {
+          "id": "901653f2-0b55-4bed-b016-5b70581fa471",
+          "name": "YYYY",
+          "path": "folder_path/with/sub/folders",
+          "ec_source": null,
+          "ec_object_id": null
+        },
+        "file": {
+          "id": "1c127623-fa7b-4ab0-b428-82029a997ef8",
+          "name": "XXXX_YYYY_20250923012024.csv",
+          "path": "folder_path/with/sub/folders/file_20250923012024.csv",
+          "size": 1994,
+          "ec_source": null,
+          "file_id": "bdc7ed3a-68cd-4558-964f-44521b33bb07",
+          "hash_algo": "md5",
+          "hash": "0fe5955f8f99b4f705db00eee176c0e5",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "0fe5955f8f99b4f705db00eee176c0e5"
+            }
+          ],
+          "mime": "text/plain",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc8cbfb-dc8f-44a9-a846-eadb009d427e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "4fa2a9e5-879c-4ff8-9c79-27b10910d718"
+      },
+      "type": "file_changes",
+      "created": "2025-09-22T15:20:25+0000",
+      "successful": true,
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "properties_edit",
+        "user_view",
+        "user_add",
+        "user_edit",
+        "user_remove",
+        "rename",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "sync_enable",
+        "sync_disable",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy",
+        "folder_move",
+        "top_shared_folder_delete"
+      ]
+    }
+  ]
+}

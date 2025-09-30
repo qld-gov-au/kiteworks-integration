@@ -38,6 +38,7 @@ jobs:
         KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
         KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
         KITEWORKS_ACTIVITY_LIST_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST_UUID }}
+        KITEWORKS_ACTIVITY_LIST2_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST2_UUID }}
       run: mvn clean install  -Dspring.profiles.active=cicd -Pskip-gpg-signing
 
     - name: Package artifacts

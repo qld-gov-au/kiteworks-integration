@@ -55994,6 +55994,19 @@
           }
         }
       },
+      "ActivityFileDetailsError": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string",
+            "description": "Error code"
+          },
+          "msg": {
+            "type": "string",
+            "description": "Error message"
+          }
+        }
+      },
       "ActivityFileDetailsFile": {
         "allOf": [
           {
@@ -56089,6 +56102,9 @@
               "$ref": "#/components/schemas/ActivityFileDetailsFile"
             }
           },
+          "folder": {
+            "$ref": "#/components/schemas/ActivityFileDetailsFolder"
+          },
           "folders": {
             "type": "array",
             "items": {
@@ -56097,6 +56113,9 @@
           },
           "parent_folder": {
             "$ref": "#/components/schemas/ActivityFileDetailsFolder"
+          },
+          "nested" : {
+            "type": "boolean"
           },
           "name": {
             "type": "string"
@@ -56126,7 +56145,7 @@
             "description": "Optional. May be null."
           },
           "error": {
-            "type": "string",
+            "$ref": "#/components/schemas/ActivityFileDetailsError",
             "description": "Optional. May be null."
           },
           "asset_classes": {
@@ -59785,6 +59804,12 @@
           "created": {
             "type": "string",
             "description": "The date and time when the object was created."
+          },
+          "guid": {
+            "type": "string"
+          },
+          "file_guid": {
+            "type": "string"
           }
         }
       },

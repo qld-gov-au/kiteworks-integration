@@ -64,5 +64,23 @@ public class EndToEndSignatureIT {
         ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
                 , null, null, null, null, null, null, null, null
                 , null, null, null, 1000, null, null, null);
+        assertThat(activityList.getData().size()).isGreaterThan(5);
+    }
+
+    @Test
+    public void testActivityCollectionWorksCorrectly() throws ApiException {
+        try {
+            for (String profileName : env.getActiveProfiles()) {
+                System.out.println("Currently active profile - " + profileName);
+            }
+        } catch (Exception e) {
+            System.out.println("could not get active profile");
+        }
+
+        UUID uuid = UUID.fromString(env.getProperty("KITEWORKS_ACTIVITY_LIST2_UUID"));
+        ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
+                , null, null, null, null, null, null, null, null
+                , null, null, null, 1000, null, null, null);
+        assertThat(activityList.getData().size()).isGreaterThan(5);
     }
 }
