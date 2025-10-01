@@ -1,4 +1,4 @@
-name: Package Publish
+name: Package Publish Maven Central Repository (OSSRH)
 run-name: "Deploy from \"${{ github.ref_name }}\" to version \"${{ github.event.inputs.releaseVersion }}\" by @${{ github.actor }}, dryrun: ${{ github.event.inputs.publish == 'No' }}"
 
 on:
@@ -90,14 +90,6 @@ jobs:
           git config --global commit.gpgSign true
           git config --global tag.gpgSign true
           git config --global gpg.program gpg
-
-      - name: Check that we are on snapshot branch before creating the release
-        run: |
-          echo "Version: "
-          mvn -Prelease help:evaluate -Dexpression=project.version -q -DforceStdout
-          mvn -Prelease help:evaluate -Dexpression=project.version -q -DforceStdout | egrep -- '-SNAPSHOT$' > /dev/null || exit 1
-          # unfortunately, this would require a snapshot parent if just called from the command line, so we cannot use it: :-(
-          # mvn org.apache.maven.plugins:maven-enforcer-plugin:3.2.1:enforce -Drules=requireSnapshotVersion
 
       - name: Verify git is clean
         run: |
