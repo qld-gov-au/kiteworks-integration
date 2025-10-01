@@ -14,11 +14,11 @@ on:
       releaseVersion:
         description: 'Release version'
         required: true
-        default: '2.0.4'
+        default: '2.0.5'
       developmentVersion:
         description: 'Development version'
         required: true
-        default: '2.0.5-SNAPSHOT'
+        default: '2.0.6-SNAPSHOT'
 jobs:
   publish:
     name: "Release version ${{ github.event.inputs.releaseversion }}"
