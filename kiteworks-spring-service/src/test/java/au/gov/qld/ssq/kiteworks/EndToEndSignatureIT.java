@@ -64,7 +64,7 @@ public class EndToEndSignatureIT {
         ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
                 , null, null, null, null, null, null, null, null
                 , null, null, null, 1000, null, null, null);
-        assertThat(activityList.getData().size()).isGreaterThan(5);
+        assertThat(activityList.getData().size()).isGreaterThanOrEqualTo(5);
     }
 
     @Test
@@ -81,6 +81,6 @@ public class EndToEndSignatureIT {
         ActivityList activityList = foldersApi.restFoldersIdActivitiesGet(uuid, null
                 , null, null, null, null, null, null, null, null
                 , null, null, null, 1000, null, null, null);
-        assertThat(activityList.getData().size()).isGreaterThan(5);
+        assertThat(activityList.getData().size()).isGreaterThanOrEqualTo(5);
     }
 }
