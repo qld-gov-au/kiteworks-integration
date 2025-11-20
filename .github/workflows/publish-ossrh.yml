@@ -27,7 +27,7 @@ jobs:
       SEGMENT_DOWNLOAD_TIMEOUT_MINS: '5'
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           fetch-depth: 3
