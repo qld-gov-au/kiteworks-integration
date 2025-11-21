@@ -23,7 +23,7 @@
         <beanvalidation-version>3.0.2</beanvalidation-version>
         <httpmime-version>4.5.14</httpmime-version>
         <junit-version>6.0.1</junit-version>
-        <spotless.version>3.0.0</spotless.version>
+        <spotless.version>3.1.0</spotless.version>
         <argLine />
     </properties>
 
