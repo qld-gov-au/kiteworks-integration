@@ -56108,7 +56108,8 @@
           "folders": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/ActivityFileDetailsFolder"
+              "type": "object",
+              "additionalProperties": true
             }
           },
           "parent_folder": {
