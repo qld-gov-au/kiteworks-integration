@@ -2,6 +2,41 @@
 ## [Unreleased]
 
 
+<a name="2.0.5"></a>
+## [2.0.5] - 2025-12-02
+### Pull Requests
+- Merge pull request [#165](https://github.com/qld-gov-au/kiteworks-integration/issues/165) from qld-gov-au/QOLDEV-1241-fix-api-mismatch
+  - Merge pull request [#164](https://github.com/qld-gov-au/kiteworks-integration/issues/164) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-d4de4708bd
+  - Merge pull request [#161](https://github.com/qld-gov-au/kiteworks-integration/issues/161) from qld-gov-au/dependabot/maven/spotless-maven-plugin-07926a2124
+  - Merge pull request [#163](https://github.com/qld-gov-au/kiteworks-integration/issues/163) from qld-gov-au/dependabot/maven/spring-boot-dependencies-5d36823607
+  - Merge pull request [#162](https://github.com/qld-gov-au/kiteworks-integration/issues/162) from qld-gov-au/dependabot/github_actions/actions/checkout-6
+  - Merge pull request [#160](https://github.com/qld-gov-au/kiteworks-integration/issues/160) from qld-gov-au/dependabot/maven/commons-lang3-3d825f834e
+  - Merge pull request [#158](https://github.com/qld-gov-au/kiteworks-integration/issues/158) from qld-gov-au/dependabot/maven/commons-io-commons-io-2.21.0
+  - Merge pull request [#159](https://github.com/qld-gov-au/kiteworks-integration/issues/159) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/commons-io-commons-io-2.21.0
+  - Merge pull request [#154](https://github.com/qld-gov-au/kiteworks-integration/issues/154) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-d3140517dc
+  - Merge pull request [#155](https://github.com/qld-gov-au/kiteworks-integration/issues/155) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.0.1
+  - Merge pull request [#156](https://github.com/qld-gov-au/kiteworks-integration/issues/156) from qld-gov-au/dependabot/maven/jackson-68a122f7af
+  - Merge pull request [#157](https://github.com/qld-gov-au/kiteworks-integration/issues/157) from qld-gov-au/dependabot/maven/junit-jupiter-096fd984ee
+  - Merge pull request [#151](https://github.com/qld-gov-au/kiteworks-integration/issues/151) from qld-gov-au/dependabot/maven/spring-boot-dependencies-c618687022
+  - Merge pull request [#152](https://github.com/qld-gov-au/kiteworks-integration/issues/152) from qld-gov-au/dependabot/maven/jackson-e0693e8e79
+  - Merge pull request [#153](https://github.com/qld-gov-au/kiteworks-integration/issues/153) from qld-gov-au/dependabot/github_actions/actions/upload-artifact-5
+  - Merge pull request [#150](https://github.com/qld-gov-au/kiteworks-integration/issues/150) from qld-gov-au/dependabot/maven/exec-maven-plugin-bd78477e50
+  - Merge pull request [#149](https://github.com/qld-gov-au/kiteworks-integration/issues/149) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.0.0
+  - Merge pull request [#148](https://github.com/qld-gov-au/kiteworks-integration/issues/148) from qld-gov-au/dependabot/maven/exec-maven-plugin-9b9db2136e
+  - Merge pull request [#147](https://github.com/qld-gov-au/kiteworks-integration/issues/147) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-0f3d110030
+  
+  
+<a name="2.0.4"></a>
+## [2.0.4] - 2025-10-01
+### Pull Requests
+- Merge pull request [#140](https://github.com/qld-gov-au/kiteworks-integration/issues/140) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-e80bf91a82
+  - Merge pull request [#146](https://github.com/qld-gov-au/kiteworks-integration/issues/146) from qld-gov-au/update-changelog
+  - Merge pull request [#144](https://github.com/qld-gov-au/kiteworks-integration/issues/144) from qld-gov-au/dependabot/maven/commons-io-commons-io-2.20.0
+  - Merge pull request [#142](https://github.com/qld-gov-au/kiteworks-integration/issues/142) from qld-gov-au/dependabot/maven/exec-maven-plugin-487eca11e6
+  - Merge pull request [#143](https://github.com/qld-gov-au/kiteworks-integration/issues/143) from qld-gov-au/dependabot/maven/junit-jupiter-6029928a43
+  - Merge pull request [#145](https://github.com/qld-gov-au/kiteworks-integration/issues/145) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/commons-io-commons-io-2.20.0
+  
+  
 <a name="2.0.3"></a>
 ## [2.0.3] - 2025-10-01
 ### Pull Requests
@@ -218,7 +253,9 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.3...HEAD
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.5...HEAD
+[2.0.5]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.4...2.0.5
+[2.0.4]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.3...2.0.4
 [2.0.3]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.1...2.0.3
 [2.0.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.0...2.0.1
 [2.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.20...2.0.0
