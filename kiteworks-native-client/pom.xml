@@ -16,8 +16,8 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <jackson-version>2.20.1</jackson-version>
-        <jackson-annotation-version>2.20</jackson-annotation-version>
+        <jackson-version>2.21.0</jackson-version>
+        <jackson-annotation-version>2.21</jackson-annotation-version>
         <jackson-databind-nullable-version>0.2.8</jackson-databind-nullable-version>
         <jakarta-annotation-version>3.0.0</jakarta-annotation-version>
         <beanvalidation-version>3.0.2</beanvalidation-version>
