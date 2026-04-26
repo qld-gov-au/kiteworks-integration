@@ -81,7 +81,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.5.4</version>
+                <version>3.5.5</version>
                 <configuration>
                     <!-- https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3 -->
                     <argLine>@{argLine} -javaagent:${org.mockito:mockito-core:jar}</argLine>
@@ -92,7 +92,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins </groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.5.4</version>
+                <version>3.5.5</version>
                 <executions>
 <!--                    <execution>-->
 <!--                        <id>IntegrationTest</id>-->
