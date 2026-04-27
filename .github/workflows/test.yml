@@ -49,7 +49,7 @@ jobs:
        cp -r  */target/generated-sources/openapi/api staging
 
     - name: Upload artifacts
-      uses: actions/upload-artifact@v6
+      uses: actions/upload-artifact@v7
       with:
         name: Package
         path: staging
