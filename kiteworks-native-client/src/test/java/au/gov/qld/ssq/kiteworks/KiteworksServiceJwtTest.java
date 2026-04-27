@@ -7,7 +7,6 @@ import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
@@ -15,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 
-public class KiteworksServiceTest {
+public class KiteworksServiceJwtTest {
 
     private KiteworksConfig kiteworksConfig;
 
@@ -28,18 +27,20 @@ public class KiteworksServiceTest {
     void setUp() {
         MockitoAnnotations.openMocks(this);
         kiteworksConfig = new KiteworksConfig();
-        kiteworksService = new KiteworksService(kiteworksConfig);
 
         // Mocking ApiClient creation to avoid actual instantiation
-        kiteworksConfig.withSignatureKey("abc123");
-        kiteworksConfig.withAuthorizationGrantType("user_credentials");
-        kiteworksConfig.withBaseUri("https://kiteworks.dcj.nsw.gov.au/");
-        kiteworksConfig.withClientId("client-id");
-        kiteworksConfig.withClientSecret("client-secret");
-        kiteworksConfig.withUsername("username");
-        kiteworksConfig.withPassword("password");
-        kiteworksConfig.withScope("*/*/*");
+        kiteworksConfig.withSignatureKey("abc123")
+                .withAuthorizationGrantType("jwt")
+                .withBaseUri("https://kiteworks.dcj.nsw.gov.au/")
+                .withClientId("client-id")
+                .withClientSecret("client-secret")
+                .withUsername("username@example.com") //The identity, if you are oidc'ing your own jwt broker, then this would be email if sub is not email
+                .withAudience("https://kiteworks.dcj.nsw.gov.au") //This is the kiteworks site in question is the jwt audience restriction
+                .withIssuer("https://myclientsite.com/") //Issuer when configuring $site/cfadmin/customClients API. (a pre-shared url usually)
+                .withPrivateKey("-----BEGIN PRIVATE KEY----- MIIJQg== -----END PRIVATE KEY-----")
+                .withScope("*/*/*");
         when(apiClient.getBaseUri()).thenReturn("https://kiteworks.dcj.nsw.gov.au/");
+        kiteworksService = new KiteworksService(kiteworksConfig);
     }
 
     @Test

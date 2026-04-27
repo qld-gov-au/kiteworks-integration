@@ -1,0 +1,19 @@
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+kiteworks:
+  enabled: true
+  authorization-grant-type: "jwt"
+  base-uri: https://kiteworks.dcj.nsw.gov.au/
+  client-id: your-client-id
+  clientSecret: ${KITEWORKS_CLIENT_SECRET}
+  privateKey: your-private-key
+  audience: your-audience
+  username: your-user-name-email-address
+  scope: 'folders/* files/* mail/*'
+  issuer: https://yourapp.com/
+  access-token-uri: https://kiteworks.dcj.nsw.gov.au/oauth/token
+  user-agent: kiteworks-client 1.0
+  kiteworks-api-version: '24'

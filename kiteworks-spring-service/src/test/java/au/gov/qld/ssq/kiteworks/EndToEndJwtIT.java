@@ -1,6 +1,5 @@
 package au.gov.qld.ssq.kiteworks;
 
-
 import com.kiteworks.client.ApiException;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
@@ -20,8 +19,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest( classes = {KiteworksSpringService.class, ProxyConfig.class})
 @EnableConfigurationProperties
-@ActiveProfiles("cicd-signature")
-public class EndToEndSignatureIT {
+@ActiveProfiles("cicd-jwt")
+public class EndToEndJwtIT {
 
     @Autowired
     private KiteworksService kiteworksService;

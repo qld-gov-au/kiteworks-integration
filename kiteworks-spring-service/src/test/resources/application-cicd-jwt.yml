@@ -1,0 +1,19 @@
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+kiteworks:
+  enabled: true
+  authorization-grant-type: "jwt"
+  baseUri: ${KITEWORKS_BASE_URI}
+  clientId: ${KITEWORKS_CLIENT_ID}
+  clientSecret: ${KITEWORKS_CLIENT_SECRET}
+  privateKey: ${KITEWORKS_PRIVATE_KEY}
+  audience: ${KITEWORKS_AUDIENCE_URI}
+  username: ${KITEWORKS_USER_ID}
+  scope: ${KITEWORKS_CLIENT_APP_SCOPES}
+  issuer: ${KITEWORKS_ISSUER_URI}
+  accessTokenUri: ${KITEWORKS_ACCESS_TOKEN_URI}
+  userAgent: kiteworks-java-client
+  kiteworksApiVersion: 24

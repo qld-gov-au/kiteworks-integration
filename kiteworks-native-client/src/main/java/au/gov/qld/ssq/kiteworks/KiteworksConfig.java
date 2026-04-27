@@ -6,7 +6,8 @@ public class KiteworksConfig {
 
     public enum Mode {
         SIGNATURE("signature"),
-        USER_CREDENTIALS("user_credentials");
+        USER_CREDENTIALS("user_credentials"),
+        JWT("jwt");
 
         private final String value;
 
@@ -42,6 +43,11 @@ public class KiteworksConfig {
     private String accessTokenUri; // e.g. defaults to "baseURI + oauth/token" i.e. https://kiteworks.dcj.nsw.gov.au/oauth/token
     private String userAgent; // e.g. kiteworks-client 1.0
     private String kiteworksApiVersion = "28"; //default latest as of 2025/05
+
+    // JWT required elements
+    private String issuer; // e.g. Identifier of your client. (what is set inside kiteworks. like redirectUri)
+    private String privateKey; // e.g. -----BEGIN PRIVATE KEY----- base64key -----END PRIVATE KEY-----
+    private String audience; // e.g. https://{HOST}
 
 
     public KiteworksConfig() {
@@ -102,10 +108,6 @@ public class KiteworksConfig {
         this.userAgent = userAgent;
     }
 
-    public void setKiteworksApiVersion(String kiteworksApiVersion) {
-        this.kiteworksApiVersion = kiteworksApiVersion;
-    }
-
     public String getBaseUri() {
         return baseUri;
     }
@@ -155,7 +157,7 @@ public class KiteworksConfig {
         return scope;
     }
 
-    public KiteworksConfig withscope(String scope) {
+    public KiteworksConfig withScope(String scope) {
         this.scope = scope;
         return this;
     }
@@ -195,6 +197,10 @@ public class KiteworksConfig {
         return kiteworksApiVersion;
     }
 
+    public void setKiteworksApiVersion(String kiteworksApiVersion) {
+        this.kiteworksApiVersion = kiteworksApiVersion;
+    }
+
     public KiteworksConfig withKiteworksApiVersion(String kiteworksApiVersion) {
         this.kiteworksApiVersion = kiteworksApiVersion;
         return this;
@@ -208,6 +214,11 @@ public class KiteworksConfig {
         this.authorizationGrantType = authorizationGrantType;
     }
 
+    public KiteworksConfig withAuthorizationGrantType(String authorizationGrantType) {
+        this.authorizationGrantType = authorizationGrantType;
+        return this;
+    }
+
     public String getUsername() {
         return username;
     }
@@ -216,11 +227,60 @@ public class KiteworksConfig {
         this.username = username;
     }
 
+    public KiteworksConfig withUsername(String username) {
+        this.username = username;
+        return this;
+    }
+
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public KiteworksConfig withPassword(String password) {
+        this.password = password;
+        return this;
+    }
+
+    public String getIssuer() {
+        return issuer;
+    }
+
+    public void setIssuer(String issuer) {
+        this.issuer = issuer;
+    }
+
+    public KiteworksConfig withIssuer(String issuer) {
+        this.issuer = issuer;
+        return this;
+    }
+
+    public String getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(String privateKey) {
+        this.privateKey = privateKey;
+    }
+
+    public KiteworksConfig withPrivateKey(String privateKey) {
+        this.privateKey = privateKey;
+        return this;
+    }
+
+    public String getAudience() {
+        return audience;
+    }
+
+    public void setAudience(String audience) {
+        this.audience = audience;
+    }
+
+    public KiteworksConfig withAudience(String audience) {
+        this.audience = audience;
+        return this;
     }
 }

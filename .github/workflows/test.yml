@@ -23,23 +23,44 @@ jobs:
       with:
         distribution: 'zulu'
         java-version: '21'
-        cache: 'maven'
+        #cache: 'maven' ## using manual cache for multi project
 
-    - name: Build with Maven
+    - name: Cache Maven packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: pre build with Maven
+      run: mvn clean install -Pskip-gpg-signing -DskipTests
+
+    - name: Build & Verify with Maven
       env:
-        KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
-        KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
-        KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
-        KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
-        KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
-        KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
-        KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
-        KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
-        KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
-        KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
+        # Test required inputs
         KITEWORKS_ACTIVITY_LIST_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST_UUID }}
         KITEWORKS_ACTIVITY_LIST2_UUID: ${{ secrets.KITEWORKS_ACTIVITY_LIST2_UUID }}
-      run: mvn clean install  -Dspring.profiles.active=cicd -Pskip-gpg-signing
+        # All required
+        KITEWORKS_BASE_URI: ${{ secrets.KITEWORKS_BASE_URI }}
+        KITEWORKS_ACCESS_TOKEN_URI: ${{ secrets.KITEWORKS_ACCESS_TOKEN_URI }}
+        KITEWORKS_CLIENT_APP_SCOPES: ${{ secrets.KITEWORKS_CLIENT_APP_SCOPES }}
+        KITEWORKS_CLIENT_ID: ${{ secrets.KITEWORKS_CLIENT_ID }}
+        KITEWORKS_CLIENT_SECRET: ${{ secrets.KITEWORKS_CLIENT_SECRET }}
+        #JWT required elements
+        KITEWORKS_PRIVATE_KEY: ${{ secrets.KITEWORKS_PRIVATE_KEY }}
+        KITEWORKS_AUDIENCE_URI: ${{ secrets.KITEWORKS_AUDIENCE_URI }}
+        KITEWORKS_ISSUER_URI: ${{ secrets.KITEWORKS_ISSUER_URI }}
+        # JWT + Username/Password required
+        KITEWORKS_USERNAME: ${{ secrets.KITEWORKS_USERNAME }}
+        # Username/Password required
+        KITEWORKS_PASSWORD: ${{ secrets.KITEWORKS_PASSWORD }}
+        # Username/Password + Signature required
+        KITEWORKS_REDIRECT_URI: ${{ secrets.KITEWORKS_REDIRECT_URI }}
+        # Signature required
+        KITEWORKS_SIGNATURE_KEY: ${{ secrets.KITEWORKS_SIGNATURE_KEY }}
+        KITEWORKS_USER_ID: ${{ secrets.KITEWORKS_USER_ID }}
+      run: mvn install  -Dspring.profiles.active=cicd -Pskip-gpg-signing
 
     - name: Package artifacts
       run: |
