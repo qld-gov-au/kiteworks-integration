@@ -34,11 +34,13 @@ public class KiteworksService {
 
             if (Objects.isNull(config.getAuthorizationGrantType()) || config.getAuthorizationGrantType().isEmpty()) {
                 LOG.error("Kiteworks mode is not set, defaulting to User Credentials");
-                config.setAuthorizationGrantType(USER_CREDENTIALS.getValue());
+                config.withAuthorizationGrantType(USER_CREDENTIALS.getValue());
             }
 
             Consumer<HttpRequest.Builder> kiteworksOAuthInterceptor;
-            if (SIGNATURE.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
+            if (JWT.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
+                kiteworksOAuthInterceptor = new KitworksJwtOAuthInterceptor(config);
+            } else if (SIGNATURE.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
                 kiteworksOAuthInterceptor = new KiteworksSignatureOAuthInterceptor(config);
             } else if (USER_CREDENTIALS.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
                 kiteworksOAuthInterceptor = new KiteworksUserCredentialOAuthInterceptor(config);

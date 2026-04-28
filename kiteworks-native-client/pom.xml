@@ -20,6 +20,7 @@
         <jackson-annotation-version>2.21</jackson-annotation-version>
         <jackson-databind-nullable-version>0.2.10</jackson-databind-nullable-version>
         <jakarta-annotation-version>3.0.0</jakarta-annotation-version>
+        <io.jsonwebtoken-jjwt-version>0.13.0</io.jsonwebtoken-jjwt-version>
         <beanvalidation-version>3.0.2</beanvalidation-version>
         <httpmime-version>4.5.14</httpmime-version>
         <junit-version>6.0.3</junit-version>
@@ -180,6 +181,12 @@
 
         <dependency><groupId>jakarta.annotation</groupId><artifactId>jakarta.annotation-api</artifactId><version>${jakarta-annotation-version}</version><scope>provided</scope></dependency>
         <dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpmime</artifactId><version>${httpmime-version}</version></dependency>
+
+        <!-- For JWT creation and signing -->
+        <dependency><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-api</artifactId><version>${io.jsonwebtoken-jjwt-version}</version></dependency>
+        <dependency><scope>runtime</scope><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-impl</artifactId><version>${io.jsonwebtoken-jjwt-version}</version></dependency>
+        <dependency><scope>runtime</scope><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-jackson</artifactId><version>${io.jsonwebtoken-jjwt-version}</version></dependency>
+
 
         <!-- ########## Test dependencies ########## -->
         <dependency><scope>test</scope><groupId>org.junit.jupiter</groupId><artifactId>junit-jupiter-api</artifactId><version>${junit-version}</version></dependency>

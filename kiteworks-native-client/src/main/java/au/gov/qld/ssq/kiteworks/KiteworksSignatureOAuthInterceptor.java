@@ -1,5 +1,6 @@
 package au.gov.qld.ssq.kiteworks;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
@@ -7,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URLEncoder;
 import java.net.http.HttpRequest;
@@ -33,7 +35,7 @@ import java.util.function.Consumer;
  * Only use this class for high trust applications that need to access the Kiteworks API as different users. Use with caution.
  *
  * Please use {@link KiteworksUserCredentialOAuthInterceptor} for low trust applications that need to access the Kiteworks API as a single user.
- *
+ * Do note that this is also deprecated. But no plans on removal just yet.
  *
  *
  * Please see the Kiteworks API documentation for more information on OAuth 2.0 authorization.
@@ -45,15 +47,16 @@ import java.util.function.Consumer;
  *
  * Note: Apps using Signature Authorization flow can access any user's content, simply by specifying their email address.
  * As such, these apps should only be accessible by trusted employees with high security clearance.
+ *
+ * Signature Authorization is expected to be phased out by end of 2026 use JWT
+ *
  */
-public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.Builder> {
+@Deprecated(since = "Kiteworks Version 9.3.1-ng30 - 18 Mar 2026, is expected to be removed at the end of 2026")
+public class KiteworksSignatureOAuthInterceptor extends AbstractOAuthInterceptor implements Consumer<HttpRequest.Builder> {
 
     private static final Logger LOG = LoggerFactory.getLogger(KiteworksSignatureOAuthInterceptor.class);
     private final KiteworksConfig config;
-    private String accessToken;
-    private Instant tokenExpiry = Instant.now().minusSeconds(120); //start expired
-    private final ReentrantLock lock = new ReentrantLock();
-    private static final ObjectMapper objectMapper = new ObjectMapper();
+
     private static final String HMAC_ALGORITHM = "HmacSHA1";
     private final Mac mac;
 
@@ -80,91 +83,41 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
     }
 
     @Override
-    public void accept(HttpRequest.Builder builder) {
-        if (isTokenExpired()) {
-            fetchAccessToken();
+    protected KiteworksConfig getConfig() {
+        return config;
+    }
+
+    protected HttpResponse<String> fetchAccessTokenInternal() throws IOException, InterruptedException {
+
+        Map<String, String> formData = new HashMap<>();
+        formData.put("client_id", config.getClientId());
+        formData.put("client_secret", config.getClientSecret());
+        formData.put("grant_type", "authorization_code");
+        formData.put("code", generateSignatureAuthorizationCode());
+        formData.put("scope", config.getScope());
+        formData.put("redirect_uri", config.getRedirectUri());
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(URI.create(config.getAccessTokenUri()))
+                .header("User-Agent", config.getUserAgent())
+                .header("accept", "*/*")
+                .header("cache-control", "no-cache")
+                .header("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
+                .POST(BodyPublishers.ofString(getFormDataAsString(formData)))
+                .build();
+
+        // Parse the response to extract the access token and its expiry time
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        if (response.statusCode() >= 400 && response.statusCode() <= 499) {
+            LOG.error("Failed to fetch access token, incorrect username/signature or client configuration?, username: {}..., client: {}... status code: {} body: {}",
+                    (Objects.isNull(config.getUserId())) ? "Is Null" : config.getUserId().substring(0, config.getUserId().length() / 2),
+                    (Objects.isNull(config.getClientId())) ? "Is Null" : config.getClientId().substring(0, config.getClientId().length() / 2),
+                    response.statusCode(), response.body());
+            throw new RuntimeException("Failed to fetch access token, status code: " + response.statusCode() + " body: " + response.body());
         }
-        builder.header("Authorization", "Bearer " + accessToken);
-        builder.header("X-Accellion-Version", config.getKiteworksApiVersion());
-        builder.header("User-Agent", config.getUserAgent());
+        return response;
     }
-
-    private boolean isTokenExpired() {
-        // Subtract a minute to account for network delays and recollection
-        return Instant.now().isAfter(tokenExpiry.minusSeconds(60));
-    }
-
-    private void fetchAccessToken() {
-        // Get a new token if first. If another process is getting a token, skip unless token is fully expired
-        if (lock.tryLock() || Instant.now().isAfter(tokenExpiry) ) {
-            try {
-                lock.lock();
-                if (!isTokenExpired()) {
-                    return; // Token was refreshed by another thread
-                }
-
-
-                Map<String, String> formData = new HashMap<>();
-                formData.put("client_id", config.getClientId());
-                formData.put("client_secret", config.getClientSecret());
-                formData.put("grant_type", "authorization_code");
-                formData.put("code", generateSignatureAuthorizationCode());
-                formData.put("scope", config.getScope());
-                formData.put("redirect_uri", config.getRedirectUri());
-
-                HttpClient client = HttpClient.newHttpClient();
-                HttpRequest request = HttpRequest.newBuilder()
-                    .uri(URI.create(config.getAccessTokenUri()))
-                    .header("User-Agent", config.getUserAgent())
-                    .header("accept", "*/*")
-                    .header("cache-control", "no-cache")
-                    .header("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8")
-                    .POST(BodyPublishers.ofString(getFormDataAsString(formData)))
-                    .build();
-
-                HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-                if (response.statusCode() >= 400 && response.statusCode() <= 499) {
-                    LOG.error("Failed to fetch access token, incorrect username/password or client configuration?, username: {}..., client: {}... status code: {} body: {}",
-                        (Objects.isNull(config.getUserId()))  ? "Is Null" : config.getUserId().substring(0, config.getUserId().length() / 2),
-                        (Objects.isNull(config.getClientId()))  ? "Is Null" : config.getClientId().substring(0, config.getClientId().length() / 2),
-                            response.statusCode(), response.body());
-                    throw new RuntimeException("Failed to fetch access token, status code: " + response.statusCode() + " body: " + response.body());
-                }
-                if (response.statusCode() != 200) {
-                    LOG.error("Failed to fetch access token, status code: {}", response.statusCode());
-                    throw new RuntimeException("Failed to fetch access token, status code: " + response.statusCode());
-                }
-                // Parse the response to extract the access token and its expiry time
-                JsonNode jsonNode = objectMapper.readTree(response.body());
-                accessToken = jsonNode.get("access_token").asText();
-                int expiresIn = jsonNode.get("expires_in").asInt();
-                tokenExpiry = Instant.now().plusSeconds(expiresIn);
-
-            } catch (InterruptedException e) {
-                //no need
-                Thread.currentThread().interrupt();
-            } catch (Exception e) {
-                e.printStackTrace();
-                throw new RuntimeException("Failed to fetch access token", e);
-            } finally {
-                lock.unlock();
-            }
-        }
-    }
-
-    private static String getFormDataAsString(Map<String, String> formData) {
-        StringBuilder formBodyBuilder = new StringBuilder();
-        for (Map.Entry<String, String> singleEntry : formData.entrySet()) {
-            if (!formBodyBuilder.isEmpty()) {
-                formBodyBuilder.append("&");
-            }
-            formBodyBuilder.append(URLEncoder.encode(singleEntry.getKey(), StandardCharsets.UTF_8));
-            formBodyBuilder.append("=");
-            formBodyBuilder.append(URLEncoder.encode(singleEntry.getValue(), StandardCharsets.UTF_8));
-        }
-        return formBodyBuilder.toString();
-    }
-
 
     private static final SecureRandom NONCES = new SecureRandom();
     private static final String AUTH_CODE_DELIMITER = "|@@|";
@@ -192,7 +145,6 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
         );
     }
 
-
     public final class Hex {
         private static final char[] HEX = "0123456789abcdef".toCharArray();
 
@@ -214,9 +166,5 @@ public class KiteworksSignatureOAuthInterceptor implements Consumer<HttpRequest.
 
             return result;
         }
-    }
-
-    public static boolean isEmpty(final CharSequence cs) {
-        return cs == null || cs.isEmpty();
     }
 }
