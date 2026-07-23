@@ -18,7 +18,7 @@
 
         <jackson-version>2.22.1</jackson-version>
         <jackson-annotation-version>2.22</jackson-annotation-version>
-        <jackson-databind-nullable-version>0.2.10</jackson-databind-nullable-version>
+        <jackson-databind-nullable-version>0.2.11</jackson-databind-nullable-version>
         <jakarta-annotation-version>3.0.0</jakarta-annotation-version>
         <io.jsonwebtoken-jjwt-version>0.13.0</io.jsonwebtoken-jjwt-version>
         <beanvalidation-version>3.0.2</beanvalidation-version>
