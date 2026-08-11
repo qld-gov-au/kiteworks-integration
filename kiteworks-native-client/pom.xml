@@ -5,6 +5,7 @@
         <groupId>au.gov.qld.services.kiteworks</groupId>
         <artifactId>kiteworks_integration</artifactId>
         <version>2.1.2-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <name>Kiteworks Native Client for Qld Government</name>
     <artifactId>kiteworks-native-client</artifactId>
@@ -15,10 +16,8 @@
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <jackson-version>2.22.1</jackson-version>
-        <jackson-annotation-version>2.22</jackson-annotation-version>
-        <jackson-databind-nullable-version>0.2.11</jackson-databind-nullable-version>
+        
+        
         <jakarta-annotation-version>3.0.0</jakarta-annotation-version>
         <io.jsonwebtoken-jjwt-version>0.13.0</io.jsonwebtoken-jjwt-version>
         <beanvalidation-version>3.0.2</beanvalidation-version>
@@ -171,16 +170,6 @@
         <dependency><groupId>au.gov.qld.services.kiteworks</groupId><artifactId>kiteworks-swagger-gen</artifactId><version>2.1.2-SNAPSHOT</version></dependency>
 
         <dependency><groupId>org.slf4j</groupId><artifactId>slf4j-api</artifactId><version>2.0.18</version><scope>compile</scope></dependency>
-
-        <!-- JSON processing: jackson -->
-        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-core</artifactId><version>${jackson-version}</version></dependency>
-        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-annotations</artifactId><version>${jackson-annotation-version}</version></dependency>
-        <dependency><groupId>com.fasterxml.jackson.core</groupId><artifactId>jackson-databind</artifactId><version>${jackson-version}</version></dependency>
-        <dependency><groupId>com.fasterxml.jackson.datatype</groupId><artifactId>jackson-datatype-jsr310</artifactId><version>${jackson-version}</version></dependency>
-        <dependency><groupId>org.openapitools</groupId><artifactId>jackson-databind-nullable</artifactId><version>${jackson-databind-nullable-version}</version></dependency>
-
-        <dependency><groupId>jakarta.annotation</groupId><artifactId>jakarta.annotation-api</artifactId><version>${jakarta-annotation-version}</version><scope>provided</scope></dependency>
-        <dependency><groupId>org.apache.httpcomponents</groupId><artifactId>httpmime</artifactId><version>${httpmime-version}</version></dependency>
 
         <!-- For JWT creation and signing -->
         <dependency><groupId>io.jsonwebtoken</groupId><artifactId>jjwt-api</artifactId><version>${io.jsonwebtoken-jjwt-version}</version></dependency>
