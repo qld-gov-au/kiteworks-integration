@@ -2,6 +2,21 @@
 ## [Unreleased]
 
 
+<a name="v2.1.2"></a>
+## [v2.1.2] - 2026-08-11
+### Pull Requests
+- Merge pull request [#250](https://github.com/qld-gov-au/kiteworks-integration/issues/250) from qld-gov-au/dependabot/maven/junit-jupiter-c199231783
+  - Merge pull request [#249](https://github.com/qld-gov-au/kiteworks-integration/issues/249) from qld-gov-au/dependabot/github_actions/actions/setup-java-5.7.0
+  - Merge pull request [#248](https://github.com/qld-gov-au/kiteworks-integration/issues/248) from qld-gov-au/dependabot/github_actions/actions/setup-java-5.6.0
+  - Merge pull request [#247](https://github.com/qld-gov-au/kiteworks-integration/issues/247) from qld-gov-au/dependabot/maven/spotless-maven-plugin-77d3c92778
+  - Merge pull request [#246](https://github.com/qld-gov-au/kiteworks-integration/issues/246) from qld-gov-au/dependabot/maven/jackson-d5944155d3
+  - Merge pull request [#245](https://github.com/qld-gov-au/kiteworks-integration/issues/245) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-7a219d1263
+  - Merge pull request [#244](https://github.com/qld-gov-au/kiteworks-integration/issues/244) from qld-gov-au/dependabot/maven/junit-jupiter-a48388cc41
+  - Merge pull request [#243](https://github.com/qld-gov-au/kiteworks-integration/issues/243) from qld-gov-au/dependabot/maven/jackson-b20c4b8e37
+  - Merge pull request [#242](https://github.com/qld-gov-au/kiteworks-integration/issues/242) from qld-gov-au/dependabot/maven/spotless-maven-plugin-78d5451900
+  - Merge pull request [#241](https://github.com/qld-gov-au/kiteworks-integration/issues/241) from qld-gov-au/update-changelog
+  
+  
 <a name="v2.1.1"></a>
 ## [v2.1.1] - 2026-06-29
 ### Pull Requests
@@ -28,9 +43,6 @@
   - Merge pull request [#218](https://github.com/qld-gov-au/kiteworks-integration/issues/218) from qld-gov-au/update-changelog
   
   
-<a name="kiteworks_integration-2.1.0"></a>
-## [kiteworks_integration-2.1.0] - 2026-04-29
-
 <a name="v2.1.0"></a>
 ## [v2.1.0] - 2026-04-29
 ### Pull Requests
@@ -70,9 +82,6 @@
   - Merge pull request [#166](https://github.com/qld-gov-au/kiteworks-integration/issues/166) from qld-gov-au/update-changelog
   
   
-<a name="2.0.5"></a>
-## [2.0.5] - 2025-12-02
-
 <a name="v2.0.5"></a>
 ## [v2.0.5] - 2025-12-02
 ### Pull Requests
@@ -97,9 +106,6 @@
   - Merge pull request [#147](https://github.com/qld-gov-au/kiteworks-integration/issues/147) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-0f3d110030
   
   
-<a name="2.0.4"></a>
-## [2.0.4] - 2025-10-01
-
 <a name="v2.0.4"></a>
 ## [v2.0.4] - 2025-10-01
 ### Pull Requests
@@ -111,9 +117,6 @@
   - Merge pull request [#145](https://github.com/qld-gov-au/kiteworks-integration/issues/145) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/commons-io-commons-io-2.20.0
   
   
-<a name="2.0.3"></a>
-## [2.0.3] - 2025-10-01
-
 <a name="v2.0.3"></a>
 ## [v2.0.3] - 2025-10-01
 
@@ -136,14 +139,8 @@
   - Merge pull request [#127](https://github.com/qld-gov-au/kiteworks-integration/issues/127) from qld-gov-au/update-changelog
   
   
-<a name="2.0.1"></a>
-## [2.0.1] - 2025-09-15
-
 <a name="v2.0.1"></a>
 ## [v2.0.1] - 2025-09-15
-
-<a name="2.0.0"></a>
-## [2.0.0] - 2025-09-15
 
 <a name="v2.0.0"></a>
 ## [v2.0.0] - 2025-09-15
@@ -185,27 +182,18 @@
   - Merge pull request [#83](https://github.com/qld-gov-au/kiteworks-integration/issues/83) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-5.6.0
   
   
-<a name="1.0.20"></a>
-## [1.0.20] - 2025-05-29
-
 <a name="v1.0.20"></a>
 ## [v1.0.20] - 2025-05-29
 ### Pull Requests
 - Merge pull request [#82](https://github.com/qld-gov-au/kiteworks-integration/issues/82) from qld-gov-au/update-changelog
   
   
-<a name="1.0.19"></a>
-## [1.0.19] - 2025-05-29
-
 <a name="v1.0.19"></a>
 ## [v1.0.19] - 2025-05-29
 ### Pull Requests
 - Merge pull request [#81](https://github.com/qld-gov-au/kiteworks-integration/issues/81) from qld-gov-au/fix/FileShouldBeFileNotJsonObjectRead
   
   
-<a name="1.0.18"></a>
-## [1.0.18] - 2025-05-28
-
 <a name="v1.0.18"></a>
 ## [v1.0.18] - 2025-05-28
 ### Pull Requests
@@ -216,18 +204,12 @@
   
 <a name="v1.0.17"></a>
 ## [v1.0.17] - 2025-05-26
-
-<a name="1.0.17"></a>
-## [1.0.17] - 2025-05-26
 ### Pull Requests
 - Merge pull request [#67](https://github.com/qld-gov-au/kiteworks-integration/issues/67) from qld-gov-au/update-changelog
   - Merge pull request [#69](https://github.com/qld-gov-au/kiteworks-integration/issues/69) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.springframework.boot-spring-boot-dependencies-3.5.0
   - Merge pull request [#68](https://github.com/qld-gov-au/kiteworks-integration/issues/68) from qld-gov-au/dependabot/maven/org.springframework.boot-spring-boot-dependencies-3.5.0
   
   
-<a name="1.0.16"></a>
-## [1.0.16] - 2025-05-23
-
 <a name="v1.0.16"></a>
 ## [v1.0.16] - 2025-05-23
 ### Pull Requests
@@ -237,9 +219,6 @@
   
 <a name="v1.0.15"></a>
 ## [v1.0.15] - 2025-05-22
-
-<a name="1.0.15"></a>
-## [1.0.15] - 2025-05-22
 ### Pull Requests
 - Merge pull request [#45](https://github.com/qld-gov-au/kiteworks-integration/issues/45) from qld-gov-au/dependabot/maven/org.openapitools-openapi-generator-maven-plugin-7.13.0
   - Merge pull request [#62](https://github.com/qld-gov-au/kiteworks-integration/issues/62) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.openapitools-openapi-generator-maven-plugin-7.13.0
@@ -269,9 +248,6 @@
   
 <a name="v1.0.14"></a>
 ## [v1.0.14] - 2025-05-21
-
-<a name="1.0.14"></a>
-## [1.0.14] - 2025-05-21
 ### Pull Requests
 - Merge pull request [#10](https://github.com/qld-gov-au/kiteworks-integration/issues/10) from qld-gov-au/dependabot/github_actions/peter-evans/create-pull-request-7
   - Merge pull request [#13](https://github.com/qld-gov-au/kiteworks-integration/issues/13) from qld-gov-au/dependabot/maven/org.slf4j-slf4j-api-2.0.17
@@ -310,23 +286,14 @@
 <a name="v1.0.13"></a>
 ## [v1.0.13] - 2025-05-08
 
-<a name="1.0.13"></a>
-## [1.0.13] - 2025-05-08
-
 <a name="v1.0.12"></a>
 ## [v1.0.12] - 2025-05-08
-
-<a name="1.0.12"></a>
-## [1.0.12] - 2025-05-08
 
 <a name="v1.0.11"></a>
 ## [v1.0.11] - 2025-02-05
 
 <a name="v1.0.10"></a>
 ## [v1.0.10] - 2025-02-05
-
-<a name="1.0.10"></a>
-## [1.0.10] - 2025-02-05
 ### Pull Requests
 - Merge pull request [#4](https://github.com/qld-gov-au/kiteworks-integration/issues/4) from qld-gov-au/update-changelog
   
@@ -369,42 +336,27 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.1...HEAD
-[v2.1.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/kiteworks_integration-2.1.0...v2.1.1
-[kiteworks_integration-2.1.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.0...kiteworks_integration-2.1.0
-[v2.1.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.5...v2.1.0
-[2.0.5]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.5...2.0.5
-[v2.0.5]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.4...v2.0.5
-[2.0.4]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.4...2.0.4
-[v2.0.4]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.3...v2.0.4
-[2.0.3]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.3...2.0.3
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.2...HEAD
+[v2.1.2]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.1...v2.1.2
+[v2.1.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.0...v2.1.1
+[v2.1.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.5...v2.1.0
+[v2.0.5]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.4...v2.0.5
+[v2.0.4]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.3...v2.0.4
 [v2.0.3]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.2...v2.0.3
-[v2.0.2]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.1...v2.0.2
-[2.0.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.1...2.0.1
-[v2.0.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/2.0.0...v2.0.1
-[2.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.0...2.0.0
-[v2.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.20...v2.0.0
-[1.0.20]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.20...1.0.20
-[v1.0.20]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.19...v1.0.20
-[1.0.19]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.19...1.0.19
-[v1.0.19]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.18...v1.0.19
-[1.0.18]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.18...1.0.18
+[v2.0.2]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.1...v2.0.2
+[v2.0.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.0...v2.0.1
+[v2.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.20...v2.0.0
+[v1.0.20]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.19...v1.0.20
+[v1.0.19]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.18...v1.0.19
 [v1.0.18]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.17...v1.0.18
-[v1.0.17]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.17...v1.0.17
-[1.0.17]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.16...1.0.17
-[1.0.16]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.16...1.0.16
+[v1.0.17]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.16...v1.0.17
 [v1.0.16]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.15...v1.0.16
-[v1.0.15]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.15...v1.0.15
-[1.0.15]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.14...1.0.15
-[v1.0.14]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.14...v1.0.14
-[1.0.14]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.13...1.0.14
-[v1.0.13]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.13...v1.0.13
-[1.0.13]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.12...1.0.13
-[v1.0.12]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.12...v1.0.12
-[1.0.12]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.11...1.0.12
+[v1.0.15]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.14...v1.0.15
+[v1.0.14]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.13...v1.0.14
+[v1.0.13]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.12...v1.0.13
+[v1.0.12]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.11...v1.0.12
 [v1.0.11]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.10...v1.0.11
-[v1.0.10]: https://github.com/qld-gov-au/kiteworks-integration/compare/1.0.10...v1.0.10
-[1.0.10]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.9...1.0.10
+[v1.0.10]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.9...v1.0.10
 [v1.0.9]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.8...v1.0.9
 [v1.0.8]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.7...v1.0.8
 [v1.0.7]: https://github.com/qld-gov-au/kiteworks-integration/compare/v1.0.6...v1.0.7
