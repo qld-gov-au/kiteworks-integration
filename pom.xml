@@ -43,7 +43,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jackson.version.databind>2.22.3</jackson.version.databind>
-        <jackson-databind-nullable-version>0.2.11</jackson-databind-nullable-version>
+        <jackson-databind-nullable-version>0.2.12</jackson-databind-nullable-version>
     </properties>
 
     <dependencyManagement>
