@@ -5,7 +5,7 @@ import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
 import com.kiteworks.client.model.ActivityList;
-import com.kiteworks.client.model.RestFoldersSharedGet200Response;
+import com.kiteworks.client.model.RestFoldersActionsRecoverPatch200Response;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -51,7 +51,7 @@ public class EndToEndJwtIT {
             System.out.println("could not get active profile");
         }
 
-        RestFoldersSharedGet200Response foldersSharedGet = foldersApi.restFoldersSharedGet(null, null, null, null, null, null, null, null, null, null, null,
+        RestFoldersActionsRecoverPatch200Response foldersSharedGet = foldersApi.restFoldersSharedGet(null, null, null, null, null, null, null, null, null, null, null,
             null, null, null, null, null, null, null, null, null, null, null,
             null, null, null, null, null, null, null, null, null, null, null);
         assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);

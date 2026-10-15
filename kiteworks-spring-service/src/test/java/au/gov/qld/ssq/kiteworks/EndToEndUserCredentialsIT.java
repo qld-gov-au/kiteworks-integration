@@ -5,7 +5,7 @@ import com.kiteworks.client.ApiException;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
-import com.kiteworks.client.model.RestFoldersSharedGet200Response;
+import com.kiteworks.client.model.RestFoldersActionsRecoverPatch200Response;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -50,7 +50,7 @@ public class EndToEndUserCredentialsIT {
             System.out.println("could not get active profile");
         }
 
-        RestFoldersSharedGet200Response foldersSharedGet = foldersApi.restFoldersSharedGet(null, null, null, null, null, null, null, null, null, null, null,
+        RestFoldersActionsRecoverPatch200Response foldersSharedGet = foldersApi.restFoldersSharedGet(null, null, null, null, null, null, null, null, null, null, null,
             null, null, null, null, null, null, null, null, null, null, null,
             null, null, null, null, null, null, null, null, null, null, null);
         assertThat(foldersSharedGet.getMetadata().getTotal()).isGreaterThan(1);

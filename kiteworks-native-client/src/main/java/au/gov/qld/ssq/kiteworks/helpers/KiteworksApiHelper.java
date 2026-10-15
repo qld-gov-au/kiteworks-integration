@@ -8,10 +8,7 @@ import com.kiteworks.client.ApiException;
 import com.kiteworks.client.ApiResponse;
 import com.kiteworks.client.api.FilesApi;
 import com.kiteworks.client.api.FoldersApi;
-import com.kiteworks.client.model.ActivityList;
-import com.kiteworks.client.model.FolderChildrenFiles;
-import com.kiteworks.client.model.RestDliFilesIdVersionsGet200Response;
-import com.kiteworks.client.model.Version;
+import com.kiteworks.client.model.*;
 
 import java.io.File;
 import java.util.List;
@@ -69,7 +66,7 @@ public class KiteworksApiHelper {
     }
 
     // %s/folders/%%s/actions/file
-    public ApiResponse<Void> doUpload(RestFoldersIdActionsFilePostRequestBuilder builder) throws ApiException {
+    public ApiResponse<ModelFile> doUpload(RestFoldersIdActionsFilePostRequestBuilder builder) throws ApiException {
         return filesApi.restFoldersIdActionsFilePostWithHttpInfo(
             builder.getId(),
             builder.getBody(),

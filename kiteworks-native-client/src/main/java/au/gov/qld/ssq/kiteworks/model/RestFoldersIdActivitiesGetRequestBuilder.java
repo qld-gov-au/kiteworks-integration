@@ -1,5 +1,6 @@
 package au.gov.qld.ssq.kiteworks.model;
 
+import java.time.LocalDate;
 import java.util.UUID;
 
 public class RestFoldersIdActivitiesGetRequestBuilder {
@@ -7,8 +8,8 @@ public class RestFoldersIdActivitiesGetRequestBuilder {
     private  Integer noDayBack;
     private  Integer startTime;
     private  Integer endTime;
-    private  String startDate;
-    private  String endDate;
+    private  LocalDate startDate;
+    private  LocalDate endDate;
     private  String filter;
     private  String search;
     private  String type;
@@ -57,20 +58,20 @@ public class RestFoldersIdActivitiesGetRequestBuilder {
         return this;
     }
 
-    public String getStartDate() {
+    public LocalDate getStartDate() {
         return startDate;
     }
 
-    public RestFoldersIdActivitiesGetRequestBuilder withStartDate(String startDate) {
+    public RestFoldersIdActivitiesGetRequestBuilder withStartDate(LocalDate startDate) {
         this.startDate = startDate;
         return this;
     }
 
-    public String getEndDate() {
+    public LocalDate getEndDate() {
         return endDate;
     }
 
-    public RestFoldersIdActivitiesGetRequestBuilder withEndDate(String endDate) {
+    public RestFoldersIdActivitiesGetRequestBuilder withEndDate(LocalDate endDate) {
         this.endDate = endDate;
         return this;
     }

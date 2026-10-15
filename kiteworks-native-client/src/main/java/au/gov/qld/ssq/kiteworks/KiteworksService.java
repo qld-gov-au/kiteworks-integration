@@ -7,11 +7,10 @@ import com.kiteworks.client.api.FoldersApi;
 import com.kiteworks.client.api.UploadsApi;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import tools.jackson.core.StreamReadFeature;
+import tools.jackson.databind.ObjectMapper;
 
-import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
-import java.text.SimpleDateFormat;
-import java.util.Locale;
 import java.util.Objects;
 import java.util.function.Consumer;
 
@@ -40,15 +39,16 @@ public class KiteworksService {
             Consumer<HttpRequest.Builder> kiteworksOAuthInterceptor;
             if (JWT.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
                 kiteworksOAuthInterceptor = new KitworksJwtOAuthInterceptor(config);
-            } else if (SIGNATURE.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
-                kiteworksOAuthInterceptor = new KiteworksSignatureOAuthInterceptor(config);
             } else if (USER_CREDENTIALS.equals(KiteworksConfig.Mode.fromValue(config.getAuthorizationGrantType()))) {
                 kiteworksOAuthInterceptor = new KiteworksUserCredentialOAuthInterceptor(config);
             } else {
                 throw new IllegalArgumentException("Invalid mode: " + config.getAuthorizationGrantType());
             }
+            ObjectMapper mapper =  ApiClient.createDefaultObjectMapper().rebuild()
+                    .configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true)
+                    .build();
 
-            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder(), ApiClient.createDefaultObjectMapper(), config.getBaseUri());
+            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder(), mapper, config.getBaseUri());
             apiClient.setRequestInterceptor(kiteworksOAuthInterceptor);
         }
         return apiClient;

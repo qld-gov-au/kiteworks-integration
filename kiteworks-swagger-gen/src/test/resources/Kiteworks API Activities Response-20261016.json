@@ -1,0 +1,4024 @@
+{
+  "data": [
+    {
+      "id": 17315551,
+      "created": "2026-10-15T22:13:13+0000",
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders/RRRR: Viewed file RRRR_ALL_20261006010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "7c7c107e-0d01-1bae-a93a-bf1c11111111",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "7c7c107e-0d01-1bae-a93a-bf1c11111111"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "1e3b133e-3511-16a2-bb01-11ede90c0771",
+          "name": "RRRR_ALL_20261006010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261006010036.csv",
+          "size": 13510,
+          "ec_source": null,
+          "file_id": "11561317-11a2-11d1-b207-70959903ab51",
+          "hash_algo": "md5",
+          "hash": "17115de69e6b35d95a1d711b6061f730",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "112173b11ca19afda013167391b35f1c291cd1e173b23123d60f02f639e51c65"
+            },
+            {
+              "algo": "md5",
+              "hash": "17115de69e6b35d95a1d711b6061f730"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "d6f0aa1a-ca12-127a-a2cc-d1ba5ab119b1"
+      }
+    },
+    {
+      "id": 17315523,
+      "created": "2026-10-15T21:11:21+0000",
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders/RRRR: Viewed file RRRR_ALL_20261006010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "7c7c107e-0d01-1bae-a93a-bf1c11111111",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "7c7c107e-0d01-1bae-a93a-bf1c11111111"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "1e3b133e-3511-16a2-bb01-11ede90c0771",
+          "name": "RRRR_ALL_20261006010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261006010036.csv",
+          "size": 13510,
+          "ec_source": null,
+          "file_id": "11561317-11a2-11d1-b207-70959903ab51",
+          "hash_algo": "md5",
+          "hash": "17115de69e6b35d95a1d711b6061f730",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "112173b11ca19afda013167391b35f1c291cd1e173b23123d60f02f639e51c65"
+            },
+            {
+              "algo": "md5",
+              "hash": "17115de69e6b35d95a1d711b6061f730"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "030e16b1-3ef9-1f03-bb11-a65110c90373"
+      }
+    },
+    {
+      "id": 17315521,
+      "created": "2026-10-15T21:16:00+0000",
+      "event": "view_file",
+      "message": "folder_path/with/sub/folders/RRRR: Viewed file RRRR_ALL_20261001010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "7c7c107e-0d01-1bae-a93a-bf1c11111111",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "7c7c107e-0d01-1bae-a93a-bf1c11111111"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "2d6d61fe-11b3-11f0-101e-5c11107d2ce5",
+          "name": "RRRR_ALL_20261001010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261001010036.csv",
+          "size": 21535,
+          "ec_source": null,
+          "file_id": "5110e111-1211-1bc6-9bc1-ddb6ce176e12",
+          "hash_algo": "md5",
+          "hash": "f161925ae11ac1713b7213c92bc52697",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "1f211d19679217969e6c9a0ba590e0b60223c3dcc19c5c9171761e2511f35e1a"
+            },
+            {
+              "algo": "md5",
+              "hash": "f161925ae11ac1713b7213c92bc52697"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "error": null,
+        "range": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "9cf015aa-ec21-13a9-a9ca-a15e10a0352a"
+      }
+    },
+    {
+      "id": 17315111,
+      "created": "2026-10-15T15:00:39+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261016010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "56533f39-3926-1ebb-ba36-601131f1e117",
+          "name": "RRRR_ALL_20261016010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261016010031.csv",
+          "size": 22170,
+          "ec_source": null,
+          "file_id": "1d1dd711-1cf1-11a6-9c6a-3af17ff1ced9",
+          "hash_algo": "md5",
+          "hash": "5d160e3cbb131aa9952ac1b5c36501d0",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "5d160e3cbb131aa9952ac1b5c36501d0"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "716af152-5926-19ce-93b1-3590bfa0e602"
+      }
+    },
+    {
+      "id": 17311157,
+      "created": "2026-10-11T15:00:39+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261015010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "391af150-19b1-1111-bc1c-a3a3e50c1e56",
+          "name": "RRRR_ALL_20261015010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261015010031.csv",
+          "size": 21101,
+          "ec_source": null,
+          "file_id": "6909bebb-7e1e-1dac-bf0c-3c95b311ca15",
+          "hash_algo": "md5",
+          "hash": "0e59cab7f6b69affeb1a7a111da9fd15",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "0e59cab7f6b69affeb1a7a111da9fd15"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "5263a111-a191-13c1-a1d1-dd10f021b639"
+      }
+    },
+    {
+      "id": 17311312,
+      "created": "2026-10-13T22:56:15+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261011010011.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "13a539d9-561f-17e2-11de-0202071b1d11",
+          "name": "RRRR_ALL_20261011010011.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261011010011.csv",
+          "size": 32173,
+          "ec_source": null,
+          "file_id": "3a12c19d-3cdd-1e5d-bc11-d67179c5dd71",
+          "hash_algo": "md5",
+          "hash": "d11730201551a011c05f1f9119b1c63a",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "1cafb1622911f0c0ce51b9ee130a693a63056c1371bf1b1b1f15100dca991129"
+            },
+            {
+              "algo": "md5",
+              "hash": "d11730201551a011c05f1f9119b1c63a"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 32173,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "c162e66d-d267-1fe0-a11d-3b671022c05b",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17311311,
+      "created": "2026-10-13T22:51:31+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261013010013.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "9e111d56-e166-1f32-9d5f-e1feb0c7cde1",
+          "name": "RRRR_ALL_20261013010013.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261013010013.csv",
+          "size": 33513,
+          "ec_source": null,
+          "file_id": "2b165562-29ad-1169-9c96-d031911673c1",
+          "hash_algo": "md5",
+          "hash": "b79311bf31a1b9131707d01e36553229",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "af191d6c59e195b111b51ea73ebfa1e1ec5c321aada7907ae2ae511f2111c715"
+            },
+            {
+              "algo": "md5",
+              "hash": "b79311bf31a1b9131707d01e36553229"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 33513,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "dc0f3211-d119-1f12-bfd1-ebc110e5c129",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17311179,
+      "created": "2026-10-13T15:00:12+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261011010011.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "13a539d9-561f-17e2-11de-0202071b1d11",
+          "name": "RRRR_ALL_20261011010011.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261011010011.csv",
+          "size": 32173,
+          "ec_source": null,
+          "file_id": "3a12c19d-3cdd-1e5d-bc11-d67179c5dd71",
+          "hash_algo": "md5",
+          "hash": "d11730201551a011c05f1f9119b1c63a",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "d11730201551a011c05f1f9119b1c63a"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "2a77955d-1b06-19b1-b2b0-11a1e2921f11"
+      }
+    },
+    {
+      "id": 17313513,
+      "created": "2026-10-12T15:00:11+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261013010013.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "9e111d56-e166-1f32-9d5f-e1feb0c7cde1",
+          "name": "RRRR_ALL_20261013010013.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261013010013.csv",
+          "size": 33513,
+          "ec_source": null,
+          "file_id": "2b165562-29ad-1169-9c96-d031911673c1",
+          "hash_algo": "md5",
+          "hash": "b79311bf31a1b9131707d01e36553229",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "b79311bf31a1b9131707d01e36553229"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "e1b99bbe-11eb-132d-9171-ccf271701922"
+      }
+    },
+    {
+      "id": 17313199,
+      "created": "2026-10-12T09:09:55+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261001010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "2d6d61fe-11b3-11f0-101e-5c11107d2ce5",
+          "name": "RRRR_ALL_20261001010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261001010036.csv",
+          "size": 21535,
+          "ec_source": null,
+          "file_id": "5110e111-1211-1bc6-9bc1-ddb6ce176e12",
+          "hash_algo": "md5",
+          "hash": "f161925ae11ac1713b7213c92bc52697",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "1f211d19679217969e6c9a0ba590e0b60223c3dcc19c5c9171761e2511f35e1a"
+            },
+            {
+              "algo": "md5",
+              "hash": "f161925ae11ac1713b7213c92bc52697"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21535,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "1adbad53-ca0d-111f-9a6e-ce0c19ca7f9e",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17313191,
+      "created": "2026-10-12T09:01:01+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261002010039.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "3d203223-131d-1b66-9ecf-ba1bd1a30ce0",
+          "name": "RRRR_ALL_20261002010039.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261002010039.csv",
+          "size": 21719,
+          "ec_source": null,
+          "file_id": "1299111e-31bc-1f73-903c-1fc109a0d0d1",
+          "hash_algo": "md5",
+          "hash": "3221bf11c51b11901b725a1a1a61c5a6",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "dae5eb616a3b1001ace1c6b1e0c3dc117d13e5a1d3591c1513107965a299ae15"
+            },
+            {
+              "algo": "md5",
+              "hash": "3221bf11c51b11901b725a1a1a61c5a6"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21719,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "9e96a139-daa0-12e7-a576-7cc2cb3dd11c",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17313197,
+      "created": "2026-10-12T09:06:53+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261003010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "69dae7cc-1972-1192-bdc2-b7d6bad97ebd",
+          "name": "RRRR_ALL_20261003010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261003010036.csv",
+          "size": 15332,
+          "ec_source": null,
+          "file_id": "12d15919-3502-17f6-971a-fdbe55b5b31f",
+          "hash_algo": "md5",
+          "hash": "20733cd0fda711c3f60ea02901ea10ac",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "16c1169b261c1221e6a62e7203ebe99e91a21d19d1d9919bfc11c131bfe5312e"
+            },
+            {
+              "algo": "md5",
+              "hash": "20733cd0fda711c3f60ea02901ea10ac"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 15332,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "cfd699e1-167a-1165-a19b-7fe13cb22313",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17313196,
+      "created": "2026-10-12T09:01:10+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261005010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "11fb51f7-fee3-1fa9-aaea-01901a237502",
+          "name": "RRRR_ALL_20261005010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261005010031.csv",
+          "size": 21901,
+          "ec_source": null,
+          "file_id": "56305e97-d662-135c-a0f0-1129e1a12bbe",
+          "hash_algo": "md5",
+          "hash": "c12fc3d323f22f5d0bcc01719576191d",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "751c9c1a21bd71e10d60cbbfdacd6be33b5d23b73b1a1b301e7d9ce2bd1301f2"
+            },
+            {
+              "algo": "md5",
+              "hash": "c12fc3d323f22f5d0bcc01719576191d"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21901,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "afa93179-e31e-1151-bfc1-129a7331672b",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17313195,
+      "created": "2026-10-12T09:03:16+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261006010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "1e3b133e-3511-16a2-bb01-11ede90c0771",
+          "name": "RRRR_ALL_20261006010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261006010036.csv",
+          "size": 13510,
+          "ec_source": null,
+          "file_id": "11561317-11a2-11d1-b207-70959903ab51",
+          "hash_algo": "md5",
+          "hash": "17115de69e6b35d95a1d711b6061f730",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "112173b11ca19afda013167391b35f1c291cd1e173b23123d60f02f639e51c65"
+            },
+            {
+              "algo": "md5",
+              "hash": "17115de69e6b35d95a1d711b6061f730"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 13510,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "1a2c57e7-2a12-1727-9f97-1c6e62ca7deb",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17313101,
+      "created": "2026-10-12T05:55:11+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20261006010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "1e3b133e-3511-16a2-bb01-11ede90c0771",
+          "name": "RRRR_ALL_20261006010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261006010036.csv",
+          "size": 13510,
+          "ec_source": null,
+          "file_id": "11561317-11a2-11d1-b207-70959903ab51",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "dc1d011e-d6af-1c17-ae21-ca663eb1976d",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17313103,
+      "created": "2026-10-12T05:55:39+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20261005010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "11fb51f7-fee3-1fa9-aaea-01901a237502",
+          "name": "RRRR_ALL_20261005010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261005010031.csv",
+          "size": 21901,
+          "ec_source": null,
+          "file_id": "56305e97-d662-135c-a0f0-1129e1a12bbe",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "aaaaae2f-1f17-10d6-9292-3213c7912a2a",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17313165,
+      "created": "2026-10-11T23:12:17+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20261003010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "69dae7cc-1972-1192-bdc2-b7d6bad97ebd",
+          "name": "RRRR_ALL_20261003010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261003010036.csv",
+          "size": 15332,
+          "ec_source": null,
+          "file_id": "12d15919-3502-17f6-971a-fdbe55b5b31f",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "2ab957de-cc21-19e7-b026-1e3e912229a2",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17313161,
+      "created": "2026-10-11T23:12:05+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20261002010039.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "3d203223-131d-1b66-9ecf-ba1bd1a30ce0",
+          "name": "RRRR_ALL_20261002010039.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261002010039.csv",
+          "size": 21719,
+          "ec_source": null,
+          "file_id": "1299111e-31bc-1f73-903c-1fc109a0d0d1",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "b1a51a95-dac2-11a1-9097-af69207a11d3",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17313160,
+      "created": "2026-10-11T23:11:53+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20261001010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "2d6d61fe-11b3-11f0-101e-5c11107d2ce5",
+          "name": "RRRR_ALL_20261001010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261001010036.csv",
+          "size": 21535,
+          "ec_source": null,
+          "file_id": "5110e111-1211-1bc6-9bc1-ddb6ce176e12",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "1b1cce12-c603-109a-b011-1c017a11d525",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17313151,
+      "created": "2026-10-11T23:31:10+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261012010013.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "fb1d0a56-1256-17a3-a36b-2cad1161f3de",
+          "name": "RRRR_ALL_20261012010013.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261012010013.csv",
+          "size": 37061,
+          "ec_source": null,
+          "file_id": "7b5ac17c-6160-19fa-9d59-a16d1d0197be",
+          "hash_algo": "md5",
+          "hash": "1c1aa676712317e7e7b712dcbc2b2b16",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "ce211e90ded21e55eaa111011e172bf751e9050119376e90cc05af66e916619d"
+            },
+            {
+              "algo": "md5",
+              "hash": "1c1aa676712317e7e7b712dcbc2b2b16"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 37061,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "1ae95b99-5911-1295-b2e1-01f61116719a",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17313116,
+      "created": "2026-10-11T23:29:31+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261010010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "3e1017b3-ebbf-192f-9229-03a51efc7fff",
+          "name": "RRRR_ALL_20261010010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261010010031.csv",
+          "size": 11167,
+          "ec_source": null,
+          "file_id": "1f7c65b7-1e1e-1925-a111-5571c0eac131",
+          "hash_algo": "md5",
+          "hash": "c01ebabcd9b113d7099b117c6c117131",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "901f259512ef1aaa27193d13fa111575f99c3cad1fb2e2001d191b2711990122"
+            },
+            {
+              "algo": "md5",
+              "hash": "c01ebabcd9b113d7099b117c6c117131"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 11167,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "3ee1062c-b1d9-115b-9ded-5b32e1d1913a",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17312930,
+      "created": "2026-10-11T15:00:11+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261012010013.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "fb1d0a56-1256-17a3-a36b-2cad1161f3de",
+          "name": "RRRR_ALL_20261012010013.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261012010013.csv",
+          "size": 37061,
+          "ec_source": null,
+          "file_id": "7b5ac17c-6160-19fa-9d59-a16d1d0197be",
+          "hash_algo": "md5",
+          "hash": "1c1aa676712317e7e7b712dcbc2b2b16",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "1c1aa676712317e7e7b712dcbc2b2b16"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "2cc96da6-f1e6-1a3d-15ca-ff26cfd31b91"
+      }
+    },
+    {
+      "id": 17312191,
+      "created": "2026-10-09T15:00:31+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261010010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "3e1017b3-ebbf-192f-9229-03a51efc7fff",
+          "name": "RRRR_ALL_20261010010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261010010031.csv",
+          "size": 11167,
+          "ec_source": null,
+          "file_id": "1f7c65b7-1e1e-1925-a111-5571c0eac131",
+          "hash_algo": "md5",
+          "hash": "c01ebabcd9b113d7099b117c6c117131",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "c01ebabcd9b113d7099b117c6c117131"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "ff5dd9db-0e6d-1511-a031-a9c71955c3fa"
+      }
+    },
+    {
+      "id": 17312126,
+      "created": "2026-10-09T09:05:13+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260929010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "6f367ce9-22eb-1ba1-9b09-37dcae1dc130",
+          "name": "RRRR_ALL_20260929010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260929010037.csv",
+          "size": 21121,
+          "ec_source": null,
+          "file_id": "7f99c21d-1df1-1fa6-ae0e-3e321d0fc6b9",
+          "hash_algo": "md5",
+          "hash": "7199ed51596b12ca6b1f791be5e1c1a1",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "22a0bf23901e7316cda66513990c0ea1703132ffc6b5576da17c6192e955101a"
+            },
+            {
+              "algo": "md5",
+              "hash": "7199ed51596b12ca6b1f791be5e1c1a1"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21121,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "2dbc20a9-9e73-1117-9311-1a2173e561d1",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17312125,
+      "created": "2026-10-09T09:03:17+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260930010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "b09fa016-10c1-1137-b217-721001f7d612",
+          "name": "RRRR_ALL_20260930010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260930010037.csv",
+          "size": 23173,
+          "ec_source": null,
+          "file_id": "19b3eed0-0cf9-1dc1-a3e2-716c1f313ec1",
+          "hash_algo": "md5",
+          "hash": "57e1bc112de359215f57fb1ed0c30672",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "cbbc773056aa1fa10b11561711acc76cfdd1121917e1ba0f115721d7d9dbffb2"
+            },
+            {
+              "algo": "md5",
+              "hash": "57e1bc112de359215f57fb1ed0c30672"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 23173,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "a7ba3769-3dd7-10af-a961-6ea1011c1572",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17311663,
+      "created": "2026-10-01T23:00:59+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260930010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "b09fa016-10c1-1137-b217-721001f7d612",
+          "name": "RRRR_ALL_20260930010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260930010037.csv",
+          "size": 23173,
+          "ec_source": null,
+          "file_id": "19b3eed0-0cf9-1dc1-a3e2-716c1f313ec1",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "550f1131-ab17-1a39-a1ec-e0c6e96e0b07",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17311660,
+      "created": "2026-10-01T23:00:16+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260929010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "6f367ce9-22eb-1ba1-9b09-37dcae1dc130",
+          "name": "RRRR_ALL_20260929010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260929010037.csv",
+          "size": 21121,
+          "ec_source": null,
+          "file_id": "7f99c21d-1df1-1fa6-ae0e-3e321d0fc6b9",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "7cf99c67-d391-131c-b7fa-b1112bd35ef3",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17311651,
+      "created": "2026-10-01T22:57:23+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261009010010.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "e1fe56ed-f7a5-1e1e-b120-d175305b7d67",
+          "name": "RRRR_ALL_20261009010010.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261009010010.csv",
+          "size": 27116,
+          "ec_source": null,
+          "file_id": "1551619e-671b-1b71-ae11-d5aff71c5210",
+          "hash_algo": "md5",
+          "hash": "e616ff70161e0ffd29762f7d00e119cd",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "29956d01ddef5a9b6161b6150d707d071ba0f196f2e2c0d153adcfbd161b1a2f"
+            },
+            {
+              "algo": "md5",
+              "hash": "e616ff70161e0ffd29762f7d00e119cd"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 27116,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "5d1b23e1-e151-112b-1c7a-56ab2ec033db",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17311119,
+      "created": "2026-10-01T15:00:11+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261009010010.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "e1fe56ed-f7a5-1e1e-b120-d175305b7d67",
+          "name": "RRRR_ALL_20261009010010.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261009010010.csv",
+          "size": 27116,
+          "ec_source": null,
+          "file_id": "1551619e-671b-1b71-ae11-d5aff71c5210",
+          "hash_algo": "md5",
+          "hash": "e616ff70161e0ffd29762f7d00e119cd",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "e616ff70161e0ffd29762f7d00e119cd"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "d96013eb-1c6b-1963-111a-2731f215311f"
+      }
+    },
+    {
+      "id": 17310961,
+      "created": "2026-10-07T23:50:21+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261001010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "6111aac3-3291-1b3a-9111-fc9b571fbeb9",
+          "name": "RRRR_ALL_20261001010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261001010037.csv",
+          "size": 23037,
+          "ec_source": null,
+          "file_id": "13c0c51b-1e1d-1a96-af1e-312e2e013d7d",
+          "hash_algo": "md5",
+          "hash": "c2601e51f21e263b50efce1d532fa11f",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "c213011c0c17b19a55969053fac35eef91f1001a0251556a93f2e71f25d73199"
+            },
+            {
+              "algo": "md5",
+              "hash": "c2601e51f21e263b50efce1d532fa11f"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 23037,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "fa1b0b6c-fa15-1110-b1c2-1511b3a0baf5",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17310963,
+      "created": "2026-10-07T23:11:21+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261007010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "3f5cc009-021f-1911-1ebd-ca7bee0f16dd",
+          "name": "RRRR_ALL_20261007010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261007010031.csv",
+          "size": 20716,
+          "ec_source": null,
+          "file_id": "2f5c2916-3f5b-17ab-ac63-c1110916eb0e",
+          "hash_algo": "md5",
+          "hash": "97aa9195d501b12c21101d171b0119cc",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "afdbe6d9e3776379d9e70c1762af0be27fd5b6af59eb6a11b1e063106d97c01b"
+            },
+            {
+              "algo": "md5",
+              "hash": "97aa9195d501b12c21101d171b0119cc"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 20716,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "dd65017c-e76f-1ca9-1d31-6fed66b1917e",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17310725,
+      "created": "2026-10-07T15:00:31+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261001010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "6111aac3-3291-1b3a-9111-fc9b571fbeb9",
+          "name": "RRRR_ALL_20261001010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261001010037.csv",
+          "size": 23037,
+          "ec_source": null,
+          "file_id": "13c0c51b-1e1d-1a96-af1e-312e2e013d7d",
+          "hash_algo": "md5",
+          "hash": "c2601e51f21e263b50efce1d532fa11f",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "c2601e51f21e263b50efce1d532fa11f"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "5f3e15a1-2793-1711-915c-1f63375bd711"
+      }
+    },
+    {
+      "id": 17310151,
+      "created": "2026-10-06T15:00:39+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261007010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "3f5cc009-021f-1911-1ebd-ca7bee0f16dd",
+          "name": "RRRR_ALL_20261007010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261007010031.csv",
+          "size": 20716,
+          "ec_source": null,
+          "file_id": "2f5c2916-3f5b-17ab-ac63-c1110916eb0e",
+          "hash_algo": "md5",
+          "hash": "97aa9195d501b12c21101d171b0119cc",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "97aa9195d501b12c21101d171b0119cc"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "21161f90-11bf-17ee-bc29-029e1560b1af"
+      }
+    },
+    {
+      "id": 17310071,
+      "created": "2026-10-06T09:10:25+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260923010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "1ae7b57b-3ab1-1bfa-b16e-05136913ff11",
+          "name": "RRRR_ALL_20260923010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260923010036.csv",
+          "size": 11239,
+          "ec_source": null,
+          "file_id": "e935a367-7565-1a11-b95f-60c313a36fe5",
+          "hash_algo": "md5",
+          "hash": "e3101c00a026bb11e1710627e7761a2f",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "9cd20b1e5b353cd110a529110d7e5e70d111f110dac155e9f13131e3aaafac6b"
+            },
+            {
+              "algo": "md5",
+              "hash": "e3101c00a026bb11e1710627e7761a2f"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 11239,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "6051fb21-5eef-199d-90d1-6bf17d3bc2a6",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17310077,
+      "created": "2026-10-06T09:01:19+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260921010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "f21a17b7-a012-1a3a-1b11-da2762005b1a",
+          "name": "RRRR_ALL_20260921010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260921010037.csv",
+          "size": 21171,
+          "ec_source": null,
+          "file_id": "c5aa1cbc-3eac-123b-151a-e321b3c6d961",
+          "hash_algo": "md5",
+          "hash": "1cde111d159257e1d55c31e36cac7561",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "961a61c07cdf1351c71dc1e107b66d1f1fe71d59eb1cad3f9903fab3d1d6f153"
+            },
+            {
+              "algo": "md5",
+              "hash": "1cde111d159257e1d55c31e36cac7561"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21171,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "91fb120d-dd0b-166f-bd29-f5aba1577bd1",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17310076,
+      "created": "2026-10-06T09:07:01+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260925010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "1bafe172-1133-1393-9e35-f0a726afef75",
+          "name": "RRRR_ALL_20260925010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260925010031.csv",
+          "size": 23196,
+          "ec_source": null,
+          "file_id": "11d52db3-5602-1199-9c9f-21f3b6b122c0",
+          "hash_algo": "md5",
+          "hash": "bc3f1f620c5172e91ee1abaff13afefc",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "1b9e0a17e113176ca355a1732312a751c95103316bf601331b65e512ae771071"
+            },
+            {
+              "algo": "md5",
+              "hash": "bc3f1f620c5172e91ee1abaff13afefc"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 23196,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "71b19712-e9d7-1779-a1b7-317111cf6111",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17310071,
+      "created": "2026-10-06T09:05:37+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260926010035.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "7917b2b1-11b3-153f-1c1f-10610cce7ee2",
+          "name": "RRRR_ALL_20260926010035.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260926010035.csv",
+          "size": 17766,
+          "ec_source": null,
+          "file_id": "16e7cda1-6f95-150d-9261-c1f019f362f0",
+          "hash_algo": "md5",
+          "hash": "72b16a9af5aa107ad90e31e1c32b0bba",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "b1615abae7a7c57d20bcd70cfc5cc05beb35a2f10ac3f2bd29e903fca21c1be0"
+            },
+            {
+              "algo": "md5",
+              "hash": "72b16a9af5aa107ad90e31e1c32b0bba"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 17766,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "a1aeac1d-606f-1b3c-1117-da6001330d25",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17310073,
+      "created": "2026-10-06T09:03:16+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260921010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "0cf6271b-9ca1-1ba1-9111-99e62b930c2c",
+          "name": "RRRR_ALL_20260921010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260921010031.csv",
+          "size": 25353,
+          "ec_source": null,
+          "file_id": "9d1152eb-c5fd-1036-bd19-e535211211bb",
+          "hash_algo": "md5",
+          "hash": "1cd957f9aa0336b519acc292011b1516",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "5dea92acb3e2e3dd3179727130709c39600fc10576c9a361155361603fd11da3"
+            },
+            {
+              "algo": "md5",
+              "hash": "1cd957f9aa0336b519acc292011b1516"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 25353,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "0233e116-e52d-1c0b-a53a-1bc1215116f1",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17339911,
+      "created": "2026-10-06T01:05:16+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260921010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "0cf6271b-9ca1-1ba1-9111-99e62b930c2c",
+          "name": "RRRR_ALL_20260921010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260921010031.csv",
+          "size": 25353,
+          "ec_source": null,
+          "file_id": "9d1152eb-c5fd-1036-bd19-e535211211bb",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "71d577bb-fd22-191d-1165-6d21eb25206b",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17339910,
+      "created": "2026-10-06T01:05:31+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260926010035.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "7917b2b1-11b3-153f-1c1f-10610cce7ee2",
+          "name": "RRRR_ALL_20260926010035.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260926010035.csv",
+          "size": 17766,
+          "ec_source": null,
+          "file_id": "16e7cda1-6f95-150d-9261-c1f019f362f0",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "1f16fe51-719f-1fa3-16b6-739ae3bda01a",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17339717,
+      "created": "2026-10-06T01:21:50+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260925010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "1bafe172-1133-1393-9e35-f0a726afef75",
+          "name": "RRRR_ALL_20260925010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260925010031.csv",
+          "size": 23196,
+          "ec_source": null,
+          "file_id": "11d52db3-5602-1199-9c9f-21f3b6b122c0",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "11acc9d1-a362-1315-9eca-15a91996263c",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17339716,
+      "created": "2026-10-06T01:21:31+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260921010037.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "f21a17b7-a012-1a3a-1b11-da2762005b1a",
+          "name": "RRRR_ALL_20260921010037.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260921010037.csv",
+          "size": 21171,
+          "ec_source": null,
+          "file_id": "c5aa1cbc-3eac-123b-151a-e321b3c6d961",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "3ae17cc2-1d01-1632-1006-1e52dd11ebca",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17339715,
+      "created": "2026-10-06T01:21:29+0000",
+      "event": "add_file_version",
+      "message": "folder_path/with/sub/folders/RRRR: Version was updated for RRRR_ALL_20260923010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "1ae7b57b-3ab1-1bfa-b16e-05136913ff11",
+          "name": "RRRR_ALL_20260923010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260923010036.csv",
+          "size": 11239,
+          "ec_source": null,
+          "file_id": "e935a367-7565-1a11-b95f-60c313a36fe5",
+          "hash_algo": "md5",
+          "hash": "Generating...",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "Generating..."
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "27e16113-3551-1a16-aa6b-b1f02a1e1c5b",
+        "editor": null,
+        "is_autosave": null,
+        "is_modified_by_user": null,
+        "session_participants": null,
+        "session_id": null,
+        "error": null
+      }
+    },
+    {
+      "id": 17339711,
+      "created": "2026-10-06T01:20:50+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261006010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "1e3b133e-3511-16a2-bb01-11ede90c0771",
+          "name": "RRRR_ALL_20261006010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261006010036.csv",
+          "size": 13531,
+          "ec_source": null,
+          "file_id": "7b165701-11d2-1192-961f-110e1ed1fdec",
+          "hash_algo": "md5",
+          "hash": "bfbf6911abdaafe66e1ba15bf793f197",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "77deedaf2de21965d55fb12f1bf16ed9007f092a0150cff27129703cdc6d730b"
+            },
+            {
+              "algo": "md5",
+              "hash": "bfbf6911abdaafe66e1ba15bf793f197"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 13531,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "bd9fcc5b-6fbe-12f7-9110-2229cb2f02ee",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17339713,
+      "created": "2026-10-06T01:20:01+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261005010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "11fb51f7-fee3-1fa9-aaea-01901a237502",
+          "name": "RRRR_ALL_20261005010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261005010031.csv",
+          "size": 21953,
+          "ec_source": null,
+          "file_id": "d711212b-1309-1627-9a1a-d6ae611e157b",
+          "hash_algo": "md5",
+          "hash": "c1c2b73a711a37eb31533da1f5950bae",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "1dc1a15ba19b255c3de9df3cf7c17c310035e0c6de171703d959f1fc66326195"
+            },
+            {
+              "algo": "md5",
+              "hash": "c1c2b73a711a37eb31533da1f5950bae"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21953,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "e1eca11a-03e9-13b1-af11-10191a3151d1",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17339712,
+      "created": "2026-10-06T01:19:11+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20261003010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "11573012-1755-1c36-1cf3-e17130191110",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "11573012-1755-1c36-1cf3-e17130191110"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "69dae7cc-1972-1192-bdc2-b7d6bad97ebd",
+          "name": "RRRR_ALL_20261003010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261003010036.csv",
+          "size": 15366,
+          "ec_source": null,
+          "file_id": "715ec517-711a-15f0-977c-e69c2d312e21",
+          "hash_algo": "md5",
+          "hash": "eca1505d3c13111b110d22cf715e157c",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "12a0b0d11ca310b9351536935bf32a1c19cf30e1b71017cb3170cb6a37d0ed1b"
+            },
+            {
+              "algo": "md5",
+              "hash": "eca1505d3c13111b110d22cf715e157c"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 15366,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "23adb79b-72b5-1116-abdd-11ebc713a157",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17339163,
+      "created": "2026-10-05T15:00:37+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261006010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "1e3b133e-3511-16a2-bb01-11ede90c0771",
+          "name": "RRRR_ALL_20261006010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261006010036.csv",
+          "size": 13531,
+          "ec_source": null,
+          "file_id": "7b165701-11d2-1192-961f-110e1ed1fdec",
+          "hash_algo": "md5",
+          "hash": "bfbf6911abdaafe66e1ba15bf793f197",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "bfbf6911abdaafe66e1ba15bf793f197"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "0713f0aa-39de-175d-a131-c12716672619"
+      }
+    },
+    {
+      "id": 17339009,
+      "created": "2026-10-01T15:00:39+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261005010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "11fb51f7-fee3-1fa9-aaea-01901a237502",
+          "name": "RRRR_ALL_20261005010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261005010031.csv",
+          "size": 21953,
+          "ec_source": null,
+          "file_id": "d711212b-1309-1627-9a1a-d6ae611e157b",
+          "hash_algo": "md5",
+          "hash": "c1c2b73a711a37eb31533da1f5950bae",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "c1c2b73a711a37eb31533da1f5950bae"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "abf1f9ca-1aa9-15f1-9192-725563153d00"
+      }
+    },
+    {
+      "id": 17331317,
+      "created": "2026-10-02T15:00:37+0000",
+      "event": "add_file",
+      "message": "folder_path/with/sub/folders/RRRR: Uploaded file RRRR_ALL_20261003010036.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "file": {
+          "id": "69dae7cc-1972-1192-bdc2-b7d6bad97ebd",
+          "name": "RRRR_ALL_20261003010036.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20261003010036.csv",
+          "size": 15366,
+          "ec_source": null,
+          "file_id": "715ec517-711a-15f0-977c-e69c2d312e21",
+          "hash_algo": "md5",
+          "hash": "eca1505d3c13111b110d22cf715e157c",
+          "fingerprints": [
+            {
+              "algo": "md5",
+              "hash": "eca1505d3c13111b110d22cf715e157c"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 9,
+            "name": "email@example.com",
+            "guid": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+            "profile": {
+              "id": 1,
+              "name": "standard"
+            }
+          }
+        },
+        "error": null,
+        "is_folder_upload": 0,
+        "on_behalf_of": null,
+        "sender": null,
+        "mail": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "7a501f71-1b92-160d-91b9-5faef31911e0"
+      }
+    },
+    {
+      "id": 17331266,
+      "created": "2026-10-02T09:05:13+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260921010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "file": {
+          "id": "e9153ce1-7191-1107-b767-905573e2926e",
+          "name": "RRRR_ALL_20260921010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260921010031.csv",
+          "size": 21923,
+          "ec_source": null,
+          "file_id": "d3fc006a-1619-1ca0-b7f5-9d15100da173",
+          "hash_algo": "md5",
+          "hash": "163c611665a01b9f15ea1b7309bfd71c",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "69aeb10bcebd76729df2c1c0139cfc916b3c2e252021aa57fe6c7f10120caccd"
+            },
+            {
+              "algo": "md5",
+              "hash": "163c611665a01b9f15ea1b7309bfd71c"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        },
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21923,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "fcbe67fb-df32-1113-96ad-95bee73c1fc1",
+        "bypass_permission_check": null
+      }
+    },
+    {
+      "id": 17331267,
+      "created": "2026-10-02T09:05:13+0000",
+      "event": "download",
+      "message": "folder_path/with/sub/folders/RRRR: Downloaded file RRRR_ALL_20260921010031.csv",
+      "type": "file_changes",
+      "successful": true,
+      "user": {
+        "userId": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e",
+        "name": "email@example.com",
+        "email": "email@example.com",
+        "profileIcon": "5fc1cbfb-dc1f-11a9-a116-eadb009d127e"
+      },
+      "permissions": [
+        "download",
+        "message_send",
+        "notification_subscribe",
+        "notification_unsubscribe",
+        "properties_view",
+        "user_view",
+        "children_view_deleted",
+        "folder_add",
+        "file_add",
+        "folder_delete",
+        "favorite_add",
+        "folder_copy"
+      ],
+      "data": {
+        "files": [{
+          "id": "e9153ce1-7191-1107-b767-905573e2926e",
+          "name": "RRRR_ALL_20260921010031.csv",
+          "path": "folder_path/with/sub/folders/RRRR/RRRR_ALL_20260921010031.csv",
+          "size": 21923,
+          "ec_source": null,
+          "file_id": "d3fc006a-1619-1ca0-b7f5-9d15100da173",
+          "hash_algo": "md5",
+          "hash": "163c611665a01b9f15ea1b7309bfd71c",
+          "fingerprints": [
+            {
+              "algo": "sha3-256",
+              "hash": "69aeb10bcebd76729df2c1c0139cfc916b3c2e252021aa57fe6c7f10120caccd"
+            },
+            {
+              "algo": "md5",
+              "hash": "163c611665a01b9f15ea1b7309bfd71c"
+            }
+          ],
+          "mime": "text/csv",
+          "tags": [],
+          "version": null,
+          "ec_object_id": null,
+          "file_uploader": {
+            "id": 1077,
+            "name": "email@example.com",
+            "guid": "11573012-1755-1c36-1cf3-e17130191110",
+            "profile": {
+              "id": 1,
+              "name": "restricted"
+            }
+          }
+        }],
+        "parent_folder": {
+          "id": "1e13272a-631e-15f6-9299-619aef37e111",
+          "name": "RRRR",
+          "path": "folder_path/with/sub/folders/RRRR",
+          "ec_source": null,
+          "ec_object_id": null,
+          "inheritance_enabled": null
+        },
+        "size": 21923,
+        "range": null,
+        "partial": null,
+        "final_chunk": null,
+        "bypass_scan": null,
+        "error": null,
+        "asset_classes": [],
+        "policies": [],
+        "reference_id": "fcbe67fb-df32-1113-96ad-95bee73c1fc1",
+        "bypass_permission_check": null
+      }
+    }
+  ]
+}
