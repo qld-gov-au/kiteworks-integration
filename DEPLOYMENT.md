@@ -4,7 +4,7 @@ This repo is equiped with a fully one-click deployment process.
 
 ### How to use
 
-``.github/workflows/publish.yml`` is the key to how this works.
+``.github/workflows/publish.yml.disabled`` is the key to how this works.
 
 It has 3 variables: 
  * ``publish``: defaults to ``No``, needs to be ``Yes`` to publish and commit changes; Else will do a 'dry-run'.
