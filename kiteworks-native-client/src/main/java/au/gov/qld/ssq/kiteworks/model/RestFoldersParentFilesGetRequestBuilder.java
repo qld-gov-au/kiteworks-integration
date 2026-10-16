@@ -1,5 +1,6 @@
 package au.gov.qld.ssq.kiteworks.model;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,35 +18,35 @@ public class RestFoldersParentFilesGetRequestBuilder {
 
     private List<String> userIdIn;
 
-    private String created;
+    private LocalDate created;
 
-    private String createdGt;
+    private LocalDate createdGt;
 
-    private String createdGte;
+    private LocalDate createdGte;
 
-    private String createdLt;
+    private LocalDate createdLt;
 
-    private String createdLte;
+    private LocalDate createdLte;
 
-    private String modified;
+    private LocalDate modified;
 
-    private String modifiedGt;
+    private LocalDate modifiedGt;
 
-    private String modifiedGte;
+    private LocalDate modifiedGte;
 
-    private String modifiedLt;
+    private LocalDate modifiedLt;
 
-    private String modifiedLte;
+    private LocalDate modifiedLte;
 
-    private String expire;
+    private LocalDate expire;
 
-    private String expireGt;
+    private LocalDate expireGt;
 
-    private String expireGte;
+    private LocalDate expireGte;
 
-    private String expireLt;
+    private LocalDate expireLt;
 
-    private String expireLte;
+    private LocalDate expireLte;
 
     private Boolean isPushed;
 
@@ -113,137 +114,137 @@ public class RestFoldersParentFilesGetRequestBuilder {
         return this;
     }
 
-    public String getCreated() {
+    public LocalDate getCreated() {
         return created;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withCreated(String created) {
+    public RestFoldersParentFilesGetRequestBuilder withCreated(LocalDate created) {
         this.created = created;
         return this;
     }
 
-    public String getCreatedGt() {
+    public LocalDate getCreatedGt() {
         return createdGt;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withCreatedGt(String createdGt) {
+    public RestFoldersParentFilesGetRequestBuilder withCreatedGt(LocalDate createdGt) {
         this.createdGt = createdGt;
         return this;
     }
 
-    public String getCreatedGte() {
+    public LocalDate getCreatedGte() {
         return createdGte;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withCreatedGte(String createdGte) {
+    public RestFoldersParentFilesGetRequestBuilder withCreatedGte(LocalDate createdGte) {
         this.createdGte = createdGte;
         return this;
     }
 
-    public String getCreatedLt() {
+    public LocalDate getCreatedLt() {
         return createdLt;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withCreatedLt(String createdLt) {
+    public RestFoldersParentFilesGetRequestBuilder withCreatedLt(LocalDate createdLt) {
         this.createdLt = createdLt;
         return this;
     }
 
-    public String getCreatedLte() {
+    public LocalDate getCreatedLte() {
         return createdLte;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withCreatedLte(String createdLte) {
+    public RestFoldersParentFilesGetRequestBuilder withCreatedLte(LocalDate createdLte) {
         this.createdLte = createdLte;
         return this;
     }
 
-    public String getModified() {
+    public LocalDate getModified() {
         return modified;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withModified(String modified) {
+    public RestFoldersParentFilesGetRequestBuilder withModified(LocalDate modified) {
         this.modified = modified;
         return this;
     }
 
-    public String getModifiedGt() {
+    public LocalDate getModifiedGt() {
         return modifiedGt;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withModifiedGt(String modifiedGt) {
+    public RestFoldersParentFilesGetRequestBuilder withModifiedGt(LocalDate modifiedGt) {
         this.modifiedGt = modifiedGt;
         return this;
     }
 
-    public String getModifiedGte() {
+    public LocalDate getModifiedGte() {
         return modifiedGte;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withModifiedGte(String modifiedGte) {
+    public RestFoldersParentFilesGetRequestBuilder withModifiedGte(LocalDate modifiedGte) {
         this.modifiedGte = modifiedGte;
         return this;
     }
 
-    public String getModifiedLt() {
+    public LocalDate getModifiedLt() {
         return modifiedLt;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withModifiedLt(String modifiedLt) {
+    public RestFoldersParentFilesGetRequestBuilder withModifiedLt(LocalDate modifiedLt) {
         this.modifiedLt = modifiedLt;
         return this;
     }
 
-    public String getModifiedLte() {
+    public LocalDate getModifiedLte() {
         return modifiedLte;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withModifiedLte(String modifiedLte) {
+    public RestFoldersParentFilesGetRequestBuilder withModifiedLte(LocalDate modifiedLte) {
         this.modifiedLte = modifiedLte;
         return this;
     }
 
-    public String getExpire() {
+    public LocalDate getExpire() {
         return expire;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withExpire(String expire) {
+    public RestFoldersParentFilesGetRequestBuilder withExpire(LocalDate expire) {
         this.expire = expire;
         return this;
     }
 
-    public String getExpireGt() {
+    public LocalDate getExpireGt() {
         return expireGt;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withExpireGt(String expireGt) {
+    public RestFoldersParentFilesGetRequestBuilder withExpireGt(LocalDate expireGt) {
         this.expireGt = expireGt;
         return this;
     }
 
-    public String getExpireGte() {
+    public LocalDate getExpireGte() {
         return expireGte;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withExpireGte(String expireGte) {
+    public RestFoldersParentFilesGetRequestBuilder withExpireGte(LocalDate expireGte) {
         this.expireGte = expireGte;
         return this;
     }
 
-    public String getExpireLt() {
+    public LocalDate getExpireLt() {
         return expireLt;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withExpireLt(String expireLt) {
+    public RestFoldersParentFilesGetRequestBuilder withExpireLt(LocalDate expireLt) {
         this.expireLt = expireLt;
         return this;
     }
 
-    public String getExpireLte() {
+    public LocalDate getExpireLte() {
         return expireLte;
     }
 
-    public RestFoldersParentFilesGetRequestBuilder withExpireLte(String expireLte) {
+    public RestFoldersParentFilesGetRequestBuilder withExpireLte(LocalDate expireLte) {
         this.expireLte = expireLte;
         return this;
     }
