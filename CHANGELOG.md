@@ -2,6 +2,21 @@
 ## [Unreleased]
 
 
+<a name="v3.0.0"></a>
+## [v3.0.0] - 2026-10-16
+### Pull Requests
+- Merge pull request [#279](https://github.com/qld-gov-au/kiteworks-integration/issues/279) from qld-gov-au/20261016_updates
+  - Merge pull request [#277](https://github.com/qld-gov-au/kiteworks-integration/issues/277) from qld-gov-au/dependabot/maven/spotless-maven-plugin-432ec9cf50
+  - Merge pull request [#278](https://github.com/qld-gov-au/kiteworks-integration/issues/278) from qld-gov-au/dependabot/maven/spotless-maven-plugin-d27f045c35
+  - Merge pull request [#274](https://github.com/qld-gov-au/kiteworks-integration/issues/274) from qld-gov-au/dependabot/github_actions/actions/upload-artifact-7.0.2
+  - Merge pull request [#275](https://github.com/qld-gov-au/kiteworks-integration/issues/275) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.6.1
+  - Merge pull request [#276](https://github.com/qld-gov-au/kiteworks-integration/issues/276) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-10377ddda2
+  - Merge pull request [#273](https://github.com/qld-gov-au/kiteworks-integration/issues/273) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.6.0
+  - Merge pull request [#272](https://github.com/qld-gov-au/kiteworks-integration/issues/272) from qld-gov-au/dependabot/maven/jackson-03006a8184
+  - Merge pull request [#271](https://github.com/qld-gov-au/kiteworks-integration/issues/271) from qld-gov-au/dependabot/maven/commons-lang3-ea831a9e36
+  - Merge pull request [#270](https://github.com/qld-gov-au/kiteworks-integration/issues/270) from qld-gov-au/update-changelog
+  
+  
 <a name="v2.1.3"></a>
 ## [v2.1.3] - 2026-09-29
 ### Pull Requests
@@ -359,7 +374,8 @@
 <a name="v1.0.0"></a>
 ## v1.0.0 - 2024-07-29
 
-[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.3...HEAD
+[Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/v3.0.0...HEAD
+[v3.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.3...v3.0.0
 [v2.1.3]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.2...v2.1.3
 [v2.1.2]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.1...v2.1.2
 [v2.1.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.0...v2.1.1
