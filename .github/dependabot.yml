@@ -58,4 +58,7 @@ updates:
     slf4j-api:
       patterns:
         - "org.slf4j:*"
+    sonatype:
+      patterns:
+        - "org.sonatype.*"
   open-pull-requests-limit: 20
