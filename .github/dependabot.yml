@@ -18,10 +18,9 @@ updates:
   groups:
     jackson:
       patterns:
-        - "jackson-version"
-        - "jackson*"
         - "org.openapitools:jackson-*"
         - "com.fasterxml.jackson*"
+        - "tools.jackson*"
     spotless-maven-plugin:
       patterns:
         - "com.diffplug.spotless:spotless-maven-plugin"
