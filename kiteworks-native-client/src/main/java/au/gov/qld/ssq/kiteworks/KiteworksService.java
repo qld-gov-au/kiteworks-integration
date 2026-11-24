@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import tools.jackson.core.StreamReadFeature;
 import tools.jackson.databind.ObjectMapper;
 
+import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.util.Objects;
 import java.util.function.Consumer;
@@ -48,7 +49,8 @@ public class KiteworksService {
                     .configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true)
                     .build();
 
-            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder(), mapper, config.getBaseUri());
+            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder()
+                    .version(HttpClient.Version.HTTP_2), mapper, config.getBaseUri());
             apiClient.setRequestInterceptor(kiteworksOAuthInterceptor);
         }
         return apiClient;
