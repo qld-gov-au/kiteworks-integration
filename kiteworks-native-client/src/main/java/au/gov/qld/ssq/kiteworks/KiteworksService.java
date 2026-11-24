@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import tools.jackson.core.StreamReadFeature;
 import tools.jackson.databind.ObjectMapper;
 
+import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.util.Objects;
 import java.util.function.Consumer;
@@ -48,7 +49,17 @@ public class KiteworksService {
                     .configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true)
                     .build();
 
-            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder(), mapper, config.getBaseUri());
+            //Note: Kiteworks 10.x seems to not accept HTTP_2 file uploads. It gives error "422 - {
+            //    "errors": [
+            //        {
+            //            "code": "ERR_INPUT_REQUIRED",
+            //            "message": "Field is required",
+            //            "field": "body"
+            //        }
+            //    ]
+            //}
+            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder()
+                    .version(HttpClient.Version.HTTP_1_1), mapper, config.getBaseUri());
             apiClient.setRequestInterceptor(kiteworksOAuthInterceptor);
         }
         return apiClient;
