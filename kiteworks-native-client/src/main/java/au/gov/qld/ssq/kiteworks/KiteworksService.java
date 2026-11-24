@@ -49,8 +49,17 @@ public class KiteworksService {
                     .configure(StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION, true)
                     .build();
 
+            //Note: Kiteworks 10.x seems to not accept HTTP_2 file uploads. It gives error "422 - {
+            //    "errors": [
+            //        {
+            //            "code": "ERR_INPUT_REQUIRED",
+            //            "message": "Field is required",
+            //            "field": "body"
+            //        }
+            //    ]
+            //}
             apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder()
-                    .version(HttpClient.Version.HTTP_2), mapper, config.getBaseUri());
+                    .version(HttpClient.Version.HTTP_1_1), mapper, config.getBaseUri());
             apiClient.setRequestInterceptor(kiteworksOAuthInterceptor);
         }
         return apiClient;
