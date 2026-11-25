@@ -46,7 +46,8 @@ public class KiteworksService {
                 throw new IllegalArgumentException("Invalid mode: " + config.getAuthorizationGrantType());
             }
 
-            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder(), ApiClient.createDefaultObjectMapper(), config.getBaseUri());
+            apiClient = new ApiClient(ApiClient.createDefaultHttpClientBuilder()
+                    .version(HttpClient.Version.HTTP_1_1), ApiClient.createDefaultObjectMapper(), config.getBaseUri());
             apiClient.setRequestInterceptor(kiteworksOAuthInterceptor);
         }
         return apiClient;
