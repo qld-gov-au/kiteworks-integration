@@ -14,7 +14,7 @@ on:
       releaseVersion:
         description: 'Release version'
         required: true
-        default: '2.0.5'
+        default: '2.0.6-SNAPSHOT'
       developmentVersion:
         description: 'Development version'
         required: true
