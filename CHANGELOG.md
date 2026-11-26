@@ -7,127 +7,8 @@
 ### Pull Requests
 - Merge pull request [#312](https://github.com/qld-gov-au/kiteworks-integration/issues/312) from qld-gov-au/dependabot/maven/spotless-maven-plugin-f0c47a3f49
   - Merge pull request [#310](https://github.com/qld-gov-au/kiteworks-integration/issues/310) from qld-gov-au/kitworks_10x_uplift
-  - Merge pull request [#307](https://github.com/qld-gov-au/kiteworks-integration/issues/307) from qld-gov-au/dependabot/github_actions/actions/setup-java-6.3.0
-  - Merge pull request [#306](https://github.com/qld-gov-au/kiteworks-integration/issues/306) from qld-gov-au/dependabot/github_actions/peter-evans/create-pull-request-8.1.3
-  - Merge pull request [#305](https://github.com/qld-gov-au/kiteworks-integration/issues/305) from qld-gov-au/dependabot/maven/exec-maven-plugin-965180ed62
-  - Merge pull request [#303](https://github.com/qld-gov-au/kiteworks-integration/issues/303) from qld-gov-au/dependabot/maven/jackson-b7f86564fb
-  - Merge pull request [#304](https://github.com/qld-gov-au/kiteworks-integration/issues/304) from qld-gov-au/dependabot/maven/commons-lang3-e56d19484a
-  - Merge pull request [#299](https://github.com/qld-gov-au/kiteworks-integration/issues/299) from qld-gov-au/dependabot/maven/spotless-maven-plugin-4321aa066b
-  - Merge pull request [#300](https://github.com/qld-gov-au/kiteworks-integration/issues/300) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.7.1
-  - Merge pull request [#301](https://github.com/qld-gov-au/kiteworks-integration/issues/301) from qld-gov-au/dependabot/maven/spotless-maven-plugin-e81d28dc0f
-  - Merge pull request [#302](https://github.com/qld-gov-au/kiteworks-integration/issues/302) from qld-gov-au/dependabot/github_actions/peter-evans/create-pull-request-8.1.2
-  - Merge pull request [#298](https://github.com/qld-gov-au/kiteworks-integration/issues/298) from qld-gov-au/dependabot/github_actions/actions/setup-java-6.2.0
-  - Merge pull request [#296](https://github.com/qld-gov-au/kiteworks-integration/issues/296) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-f5fff5bec4
-  - Merge pull request [#295](https://github.com/qld-gov-au/kiteworks-integration/issues/295) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.6.2
-  - Merge pull request [#294](https://github.com/qld-gov-au/kiteworks-integration/issues/294) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-692e4f6262
-  - Merge pull request [#293](https://github.com/qld-gov-au/kiteworks-integration/issues/293) from qld-gov-au/dependabot/maven/jackson-3c06e4f88b
-  - Merge pull request [#290](https://github.com/qld-gov-au/kiteworks-integration/issues/290) from qld-gov-au/dependabot/maven/spring-boot-dependencies-4ba528d360
-  - Merge pull request [#292](https://github.com/qld-gov-au/kiteworks-integration/issues/292) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-f7d00a2ef4
-  - Merge pull request [#291](https://github.com/qld-gov-au/kiteworks-integration/issues/291) from qld-gov-au/dependabot/maven/spring-boot-dependencies-e8af22cef7
-  - Merge pull request [#289](https://github.com/qld-gov-au/kiteworks-integration/issues/289) from qld-gov-au/dependabot/maven/jackson-2952460736
-  - Merge pull request [#288](https://github.com/qld-gov-au/kiteworks-integration/issues/288) from qld-gov-au/dependabot/maven/jackson-51788cee48
-  - Merge pull request [#286](https://github.com/qld-gov-au/kiteworks-integration/issues/286) from qld-gov-au/dependabot/maven/sonatype-97dfb0f9f0
-  - Merge pull request [#287](https://github.com/qld-gov-au/kiteworks-integration/issues/287) from qld-gov-au/dependabot/maven/sonatype-16f148abe8
-  - Merge pull request [#281](https://github.com/qld-gov-au/kiteworks-integration/issues/281) from qld-gov-au/dependabot/github_actions/actions/setup-java-6.1.0
-  - Merge pull request [#280](https://github.com/qld-gov-au/kiteworks-integration/issues/280) from qld-gov-au/update-changelog
-  - Merge pull request [#279](https://github.com/qld-gov-au/kiteworks-integration/issues/279) from qld-gov-au/20261016_updates
-  - Merge pull request [#277](https://github.com/qld-gov-au/kiteworks-integration/issues/277) from qld-gov-au/dependabot/maven/spotless-maven-plugin-432ec9cf50
-  - Merge pull request [#278](https://github.com/qld-gov-au/kiteworks-integration/issues/278) from qld-gov-au/dependabot/maven/spotless-maven-plugin-d27f045c35
-  - Merge pull request [#274](https://github.com/qld-gov-au/kiteworks-integration/issues/274) from qld-gov-au/dependabot/github_actions/actions/upload-artifact-7.0.2
-  - Merge pull request [#275](https://github.com/qld-gov-au/kiteworks-integration/issues/275) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.6.1
-  - Merge pull request [#276](https://github.com/qld-gov-au/kiteworks-integration/issues/276) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-10377ddda2
-  - Merge pull request [#273](https://github.com/qld-gov-au/kiteworks-integration/issues/273) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.6.0
-  - Merge pull request [#272](https://github.com/qld-gov-au/kiteworks-integration/issues/272) from qld-gov-au/dependabot/maven/jackson-03006a8184
-  - Merge pull request [#271](https://github.com/qld-gov-au/kiteworks-integration/issues/271) from qld-gov-au/dependabot/maven/commons-lang3-ea831a9e36
-  - Merge pull request [#270](https://github.com/qld-gov-au/kiteworks-integration/issues/270) from qld-gov-au/update-changelog
-  - Merge pull request [#269](https://github.com/qld-gov-au/kiteworks-integration/issues/269) from qld-gov-au/dependabot/maven/spotless-maven-plugin-538eef4379
-  - Merge pull request [#258](https://github.com/qld-gov-au/kiteworks-integration/issues/258) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.5.0
-  - Merge pull request [#267](https://github.com/qld-gov-au/kiteworks-integration/issues/267) from qld-gov-au/dependabot/maven/mockito-core-96ee2d7105
-  - Merge pull request [#268](https://github.com/qld-gov-au/kiteworks-integration/issues/268) from qld-gov-au/dependabot/maven/slf4j-api-bf15f3a68f
-  - Merge pull request [#266](https://github.com/qld-gov-au/kiteworks-integration/issues/266) from qld-gov-au/dependabot/maven/jackson-9903fc571f
-  - Merge pull request [#265](https://github.com/qld-gov-au/kiteworks-integration/issues/265) from qld-gov-au/dependabot/maven/exec-maven-plugin-4483ec3dfa
-  - Merge pull request [#264](https://github.com/qld-gov-au/kiteworks-integration/issues/264) from qld-gov-au/dependabot/github_actions/actions/setup-java-6.0.1
-  - Merge pull request [#262](https://github.com/qld-gov-au/kiteworks-integration/issues/262) from qld-gov-au/dependabot/maven/spotless-maven-plugin-e702d39a05
-  - Merge pull request [#263](https://github.com/qld-gov-au/kiteworks-integration/issues/263) from qld-gov-au/dependabot/maven/slf4j-api-d61681f4d9
-  - Merge pull request [#259](https://github.com/qld-gov-au/kiteworks-integration/issues/259) from qld-gov-au/dependabot/maven/spotless-maven-plugin-64d69ad90d
-  - Merge pull request [#261](https://github.com/qld-gov-au/kiteworks-integration/issues/261) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-32fee9cd29
-  - Merge pull request [#257](https://github.com/qld-gov-au/kiteworks-integration/issues/257) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-30aad0f737
-  - Merge pull request [#256](https://github.com/qld-gov-au/kiteworks-integration/issues/256) from qld-gov-au/dependabot/github_actions/actions/setup-java-6.0.0
-  - Merge pull request [#255](https://github.com/qld-gov-au/kiteworks-integration/issues/255) from qld-gov-au/dependabot/maven/spring-boot-dependencies-aaa85c9266
-  - Merge pull request [#254](https://github.com/qld-gov-au/kiteworks-integration/issues/254) from qld-gov-au/dependabot/maven/spotless-maven-plugin-b0d1531c25
-  - Merge pull request [#253](https://github.com/qld-gov-au/kiteworks-integration/issues/253) from qld-gov-au/dependabot/maven/jackson-264b8c0ebf
-  - Merge pull request [#252](https://github.com/qld-gov-au/kiteworks-integration/issues/252) from qld-gov-au/dependabot/maven/jackson-a8246a8e9f
-  - Merge pull request [#251](https://github.com/qld-gov-au/kiteworks-integration/issues/251) from qld-gov-au/update-changelog
-  - Merge pull request [#250](https://github.com/qld-gov-au/kiteworks-integration/issues/250) from qld-gov-au/dependabot/maven/junit-jupiter-c199231783
-  - Merge pull request [#249](https://github.com/qld-gov-au/kiteworks-integration/issues/249) from qld-gov-au/dependabot/github_actions/actions/setup-java-5.7.0
-  - Merge pull request [#248](https://github.com/qld-gov-au/kiteworks-integration/issues/248) from qld-gov-au/dependabot/github_actions/actions/setup-java-5.6.0
-  - Merge pull request [#247](https://github.com/qld-gov-au/kiteworks-integration/issues/247) from qld-gov-au/dependabot/maven/spotless-maven-plugin-77d3c92778
-  - Merge pull request [#246](https://github.com/qld-gov-au/kiteworks-integration/issues/246) from qld-gov-au/dependabot/maven/jackson-d5944155d3
-  - Merge pull request [#245](https://github.com/qld-gov-au/kiteworks-integration/issues/245) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-7a219d1263
-  - Merge pull request [#244](https://github.com/qld-gov-au/kiteworks-integration/issues/244) from qld-gov-au/dependabot/maven/junit-jupiter-a48388cc41
-  - Merge pull request [#243](https://github.com/qld-gov-au/kiteworks-integration/issues/243) from qld-gov-au/dependabot/maven/jackson-b20c4b8e37
-  - Merge pull request [#242](https://github.com/qld-gov-au/kiteworks-integration/issues/242) from qld-gov-au/dependabot/maven/spotless-maven-plugin-78d5451900
-  - Merge pull request [#241](https://github.com/qld-gov-au/kiteworks-integration/issues/241) from qld-gov-au/update-changelog
-  - Merge pull request [#235](https://github.com/qld-gov-au/kiteworks-integration/issues/235) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.sonatype.central-central-publishing-maven-plugin-0.11.0
-  - Merge pull request [#236](https://github.com/qld-gov-au/kiteworks-integration/issues/236) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.sonatype.central-central-publishing-maven-plugin-0.11.0
-  - Merge pull request [#240](https://github.com/qld-gov-au/kiteworks-integration/issues/240) from qld-gov-au/dependabot/maven/junit-jupiter-7e63438baf
-  - Merge pull request [#239](https://github.com/qld-gov-au/kiteworks-integration/issues/239) from qld-gov-au/dependabot/github_actions/actions/cache-6
-  - Merge pull request [#238](https://github.com/qld-gov-au/kiteworks-integration/issues/238) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.4.2
-  - Merge pull request [#237](https://github.com/qld-gov-au/kiteworks-integration/issues/237) from qld-gov-au/dependabot/github_actions/actions/checkout-7
-  - Merge pull request [#231](https://github.com/qld-gov-au/kiteworks-integration/issues/231) from qld-gov-au/dependabot/maven/spring-boot-dependencies-e27f31ebf1
-  - Merge pull request [#227](https://github.com/qld-gov-au/kiteworks-integration/issues/227) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-5c20587955
-  - Merge pull request [#232](https://github.com/qld-gov-au/kiteworks-integration/issues/232) from qld-gov-au/dependabot/maven/spotless-maven-plugin-17a2dac157
-  - Merge pull request [#233](https://github.com/qld-gov-au/kiteworks-integration/issues/233) from qld-gov-au/dependabot/maven/org.sonatype.central-central-publishing-maven-plugin-0.11.0
-  - Merge pull request [#234](https://github.com/qld-gov-au/kiteworks-integration/issues/234) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.sonatype.central-central-publishing-maven-plugin-0.11.0
-  - Merge pull request [#230](https://github.com/qld-gov-au/kiteworks-integration/issues/230) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-196bf76a9a
-  - Merge pull request [#229](https://github.com/qld-gov-au/kiteworks-integration/issues/229) from qld-gov-au/dependabot/maven/jackson-94c743bad1
-  - Merge pull request [#225](https://github.com/qld-gov-au/kiteworks-integration/issues/225) from qld-gov-au/dependabot/maven/spotless-maven-plugin-de12611cd7
-  - Merge pull request [#226](https://github.com/qld-gov-au/kiteworks-integration/issues/226) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-1e7b722438
-  - Merge pull request [#222](https://github.com/qld-gov-au/kiteworks-integration/issues/222) from qld-gov-au/dependabot/maven/spotless-maven-plugin-ec77755b5f
-  - Merge pull request [#224](https://github.com/qld-gov-au/kiteworks-integration/issues/224) from qld-gov-au/dependabot/maven/junit-jupiter-26c2363428
-  - Merge pull request [#223](https://github.com/qld-gov-au/kiteworks-integration/issues/223) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-7eb474f452
-  - Merge pull request [#220](https://github.com/qld-gov-au/kiteworks-integration/issues/220) from qld-gov-au/dependabot/maven/spotless-maven-plugin-63711b8269
-  - Merge pull request [#219](https://github.com/qld-gov-au/kiteworks-integration/issues/219) from qld-gov-au/dependabot/maven/slf4j-api-efec19ae6d
-  - Merge pull request [#218](https://github.com/qld-gov-au/kiteworks-integration/issues/218) from qld-gov-au/update-changelog
-  - Merge pull request [#215](https://github.com/qld-gov-au/kiteworks-integration/issues/215) from qld-gov-au/dependabot/github_actions/actions/cache-5
-  - Merge pull request [#216](https://github.com/qld-gov-au/kiteworks-integration/issues/216) from qld-gov-au/dependabot/maven/jackson-c32bf476a1
-  - Merge pull request [#217](https://github.com/qld-gov-au/kiteworks-integration/issues/217) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-96cbb2d094
-  - Merge pull request [#214](https://github.com/qld-gov-au/kiteworks-integration/issues/214) from qld-gov-au/202604_jwt_auth_module_added
-  - Merge pull request [#210](https://github.com/qld-gov-au/kiteworks-integration/issues/210) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.4.0
-  - Merge pull request [#208](https://github.com/qld-gov-au/kiteworks-integration/issues/208) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-fbdeece7d1
-  - Merge pull request [#197](https://github.com/qld-gov-au/kiteworks-integration/issues/197) from qld-gov-au/dependabot/github_actions/actions/upload-artifact-7
-  - Merge pull request [#192](https://github.com/qld-gov-au/kiteworks-integration/issues/192) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-8117134830
-  - Merge pull request [#191](https://github.com/qld-gov-au/kiteworks-integration/issues/191) from qld-gov-au/dependabot/maven/junit-jupiter-fbb99e6ca9
-  - Merge pull request [#190](https://github.com/qld-gov-au/kiteworks-integration/issues/190) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-0e896a2397
-  - Merge pull request [#189](https://github.com/qld-gov-au/kiteworks-integration/issues/189) from qld-gov-au/dependabot/maven/jackson-19032cc311
-  - Merge pull request [#188](https://github.com/qld-gov-au/kiteworks-integration/issues/188) from qld-gov-au/dependabot/maven/org-apache-maven-plugins-342cd08d56
-  - Merge pull request [#187](https://github.com/qld-gov-au/kiteworks-integration/issues/187) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.2.0
-  - Merge pull request [#186](https://github.com/qld-gov-au/kiteworks-integration/issues/186) from qld-gov-au/dependabot/maven/spotless-maven-plugin-be911994da
-  - Merge pull request [#183](https://github.com/qld-gov-au/kiteworks-integration/issues/183) from qld-gov-au/dependabot/maven/assertj-44ac10f94c
-  - Merge pull request [#184](https://github.com/qld-gov-au/kiteworks-integration/issues/184) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.assertj-assertj-core-3.27.7
-  - Merge pull request [#185](https://github.com/qld-gov-au/kiteworks-integration/issues/185) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.assertj-assertj-core-3.27.7
-  - Merge pull request [#182](https://github.com/qld-gov-au/kiteworks-integration/issues/182) from qld-gov-au/dependabot/maven/spotless-maven-plugin-1aff4f439f
-  - Merge pull request [#181](https://github.com/qld-gov-au/kiteworks-integration/issues/181) from qld-gov-au/dependabot/maven/spring-boot-dependencies-08798948af
-  - Merge pull request [#179](https://github.com/qld-gov-au/kiteworks-integration/issues/179) from qld-gov-au/dependabot/maven/jackson-32cff43e40
-  - Merge pull request [#180](https://github.com/qld-gov-au/kiteworks-integration/issues/180) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-5bb386307f
-  - Merge pull request [#175](https://github.com/qld-gov-au/kiteworks-integration/issues/175) from qld-gov-au/dependabot/maven/org.sonatype.central-central-publishing-maven-plugin-0.10.0
-  - Merge pull request [#176](https://github.com/qld-gov-au/kiteworks-integration/issues/176) from qld-gov-au/dependabot/maven/kiteworks-native-client/org.sonatype.central-central-publishing-maven-plugin-0.10.0
-  - Merge pull request [#177](https://github.com/qld-gov-au/kiteworks-integration/issues/177) from qld-gov-au/dependabot/maven/kiteworks-spring-service/org.sonatype.central-central-publishing-maven-plugin-0.10.0
-  - Merge pull request [#178](https://github.com/qld-gov-au/kiteworks-integration/issues/178) from qld-gov-au/dependabot/maven/kiteworks-swagger-gen/org.sonatype.central-central-publishing-maven-plugin-0.10.0
-  - Merge pull request [#170](https://github.com/qld-gov-au/kiteworks-integration/issues/170) from qld-gov-au/dependabot/maven/spring-boot-dependencies-dd994ee386
-  - Merge pull request [#174](https://github.com/qld-gov-au/kiteworks-integration/issues/174) from qld-gov-au/dependabot/maven/junit-jupiter-520ecaf035
-  - Merge pull request [#172](https://github.com/qld-gov-au/kiteworks-integration/issues/172) from qld-gov-au/dependabot/maven/openapi-generator-maven-plugin-bd0633e178
-  - Merge pull request [#171](https://github.com/qld-gov-au/kiteworks-integration/issues/171) from qld-gov-au/dependabot/maven/exec-maven-plugin-7adc97551c
-  - Merge pull request [#173](https://github.com/qld-gov-au/kiteworks-integration/issues/173) from qld-gov-au/dependabot/github_actions/mikepenz/action-junit-report-6.1.0
-  - Merge pull request [#169](https://github.com/qld-gov-au/kiteworks-integration/issues/169) from qld-gov-au/dependabot/github_actions/actions/upload-artifact-6
-  - Merge pull request [#167](https://github.com/qld-gov-au/kiteworks-integration/issues/167) from qld-gov-au/dependabot/github_actions/peter-evans/create-pull-request-8
-  - Merge pull request [#168](https://github.com/qld-gov-au/kiteworks-integration/issues/168) from qld-gov-au/dependabot/maven/mockito-core-2aff6151db
-  - Merge pull request [#166](https://github.com/qld-gov-au/kiteworks-integration/issues/166) from qld-gov-au/update-changelog
   
   
-<a name="v2.0.6"></a>
-## [v2.0.6] - 2026-11-25
-
 <a name="v3.0.1"></a>
 ## [v3.0.1] - 2026-11-24
 ### Pull Requests
@@ -529,8 +410,7 @@
 ## v1.0.0 - 2024-07-29
 
 [Unreleased]: https://github.com/qld-gov-au/kiteworks-integration/compare/v3.0.2...HEAD
-[v3.0.2]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.0.6...v3.0.2
-[v2.0.6]: https://github.com/qld-gov-au/kiteworks-integration/compare/v3.0.1...v2.0.6
+[v3.0.2]: https://github.com/qld-gov-au/kiteworks-integration/compare/v3.0.1...v3.0.2
 [v3.0.1]: https://github.com/qld-gov-au/kiteworks-integration/compare/v3.0.0...v3.0.1
 [v3.0.0]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.3...v3.0.0
 [v2.1.3]: https://github.com/qld-gov-au/kiteworks-integration/compare/v2.1.2...v2.1.3
